@@ -41,13 +41,6 @@ class Login extends \Aplikasi\Kitab\Kawal
 		echo '</pre>|';//*/
 	}
 ##-----------------------------------------------------------------------------------------
-	public function semakRujuk($senarai)
-	{
-		//echo '<pre>$senarai:<br>';
-		print_r($senarai);
-		//echo '</pre>|';//*/
-	}
-##-----------------------------------------------------------------------------------------
 	function logout()
 	{
 		//echo '<pre>sebelum:'; print_r($_SESSION); echo '</pre>';
@@ -144,10 +137,10 @@ class Login extends \Aplikasi\Kitab\Kawal
 				//$this->tanya->cariSql("`$myTable`", $medan, $carian, null);
 				$kira = sizeof($cariNama);//*/
 		# semak pembolehubah
-		//echo '<pre>Test $_POST->'; print_r($_POST) . '</pre>';
+		//echo '<pre>Test $_POST->'; print_r($_POST); echo '</pre>';
 		//echo '<pre>password->'; print_r($password); echo '</pre>';
-		//echo '<pre>$cariNama::'; print_r($cariNama) . '<pre>';
-		//echo '<hr>$data->' . sizeof($cariNama) . '<hr>';
+		/*echo '<pre>$cariNama::'; print_r($cariNama); echo '</pre>';
+		echo '<hr>$data->' . sizeof($cariNama) . '<hr>';//*/
 
 		$this->kunciPintu($kira, $cariNama); # pilih pintu masuk
 	}
