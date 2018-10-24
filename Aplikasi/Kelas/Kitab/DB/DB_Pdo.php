@@ -21,26 +21,11 @@ class DB_Pdo extends \PDO
 	}
 #------------------------------------------------------------------------------------------------------------------
 	/**
-	 * bigError
-	 * @param papar $masalah yang dialami
-	 * @exit 
-	 */
-	public function bigError($masalah)
-	{
-		$error  = 'PDO::errorInfo()';
-		$error .= '<br>' . $masalah[2];
-		echo $error;
-		/*foreach ($masalah as $key=>$apa)
-			$error .= '<br>' . $key . '=>' . $apa; //*/
-		exit;
-	}
-#------------------------------------------------------------------------------------------------------------------
-	/**
 	 * masalahIni
 	 * @param papar $masalah yang dialami
 	 * @exit
 	 */
-	public function masalahIni($masalah)
+	public function masalahIni($sth,$masalah)
 	{
 		//$sth->debugDumpParams(); # papar sql balik
 		# true flag returns val rather than print;
@@ -72,7 +57,7 @@ class DB_Pdo extends \PDO
 		if($masalah[0]=='00000')# pulangkan pembolehubah
 			return $sth->fetchAll($fetchMode);
 		else
-			$this->masalahIni($masalah);//*/
+			$this->masalahIni($sth,$masalah);//*/
 	}
 #------------------------------------------------------------------------------------------------------------------
 	/**
@@ -96,7 +81,7 @@ class DB_Pdo extends \PDO
 		if($masalah[0]=='00000')# pulangkan pembolehubah
 			return $sth->fetchAll($fetchMode);
 		else
-			$this->masalahIni($masalah);//*/
+			$this->masalahIni($sth,$masalah);//*/
 	}
 #------------------------------------------------------------------------------------------------------------------
 	/**
@@ -120,7 +105,7 @@ class DB_Pdo extends \PDO
 		if($masalah[0]=='00000')# pulangkan pembolehubah
 			return $sth->rowCount(); //$sth->fetchAll($fetchMode);
 		else
-			$this->masalahIni($masalah);//*/
+			$this->masalahIni($sth,$masalah);//*/
 	}
 #------------------------------------------------------------------------------------------------------------------
 	/**
@@ -147,7 +132,7 @@ class DB_Pdo extends \PDO
 		if($masalah[0]=='00000')# pulangkan pembolehubah
 			return $sth->fetchAll($fetchMode);
 		else
-			$this->masalahIni($masalah);//*/
+			$this->masalahIni($sth,$masalah);//*/
 	}
 #------------------------------------------------------------------------------------------------------------------
 	/**
@@ -172,7 +157,7 @@ class DB_Pdo extends \PDO
 		if($masalah[0]=='00000')# pulangkan pembolehubah
 			return $sth->fetchAll($fetchMode);
 		else
-			$this->masalahIni($masalah);//*/
+			$this->masalahIni($sth,$masalah);//*/
 	}
 #------------------------------------------------------------------------------------------------------------------
 	/**
@@ -199,7 +184,7 @@ class DB_Pdo extends \PDO
 		if($masalah[0]=='00000')# pulangkan pembolehubah
 			return $sth->fetchAll($fetchMode);
 		else
-			$this->masalahIni($masalah);//*/
+			$this->masalahIni($sth,$masalah);//*/
 	}
 #------------------------------------------------------------------------------------------------------------------
 	/**
@@ -224,7 +209,7 @@ class DB_Pdo extends \PDO
 		if($masalah[0]=='00000')# pulangkan pembolehubah
 			return $sth->fetchAll($fetchMode);
 		else
-			$this->masalahIni($masalah);//*/
+			$this->masalahIni($sth,$masalah);//*/
 	}
 #------------------------------------------------------------------------------------------------------------------
 	/**
@@ -249,7 +234,7 @@ class DB_Pdo extends \PDO
 		if($masalah[0]=='00000')# pulangkan pembolehubah
 			return $sth->fetchAll($fetchMode);
 		else
-			$this->masalahIni($masalah);//*/
+			$this->masalahIni($sth,$masalah);//*/
 	}
 #------------------------------------------------------------------------------------------------------------------
 	/**
@@ -279,7 +264,7 @@ class DB_Pdo extends \PDO
 		if($masalah[0]=='00000')# pulangkan pembolehubah
 			return $sth->fetchAll($fetchMode);
 		else
-			$this->masalahIni($masalah);//*/
+			$this->masalahIni($sth,$masalah);//*/
 	}
 #------------------------------------------------------------------------------------------------------------------
 	/**
