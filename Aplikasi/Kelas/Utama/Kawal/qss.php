@@ -61,6 +61,26 @@ class Qss extends \Aplikasi\Kitab\Kawal
 		echo '</font></pre>';
 	}
 ##-----------------------------------------------------------------------------------------
+	function kandunganPaparan($pilih, $myTable)
+	{
+		//$this->papar->senarai[$myTable] = null;
+		$this->papar->myTable = $myTable;
+		$this->papar->_jadual = $myTable;
+		$this->papar->carian[] = 'semua';
+		$this->papar->c1 = $this->papar->c2 = null;
+		$this->papar->_pilih = $pilih;
+		$this->papar->template = 'template_biasa';
+		$this->papar->pilihJadual = 'pilih_jadual_am';
+		$this->papar->template2 = 'template_khas02';
+		$this->papar->pilihJadual2 = 'pilih_jadual_am2';
+		$this->papar->template3 = 'template_khas03';
+		$this->papar->pilihJadual3 = 'pilih_jadual_am';
+		//$this->papar->template2 = 'template_bootstrap';
+		//$this->papar->template3 = 'template_bootstrap_table';
+		//$this->papar->template1 = 'template_khas01';
+		//*/
+	}
+##-----------------------------------------------------------------------------------------
 	function logout()
 	{
 		//echo '<pre>sebelum:'; print_r($_SESSION) . '</pre>';
@@ -78,10 +98,9 @@ class Qss extends \Aplikasi\Kitab\Kawal
 		list($medan, $carian, $susun) = $this->tanya->setPencam($pilih,$medanID,$dataID);
 		$this->papar->senarai[$pilih] = $this->tanya->cariSql
 			//cariSemuaData
-			($myJadual, $medan, $carian, $susun);
+			("`$myJadual`", $medan, $carian, $susun);
 		# Set pembolehubah untuk Papar
 		$this->kandunganPaparan($pilih, $myJadual);
-		//$this->debugKandunganPaparan($pilih, $myJadual);
 	}
 ###------------------------------------------------------------------------------------------
 # tamat - semak database
