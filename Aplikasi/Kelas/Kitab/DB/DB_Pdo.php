@@ -1,5 +1,5 @@
 <?php
-namespace Aplikasi\Kitab; //echo __NAMESPACE__; 
+namespace Aplikasi\Kitab; //echo __NAMESPACE__;
 class DB_Pdo extends \PDO
 {
 #==================================================================================================================
@@ -22,17 +22,17 @@ class DB_Pdo extends \PDO
 #------------------------------------------------------------------------------------------------------------------
 	/**
 	 * bigError
-	 * @param papar $masalah yang dialami
+	 * @param papar $problem yang dialami
 	 * @exit
 	 */
-	public function bigError($sth,$masalah)
+	public function bigError($sth,$problem)
 	{
 		//$sth->debugDumpParams(); # papar sql balik
 		# true flag returns val rather than print;
-		$errorInfo = print_r($masalah, true);
-		$error  = 'PDO::errorInfo()';
+		$errorInfo = print_r($problem, true);
+		$error  = 'PDO::errorInfo():';
 		$error .= '<pre>' . $errorInfo . '</pre>';
-		echo $error; # do what you wish with this var, write to log file etc...
+		echo $error; # do what you wish with this param, write to log file etc...
 		exit;
 	}
 #------------------------------------------------------------------------------------------------------------------
@@ -53,11 +53,11 @@ class DB_Pdo extends \PDO
 		}
 
 		$sth->execute();
-		$masalah = $sth->errorInfo(); # semak jika ada error
-		if($masalah[0]=='00000')# pulangkan pembolehubah
+		$problem = $sth->errorInfo(); # semak jika ada error
+		if($problem[0]=='00000')# pulangkan pembolehubah
 			return $sth->fetchAll($fetchMode);
 		else
-			$this->bigError($sth,$masalah);//*/
+			$this->bigError($sth,$problem);//*/
 	}
 #------------------------------------------------------------------------------------------------------------------
 	/**
@@ -77,11 +77,11 @@ class DB_Pdo extends \PDO
 		}
 
 		$sth->execute();
-		$masalah = $sth->errorInfo(); # semak jika ada error
-		if($masalah[0]=='00000')# pulangkan pembolehubah
+		$problem = $sth->errorInfo(); # semak jika ada error
+		if($problem[0]=='00000')# pulangkan pembolehubah
 			return $sth->fetchAll($fetchMode);
 		else
-			$this->bigError($sth,$masalah);//*/
+			$this->bigError($sth,$problem);//*/
 	}
 #------------------------------------------------------------------------------------------------------------------
 	/**
@@ -101,11 +101,11 @@ class DB_Pdo extends \PDO
 		}
 
 		$sth->execute();
-		$masalah = $sth->errorInfo(); # semak jika ada error
-		if($masalah[0]=='00000')# pulangkan pembolehubah
+		$problem = $sth->errorInfo(); # semak jika ada error
+		if($problem[0]=='00000')# pulangkan pembolehubah
 			return $sth->rowCount(); //$sth->fetchAll($fetchMode);
 		else
-			$this->bigError($sth,$masalah);//*/
+			$this->bigError($sth,$problem);//*/
 	}
 #------------------------------------------------------------------------------------------------------------------
 	/**
@@ -128,11 +128,11 @@ class DB_Pdo extends \PDO
 		}
 
 		$sth->execute();
-		$masalah = $sth->errorInfo(); # semak jika ada error
-		if($masalah[0]=='00000')# pulangkan pembolehubah
+		$problem = $sth->errorInfo(); # semak jika ada error
+		if($problem[0]=='00000')# pulangkan pembolehubah
 			return $sth->fetchAll($fetchMode);
 		else
-			$this->bigError($sth,$masalah);//*/
+			$this->bigError($sth,$problem);//*/
 	}
 #------------------------------------------------------------------------------------------------------------------
 	/**
@@ -153,11 +153,11 @@ class DB_Pdo extends \PDO
 		}//*/
 
 		$sth->execute();
-		$masalah = $sth->errorInfo(); # semak jika ada error
-		if($masalah[0]=='00000')# pulangkan pembolehubah
+		$problem = $sth->errorInfo(); # semak jika ada error
+		if($problem[0]=='00000')# pulangkan pembolehubah
 			return $sth->fetchAll($fetchMode);
 		else
-			$this->bigError($sth,$masalah);//*/
+			$this->bigError($sth,$problem);//*/
 	}
 #------------------------------------------------------------------------------------------------------------------
 	/**
@@ -180,11 +180,11 @@ class DB_Pdo extends \PDO
 		}	//echo '<hr>';
 
 		$sth->execute();
-		$masalah = $sth->errorInfo(); # semak jika ada error
-		if($masalah[0]=='00000')# pulangkan pembolehubah
+		$problem = $sth->errorInfo(); # semak jika ada error
+		if($problem[0]=='00000')# pulangkan pembolehubah
 			return $sth->fetchAll($fetchMode);
 		else
-			$this->bigError($sth,$masalah);//*/
+			$this->bigError($sth,$problem);//*/
 	}
 #------------------------------------------------------------------------------------------------------------------
 	/**
@@ -205,11 +205,11 @@ class DB_Pdo extends \PDO
 		}
 
 		$sth->execute();
-		$masalah = $sth->errorInfo(); # semak jika ada error
-		if($masalah[0]=='00000')# pulangkan pembolehubah
+		$problem = $sth->errorInfo(); # semak jika ada error
+		if($problem[0]=='00000')# pulangkan pembolehubah
 			return $sth->fetchAll($fetchMode);
 		else
-			$this->bigError($sth,$masalah);//*/
+			$this->bigError($sth,$problem);//*/
 	}
 #------------------------------------------------------------------------------------------------------------------
 	/**
@@ -230,11 +230,11 @@ class DB_Pdo extends \PDO
 		}	//echo '<hr>';
 
 		$sth->execute();
-		$masalah = $sth->errorInfo(); # semak jika ada error
-		if($masalah[0]=='00000')# pulangkan pembolehubah
+		$problem = $sth->errorInfo(); # semak jika ada error
+		if($problem[0]=='00000')# pulangkan pembolehubah
 			return $sth->fetchAll($fetchMode);
 		else
-			$this->bigError($sth,$masalah);//*/
+			$this->bigError($sth,$problem);//*/
 	}
 #------------------------------------------------------------------------------------------------------------------
 	/**
@@ -260,11 +260,11 @@ class DB_Pdo extends \PDO
 			$sth->bindValue(":$key", $value);
 
 		$sth->execute();
-		$masalah = $sth->errorInfo(); # semak jika ada error
-		if($masalah[0]=='00000')# pulangkan pembolehubah
+		$problem = $sth->errorInfo(); # semak jika ada error
+		if($problem[0]=='00000')# pulangkan pembolehubah
 			return $sth->fetchAll($fetchMode);
 		else
-			$this->bigError($sth,$masalah);//*/
+			$this->bigError($sth,$problem);//*/
 	}
 #------------------------------------------------------------------------------------------------------------------
 	/**
