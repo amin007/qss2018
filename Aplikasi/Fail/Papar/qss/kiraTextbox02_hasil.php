@@ -10,12 +10,12 @@ $('#F00<?php echo $ff ?>c').keyup(function(){
 	F00<?php echo $ff ?>b = parseFloat($('#F00<?php echo $ff ?>b').val());
 	F00<?php echo $ff ?>c = parseFloat($('#F00<?php echo $ff ?>c').val());
 	var result = F00<?php echo $ff ?>a + F00<?php echo $ff ?>b + F00<?php echo $ff ?>c;
-	$('#F00<?php echo $ff ?>d').val(result.toFixed(0));
+	$('#F00<?php echo $ff ?>').val(result.toFixed(0));
 });
 </script>
 <?php endforeach; 
 echo "\r";
-$kiraF = array('a','b','c','d');
+$kiraF = array('a','b','c','');
 foreach ($kiraF as $ff):?>
 <script>
 $('#F0009<?php echo $ff ?>').keyup(function(){
@@ -30,7 +30,7 @@ $('#F0009<?php echo $ff ?>').keyup(function(){
 <?php endforeach; 
 echo "\r";
 echo "\r";
-$kiraF = array('a','b','c','d');
+$kiraF = array('a','b','c','');
 foreach ($kiraF as $ff):?>
 <script>
 $('#F0010<?php echo $ff ?>').keyup(function(){
@@ -45,7 +45,7 @@ $('#F0010<?php echo $ff ?>').keyup(function(){
 <?php endforeach; 
 echo "\r";
 ####################################################################################################
-$kiraF = array('a','b','c','d');
+$kiraF = array('a','b','c','');
 foreach ($kiraF as $ff):?>
 <script>
 $('#F0017<?php echo $ff ?>').keyup(function(){
@@ -61,7 +61,7 @@ $('#F0017<?php echo $ff ?>').keyup(function(){
 </script>
 <?php endforeach; 
 echo "\r";
-$kiraF = array('a','b','c','d');
+$kiraF = array('a','b','c','');
 foreach ($kiraF as $ff):?>
 <script>
 $('#F0018<?php echo $ff ?>').keyup(function(){
