@@ -1,5 +1,5 @@
 <?php
-namespace Aplikasi\Kawal; //echo __NAMESPACE__; 
+namespace Aplikasi\Kawal; //echo __NAMESPACE__;
 class Qss extends \Aplikasi\Kitab\Kawal
 {
 #==========================================================================================
@@ -17,7 +17,7 @@ class Qss extends \Aplikasi\Kitab\Kawal
 		//echo '<hr> Nama class : ' . __METHOD__ . '<hr>';
 
 		# Pergi papar kandungan
-		$lokasi = 'qss/cari/';
+		$lokasi = 'qss/google/';
 		//echo '<br>location: ' . URL . $lokasi;
 		header('location: ' . URL . $lokasi); //*/
 		//$this->paparKandungan($this->_folder, 'index', $noInclude=0);
@@ -123,7 +123,7 @@ class Qss extends \Aplikasi\Kitab\Kawal
 		//echo 'Kod:' . RahsiaHash::create('sha256', $_POST['password'], HASH_PASSWORD_KEY) . ': ';
 	}
 #-------------------------------------------------------------------------------------------
-	public function cari($action = 'x')
+	public function google($action = 'x')
 	{
 		# Set pemboleubah utama
 		$this->papar->idBorang = (isset($_GET['cari'])) ? $_GET['cari'] : null;
