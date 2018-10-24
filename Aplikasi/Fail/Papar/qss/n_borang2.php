@@ -45,7 +45,7 @@ foreach ($ulang as $papar => $lihat):
 endforeach;
 
 echo "\n\t\t" . '<tr><td bgcolor="#e9e7e9">Keterangan&nbsp;MSIC</td><td>'
-. '<textarea cols="70" rows="1" style="resize:none;">' . $this->bentukJadual01[0]['F1201']
+. '<textarea cols="50" rows="2" style="resize:none;">' . $this->bentukJadual01[0]['F1201']
 . '</textarea></td></tr>' . "\n\t\t";
 ?></table>
 	</td>
