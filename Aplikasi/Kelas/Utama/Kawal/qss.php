@@ -93,13 +93,11 @@ class Qss extends \Aplikasi\Kitab\Kawal
 ###------------------------------------------------------------------------------------------
 	function panggilTable($myJadual,$pilih,$medanID,$dataID)
 	{
-		/*echo '<hr>Nama class :' . __METHOD__ . '';
-		echo "(\$myJadual='$myJadual',\$pilih='$pilih',";
-		echo "\$medanID='$medanID',\$dataID='$dataID')<hr>";//*/
+		//echo '<hr>Nama class :' . __METHOD__ . '()';
 		# Set pembolehubah utama
-		$jadual = explode('-', $myJadual);
+		//$jadual = explode('-', $myJadual);
 		list($medan, $carian, $susun) = $this->tanya->setPencam($pilih,$medanID,$dataID);
-		$this->papar->senarai[$jadual[2]] = $this->tanya->//cariSql
+		$this->papar->senarai[$myJadual] = $this->tanya->//cariSql
 			cariSemuaData
 			("`$myJadual`", $medan, $carian, $susun);
 		# Set pembolehubah untuk Papar
