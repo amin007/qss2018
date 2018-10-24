@@ -69,6 +69,22 @@ class Qss extends \Aplikasi\Kitab\Kawal
 		//exit;
 	}
 #==========================================================================================
+# mula - semak database
+###------------------------------------------------------------------------------------------
+	function panggilTable($myJadual,$pilih,$medanID)
+	{
+		# Set pembolehubah utama
+		list($medan, $carian, $susun) = $this->tanya->setPencam($pilih,$medanID,$dataID);
+		$this->papar->senarai[$pilih] = $this->tanya->//cariSql
+			cariSemuaData
+			($myJadual, $medan, $carian, $susun);
+		# Set pembolehubah untuk Papar
+		$this->kandunganPaparan($pilih, $myJadual);
+		//$this->debugKandunganPaparan($pilih, $myJadual);
+	}
+###------------------------------------------------------------------------------------------
+# tamat - semak database
+#==========================================================================================
 #-------------------------------------------------------------------------------------------
 	function semaknama($nama)
 	{
@@ -129,6 +145,10 @@ class Qss extends \Aplikasi\Kitab\Kawal
 		'06qss2018-q2-pengangkutan_penyimpanan','07qss2018-q2-kesihatan',
 		'08qss2018-q2-fnb','09qss2018-q2-perkhidmatan_lain',
 		'10qss2018-q2-pks','11qss2018-q2-pendidikan');
+
+		foreach($senarai as $myJadual):
+			$this->panggilTable($myJadual,'qss',$medanID);
+		endforeach;
 	}
 #-------------------------------------------------------------------------------------------
 #==========================================================================================
