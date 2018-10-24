@@ -93,12 +93,12 @@ class Qss extends \Aplikasi\Kitab\Kawal
 ###------------------------------------------------------------------------------------------
 	function panggilTable($myJadual,$pilih,$medanID,$dataID)
 	{
-		echo '<hr>Nama class :' . __METHOD__ . '';
-		echo "(\$myJadual=$myJadual,\$pilih=$pilih,";
-		echo "\$medanID=$medanID,\$dataID=$dataID)<hr>";
+		/*echo '<hr>Nama class :' . __METHOD__ . '';
+		echo "(\$myJadual='$myJadual',\$pilih='$pilih',";
+		echo "\$medanID='$medanID',\$dataID='$dataID')<hr>";//*/
 		# Set pembolehubah utama
 		list($medan, $carian, $susun) = $this->tanya->setPencam($pilih,$medanID,$dataID);
-		$this->papar->senarai[$pilih] = $this->tanya->//cariSql
+		$this->papar->senarai[$myJadual] = $this->tanya->//cariSql
 			cariSemuaData
 			("`$myJadual`", $medan, $carian, $susun);
 		# Set pembolehubah untuk Papar
@@ -131,7 +131,7 @@ class Qss extends \Aplikasi\Kitab\Kawal
 #-------------------------------------------------------------------------------------------
 	public function suku2($dataID = null, $suku = 2,$action = 'hasil')
 	{
-		echo '<hr>Nama class :' . __METHOD__ . '()<hr>';
+		//echo '<hr>Nama class :' . __METHOD__ . '()<hr>';
 		# Set pemboleubah utama
 		$this->papar->suku = $suku;
 		$this->pilihjadual($dataID);
@@ -161,7 +161,7 @@ class Qss extends \Aplikasi\Kitab\Kawal
 #-------------------------------------------------------------------------------------------
 	function pilihJadual($dataID)
 	{
-		echo '<hr>Nama class :' . __METHOD__ . '()<hr>';
+		//echo '<hr>Nama class :' . __METHOD__ . '()<hr>';
 		$medanID = 'newss';
 		$this->papar->medanID = 'newss';
 		$this->papar->dataID = $dataID;
