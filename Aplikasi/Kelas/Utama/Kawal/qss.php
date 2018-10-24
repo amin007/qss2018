@@ -93,11 +93,13 @@ class Qss extends \Aplikasi\Kitab\Kawal
 ###------------------------------------------------------------------------------------------
 	function panggilTable($myJadual,$pilih,$medanID,$dataID)
 	{
-		echo '<hr>Nama class :' . __METHOD__ . '()<hr>';
+		echo '<hr>Nama class :' . __METHOD__ . '';
+		echo "(\$myJadual=$myJadual,\$pilih=$pilih,";
+		echo "\$medanID=$medanID,\$dataID=$dataID)<hr>";
 		# Set pembolehubah utama
 		list($medan, $carian, $susun) = $this->tanya->setPencam($pilih,$medanID,$dataID);
-		$this->papar->senarai[$pilih] = $this->tanya->cariSql
-			//cariSemuaData
+		$this->papar->senarai[$pilih] = $this->tanya->//cariSql
+			cariSemuaData
 			("`$myJadual`", $medan, $carian, $susun);
 		# Set pembolehubah untuk Papar
 		$this->kandunganPaparan($pilih, $myJadual);
@@ -123,7 +125,7 @@ class Qss extends \Aplikasi\Kitab\Kawal
 		$pilihFail = $this->pilihFail($action);
 
 		# Pergi papar kandungan
-		//debugKandunganPaparan(); # Semak data dulu
+		//$this->debugKandunganPaparan(); # Semak data dulu
 		$this->paparKandungan($this->_folder, $pilihFail, $noInclude=1);
 	}
 #-------------------------------------------------------------------------------------------
@@ -137,7 +139,7 @@ class Qss extends \Aplikasi\Kitab\Kawal
 
 		# Pergi papar kandungan
 		//echo '<pre>';
-		debugKandunganPaparan(); # Semak data dulu
+		$this->debugKandunganPaparan(); # Semak data dulu
 		//$this->paparKandungan($this->_folder, $pilihFail, $noInclude=1);
 	}
 #-------------------------------------------------------------------------------------------
