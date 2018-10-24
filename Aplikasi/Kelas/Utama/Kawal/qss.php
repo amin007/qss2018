@@ -97,8 +97,9 @@ class Qss extends \Aplikasi\Kitab\Kawal
 		echo "(\$myJadual='$myJadual',\$pilih='$pilih',";
 		echo "\$medanID='$medanID',\$dataID='$dataID')<hr>";//*/
 		# Set pembolehubah utama
+		$jadual = explode('-', $myJadual);
 		list($medan, $carian, $susun) = $this->tanya->setPencam($pilih,$medanID,$dataID);
-		$this->papar->senarai[$myJadual] = $this->tanya->//cariSql
+		$this->papar->senarai[$jadual[2]] = $this->tanya->//cariSql
 			cariSemuaData
 			("`$myJadual`", $medan, $carian, $susun);
 		# Set pembolehubah untuk Papar
@@ -163,13 +164,13 @@ class Qss extends \Aplikasi\Kitab\Kawal
 	{
 		//echo '<hr>Nama class :' . __METHOD__ . '()<hr>';
 		$medanID = 'newss';
-		$this->papar->medanID = 'newss';
+		$this->papar->medanID = $medanID;
 		$this->papar->dataID = $dataID;
-		$senarai = array('qss2018-q2-mk','qss2018-q2-ejen_hartanah',
+		$senarai = array('qss2018-q2-mk'/*,'qss2018-q2-ejen_hartanah',
 		'qss2018-q2-kesenian','qss2018-q2-profesional','qss2018-q2-penginapan',
 		'qss2018-q2-pengangkutan_penyimpanan','qss2018-q2-kesihatan',
 		'qss2018-q2-fnb','qss2018-q2-perkhidmatan_lain',
-		'qss2018-q2-pks','qss2018-q2-pendidikan');
+		'qss2018-q2-pks','qss2018-q2-pendidikan'*/);
 
 		foreach($senarai as $myJadual):
 			//echo "<br>RENAME TABLE `$myJadual` TO `$myJadual`; ";
