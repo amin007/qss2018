@@ -31,8 +31,7 @@ $link[1]= 'https://qss.stats.gov.my/qssv2/pdf/pdf3.php?no_siri='
 $link[2] = 'https://qss.stats.gov.my/qssv2/pagemenu.php?pref='
 . $this->suku . '&getSerial=' . $this->dataID . '';
 ?>
-<br>Sektor : <?php echo $this->_jadual ?>
-<br>Anjung : <a href="<?php echo $link[0] ?>"><?php echo $link[0] ?></a>
+<br>Sektor : <?php echo $this->_jadual ?> | <a href="<?php echo $link[0] ?>">Anjung</a>
 <br>Suku 1 : <a target="_blank" href="<?php echo $link[1] ?>"><?php echo $link[1] ?></a>
 <br>Suku 2 : <a target="_blank" href="<?php echo $link[2] ?>"><?php echo $link[2] ?></a>
 <!-- isi borang mula ########################################################################################################## -->
