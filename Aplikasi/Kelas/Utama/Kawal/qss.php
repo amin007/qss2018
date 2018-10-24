@@ -128,7 +128,7 @@ class Qss extends \Aplikasi\Kitab\Kawal
 		$this->paparKandungan($this->_folder, $pilihFail, $noInclude=1);
 	}
 #-------------------------------------------------------------------------------------------
-	public function suku2($dataID = null, $suku = 2,$action = 'hasil')
+	public function suku2($dataID = null, $suku = 2, $action = 'hasil')
 	{
 		//echo '<hr>Nama class :' . __METHOD__ . '()<hr>';
 		# Set pemboleubah utama
@@ -137,9 +137,9 @@ class Qss extends \Aplikasi\Kitab\Kawal
 		$pilihFail = $this->pilihFail($action);
 
 		# Pergi papar kandungan
-		//echo '<pre>';
-		$this->debugKandunganPaparan(); # Semak data dulu
-		//$this->paparKandungan($this->_folder, $pilihFail, $noInclude=1);
+		//$this->debugKandunganPaparan(); # Semak data dulu
+		//$this->_folder = 'borang'; //echo "$this->_folder|$pilihFail";
+		$this->paparKandungan($this->_folder, $pilihFail, $noInclude=1);
 	}
 #-------------------------------------------------------------------------------------------
 	function pilihFail($action = 'hasil')
@@ -153,6 +153,9 @@ class Qss extends \Aplikasi\Kitab\Kawal
 			$pilihFail = 'tab03_aset';
 		elseif($action == 'tambahan'):
 			$pilihFail = 'tab04_tambahan';
+		else:
+			$fail = array('index','index1','index2','b_ubah','soalan4');
+			$pilihFail = $fail[2];
 		endif;
 
 		return $pilihFail;
@@ -164,11 +167,11 @@ class Qss extends \Aplikasi\Kitab\Kawal
 		$medanID = 'newss';
 		$this->papar->medanID = $medanID;
 		$this->papar->dataID = $dataID;
-		$senarai = array('qss2018-q2-mk'/*,'qss2018-q2-ejen_hartanah',
+		$senarai = array('qss2018-q2-mk','qss2018-q2-ejen_hartanah',
 		'qss2018-q2-kesenian','qss2018-q2-profesional','qss2018-q2-penginapan',
 		'qss2018-q2-pengangkutan_penyimpanan','qss2018-q2-kesihatan',
 		'qss2018-q2-fnb','qss2018-q2-perkhidmatan_lain',
-		'qss2018-q2-pks','qss2018-q2-pendidikan'*/);
+		'qss2018-q2-pks','qss2018-q2-pendidikan');
 
 		foreach($senarai as $myJadual):
 			//echo "<br>RENAME TABLE `$myJadual` TO `$myJadual`; ";
