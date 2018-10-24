@@ -21,11 +21,11 @@ class DB_Pdo extends \PDO
 	}
 #------------------------------------------------------------------------------------------------------------------
 	/**
-	 * masalahIni
+	 * bigError
 	 * @param papar $masalah yang dialami
 	 * @exit
 	 */
-	public function masalahIni($sth,$masalah)
+	public function bigError($sth,$masalah)
 	{
 		//$sth->debugDumpParams(); # papar sql balik
 		# true flag returns val rather than print;
@@ -57,7 +57,7 @@ class DB_Pdo extends \PDO
 		if($masalah[0]=='00000')# pulangkan pembolehubah
 			return $sth->fetchAll($fetchMode);
 		else
-			$this->masalahIni($sth,$masalah);//*/
+			$this->bigError($sth,$masalah);//*/
 	}
 #------------------------------------------------------------------------------------------------------------------
 	/**
@@ -81,7 +81,7 @@ class DB_Pdo extends \PDO
 		if($masalah[0]=='00000')# pulangkan pembolehubah
 			return $sth->fetchAll($fetchMode);
 		else
-			$this->masalahIni($sth,$masalah);//*/
+			$this->bigError($sth,$masalah);//*/
 	}
 #------------------------------------------------------------------------------------------------------------------
 	/**
@@ -105,7 +105,7 @@ class DB_Pdo extends \PDO
 		if($masalah[0]=='00000')# pulangkan pembolehubah
 			return $sth->rowCount(); //$sth->fetchAll($fetchMode);
 		else
-			$this->masalahIni($sth,$masalah);//*/
+			$this->bigError($sth,$masalah);//*/
 	}
 #------------------------------------------------------------------------------------------------------------------
 	/**
@@ -132,7 +132,7 @@ class DB_Pdo extends \PDO
 		if($masalah[0]=='00000')# pulangkan pembolehubah
 			return $sth->fetchAll($fetchMode);
 		else
-			$this->masalahIni($sth,$masalah);//*/
+			$this->bigError($sth,$masalah);//*/
 	}
 #------------------------------------------------------------------------------------------------------------------
 	/**
@@ -157,7 +157,7 @@ class DB_Pdo extends \PDO
 		if($masalah[0]=='00000')# pulangkan pembolehubah
 			return $sth->fetchAll($fetchMode);
 		else
-			$this->masalahIni($sth,$masalah);//*/
+			$this->bigError($sth,$masalah);//*/
 	}
 #------------------------------------------------------------------------------------------------------------------
 	/**
@@ -184,7 +184,7 @@ class DB_Pdo extends \PDO
 		if($masalah[0]=='00000')# pulangkan pembolehubah
 			return $sth->fetchAll($fetchMode);
 		else
-			$this->masalahIni($sth,$masalah);//*/
+			$this->bigError($sth,$masalah);//*/
 	}
 #------------------------------------------------------------------------------------------------------------------
 	/**
@@ -209,7 +209,7 @@ class DB_Pdo extends \PDO
 		if($masalah[0]=='00000')# pulangkan pembolehubah
 			return $sth->fetchAll($fetchMode);
 		else
-			$this->masalahIni($sth,$masalah);//*/
+			$this->bigError($sth,$masalah);//*/
 	}
 #------------------------------------------------------------------------------------------------------------------
 	/**
@@ -234,7 +234,7 @@ class DB_Pdo extends \PDO
 		if($masalah[0]=='00000')# pulangkan pembolehubah
 			return $sth->fetchAll($fetchMode);
 		else
-			$this->masalahIni($sth,$masalah);//*/
+			$this->bigError($sth,$masalah);//*/
 	}
 #------------------------------------------------------------------------------------------------------------------
 	/**
@@ -264,7 +264,7 @@ class DB_Pdo extends \PDO
 		if($masalah[0]=='00000')# pulangkan pembolehubah
 			return $sth->fetchAll($fetchMode);
 		else
-			$this->masalahIni($sth,$masalah);//*/
+			$this->bigError($sth,$masalah);//*/
 	}
 #------------------------------------------------------------------------------------------------------------------
 	/**
@@ -308,8 +308,6 @@ class DB_Pdo extends \PDO
 		}
 	}
 #------------------------------------------------------------------------------------------------------------------
-#------------------------------------------------------------------------------------------------------------------
-#------------------------------------------------------------------------------------------------------------------
 #==================================================================================================================
 }
 
@@ -317,7 +315,7 @@ class DB_Pdo extends \PDO
 	/**
 	 * entah mana mamat ini jumpa, masih tidak faham
 	 * https://www.sitepoint.com/community/t/pdo-getcolumnmeta-bug/3430/3
-
+#------------------------------------------------------------------------------------------------------------------
 	/**
 	 *	Automatically get column metadata
 	 *
@@ -348,7 +346,7 @@ class DB_Pdo extends \PDO
 		}
 		return true;
 	}
-
+#------------------------------------------------------------------------------------------------------------------
 	/**
 	 *	Parse PDO-produced column type
 	 *	[internal function]
@@ -383,7 +381,7 @@ class DB_Pdo extends \PDO
 
 		return $colInfo;
 	}
-
+#------------------------------------------------------------------------------------------------------------------
 	/**
 	 *	Will attempt to bind columns with datatypes based on parts of the column type name
 	 *	Any part of the name below will be picked up and converted unless otherwise sepcified
@@ -401,5 +399,5 @@ class DB_Pdo extends \PDO
 		'blob' => PDO::PARAM_LOB,
 		'binary' => PDO::PARAM_LOB
 		);
-
+#------------------------------------------------------------------------------------------------------------------
 //*/
