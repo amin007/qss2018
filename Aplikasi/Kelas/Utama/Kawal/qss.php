@@ -165,14 +165,14 @@ class Qss extends \Aplikasi\Kitab\Kawal
 		$medanID = 'newss';
 		$this->papar->medanID = 'newss';
 		$this->papar->dataID = $dataID;
-		$senarai = array('01qss2018-q2-mk','02qss2018-q2-ejen_hartanah',
-		'03qss2018-q2-kesenian','04qss2018-q2-profesional','05qss2018-q2-penginapan',
-		'06qss2018-q2-pengangkutan_penyimpanan','07qss2018-q2-kesihatan',
-		'08qss2018-q2-fnb','09qss2018-q2-perkhidmatan_lain',
-		'10qss2018-q2-pks','11qss2018-q2-pendidikan');
+		$senarai = array('qss2018-q2-mk','qss2018-q2-ejen_hartanah',
+		'qss2018-q2-kesenian','qss2018-q2-profesional','qss2018-q2-penginapan',
+		'qss2018-q2-pengangkutan_penyimpanan','qss2018-q2-kesihatan',
+		'qss2018-q2-fnb','qss2018-q2-perkhidmatan_lain',
+		'qss2018-q2-pks','qss2018-q2-pendidikan');
 
 		foreach($senarai as $myJadual):
-			//echo "<br>$myJadual ";
+			//echo "<br>RENAME TABLE `$myJadual` TO `$myJadual`; ";
 			$this->panggilTable($myJadual,'semuaJadual',$medanID,$dataID);
 		endforeach;
 	}
