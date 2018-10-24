@@ -39,6 +39,28 @@ class Qss extends \Aplikasi\Kitab\Kawal
 		echo '</pre>|';//*/
 	}
 ##-----------------------------------------------------------------------------------------
+	public function debugKandunganPaparan()
+	{
+		echo '<hr>Nama class :' . __METHOD__ . '()<hr><pre>';
+		$semak = array('idBorang','senarai','myTable','_jadual','carian','c1','c2',
+			'medan','bentukJadual01','bentukJadual02','bentukJadual03',
+			'_pilih','_5p','template','pilihJadual','template2','pilihJadual2');
+		$takWujud = array(); $kira = 0;
+
+		foreach($semak as $apa):
+			if(isset($this->papar->$apa)):
+				echo '<br>$this->papar->' . $apa . ' : ';
+				print_r($this->papar->$apa);
+			else:
+				$takWujud[$kira++] = '$this->papar->' . $apa;
+			endif;
+		endforeach;
+
+		echo '<hr><font color="red">tidak wujud : ';
+		print_r($takWujud);
+		echo '</font></pre>';
+	}
+##-----------------------------------------------------------------------------------------
 	function logout()
 	{
 		//echo '<pre>sebelum:'; print_r($_SESSION) . '</pre>';
@@ -76,11 +98,12 @@ class Qss extends \Aplikasi\Kitab\Kawal
 		//echo '<hr> Nama class : ' . namaClass($this) . '<hr>';
 		$this->papar->suku = $suku;
 		$this->papar->medanID = $medanID;
+		$this->pilihjadual($medanID);
 		$pilihFail = $this->pilihFail($action);
 
 		# Pergi papar kandungan
 		//$this->semakPembolehubah($this->papar->senarai); # Semak data dulu
-		$this->paparKandungan($this->_folder, $pilihFail, $noInclude=1);
+		//$this->paparKandungan($this->_folder, $pilihFail, $noInclude=1);
 	}
 #-------------------------------------------------------------------------------------------
 	function pilihFail($action = 'hasil')
@@ -99,6 +122,14 @@ class Qss extends \Aplikasi\Kitab\Kawal
 		return $pilihFail;
 	}
 #-------------------------------------------------------------------------------------------
+	function pilihJadual($medanID)
+	{
+		$senarai = array('01qss2018-q2-mk','02qss2018-q2-ejen_hartanah',
+		'03qss2018-q2-kesenian','04qss2018-q2-profesional','05qss2018-q2-penginapan',
+		'06qss2018-q2-pengangkutan_penyimpanan','07qss2018-q2-kesihatan',
+		'08qss2018-q2-fnb','09qss2018-q2-perkhidmatan_lain',
+		'10qss2018-q2-pks','11qss2018-q2-pendidikan');
+	}
 #-------------------------------------------------------------------------------------------
 #==========================================================================================
 }
