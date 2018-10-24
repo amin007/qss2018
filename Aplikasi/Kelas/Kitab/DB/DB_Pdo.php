@@ -42,6 +42,7 @@ class DB_Pdo extends \PDO
 	 */
 	public function masalahIni($masalah)
 	{
+		//$sth->debugDumpParams(); # papar sql balik
 		# true flag returns val rather than print;
 		$errorInfo = print_r($masalah, true);
 		$error  = 'PDO::errorInfo()';
@@ -68,9 +69,9 @@ class DB_Pdo extends \PDO
 
 		$sth->execute();
 		$masalah = $sth->errorInfo(); # semak jika ada error
-		//echo "\nPDO::errorInfo()<hr><pre>"; print_r($masalah) . '</pre>';
-		if($masalah[0]=='00000') return $sth->fetchAll($fetchMode);
-		else # pulangkan pembolehubah
+		if($masalah[0]=='00000')# pulangkan pembolehubah
+			return $sth->fetchAll($fetchMode);
+		else
 			$this->masalahIni($masalah);//*/
 	}
 #------------------------------------------------------------------------------------------------------------------
@@ -92,11 +93,10 @@ class DB_Pdo extends \PDO
 
 		$sth->execute();
 		$masalah = $sth->errorInfo(); # semak jika ada error
-		//echo "\nPDO::errorInfo()<hr><pre>"; print_r($masalah) . '</pre>';
-		if (strpos($masalah[2], 'Unknown column') !== false) 
-			$this->bigError($masalah);
-		else # pulangkan pembolehubah
+		if($masalah[0]=='00000')# pulangkan pembolehubah
 			return $sth->fetchAll($fetchMode);
+		else
+			$this->masalahIni($masalah);//*/
 	}
 #------------------------------------------------------------------------------------------------------------------
 	/**
@@ -117,11 +117,10 @@ class DB_Pdo extends \PDO
 
 		$sth->execute();
 		$masalah = $sth->errorInfo(); # semak jika ada error
-		//echo "\nPDO::errorInfo()<hr><pre>"; print_r($masalah) . '</pre>';
-		if (strpos($masalah[2], 'Unknown column') !== false) 
-			$this->bigError($masalah);
-		else # pulangkan pembolehubah
+		if($masalah[0]=='00000')# pulangkan pembolehubah
 			return $sth->rowCount(); //$sth->fetchAll($fetchMode);
+		else
+			$this->masalahIni($masalah);//*/
 	}
 #------------------------------------------------------------------------------------------------------------------
 	/**
@@ -145,10 +144,10 @@ class DB_Pdo extends \PDO
 
 		$sth->execute();
 		$masalah = $sth->errorInfo(); # semak jika ada error
-		//echo "\nPDO::errorInfo()<hr><pre>"; print_r($masalah) . '</pre>';
-		if (strpos($masalah[2], 'Unknown column') !== false) 
-			$this->bigError($masalah);
-		//*/
+		if($masalah[0]=='00000')# pulangkan pembolehubah
+			return $sth->fetchAll($fetchMode);
+		else
+			$this->masalahIni($masalah);//*/
 	}
 #------------------------------------------------------------------------------------------------------------------
 	/**
@@ -170,12 +169,10 @@ class DB_Pdo extends \PDO
 
 		$sth->execute();
 		$masalah = $sth->errorInfo(); # semak jika ada error
-		//echo "\nPDO::errorInfo()<hr><pre>"; print_r($masalah) . '</pre>';
-		if (strpos($masalah[2], 'Unknown column') !== false) 
-			$this->bigError($masalah);
-		else # pulangkan pembolehubah
+		if($masalah[0]=='00000')# pulangkan pembolehubah
 			return $sth->fetchAll($fetchMode);
-		//*/
+		else
+			$this->masalahIni($masalah);//*/
 	}
 #------------------------------------------------------------------------------------------------------------------
 	/**
@@ -199,11 +196,10 @@ class DB_Pdo extends \PDO
 
 		$sth->execute();
 		$masalah = $sth->errorInfo(); # semak jika ada error
-		//$sth->debugDumpParams(); # papar sql balik
-		//echo "\nPDO::errorInfo()<hr><pre>"; print_r($masalah); echo '</pre>';
-		if (strpos($masalah[2], 'Unknown column') !== false) 
-			$this->bigError($masalah);
-		//*/
+		if($masalah[0]=='00000')# pulangkan pembolehubah
+			return $sth->fetchAll($fetchMode);
+		else
+			$this->masalahIni($masalah);//*/
 	}
 #------------------------------------------------------------------------------------------------------------------
 	/**
@@ -225,10 +221,10 @@ class DB_Pdo extends \PDO
 
 		$sth->execute();
 		$masalah = $sth->errorInfo(); # semak jika ada error
-		//echo "\nPDO::errorInfo()<hr><pre>"; print_r($masalah) . '</pre>';
-		if (strpos($masalah[2], 'Unknown column') !== false) 
-			$this->bigError($masalah);
-		//*/
+		if($masalah[0]=='00000')# pulangkan pembolehubah
+			return $sth->fetchAll($fetchMode);
+		else
+			$this->masalahIni($masalah);//*/
 	}
 #------------------------------------------------------------------------------------------------------------------
 	/**
@@ -250,11 +246,10 @@ class DB_Pdo extends \PDO
 
 		$sth->execute();
 		$masalah = $sth->errorInfo(); # semak jika ada error
-		//$sth->debugDumpParams(); # papar sql balik
-		//echo "\nPDO::errorInfo()<hr><pre>"; print_r($masalah); echo '</pre>';
-		if (strpos($masalah[2], 'Unknown column') !== false) 
-			$this->bigError($masalah);
-		//*/
+		if($masalah[0]=='00000')# pulangkan pembolehubah
+			return $sth->fetchAll($fetchMode);
+		else
+			$this->masalahIni($masalah);//*/
 	}
 #------------------------------------------------------------------------------------------------------------------
 	/**
@@ -281,10 +276,10 @@ class DB_Pdo extends \PDO
 
 		$sth->execute();
 		$masalah = $sth->errorInfo(); # semak jika ada error
-		//echo "\nPDO::errorInfo()<hr><pre>"; print_r($masalah) . '</pre>';
-		if (strpos($masalah[2], 'Unknown column') !== false) 
-			$this->bigError($masalah);
-		//*/
+		if($masalah[0]=='00000')# pulangkan pembolehubah
+			return $sth->fetchAll($fetchMode);
+		else
+			$this->masalahIni($masalah);//*/
 	}
 #------------------------------------------------------------------------------------------------------------------
 	/**
