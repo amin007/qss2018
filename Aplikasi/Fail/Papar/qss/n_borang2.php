@@ -1,10 +1,12 @@
 <form id="form1" name="form1" method="post" action="pengguna_dalam/kemaskini/borang/borangA_proses.php">
 
-<table width="961"  align="center" height="20">
-<tr><td height="20" colspan="3" align="left" ><p><div class="textdescrp"></div></p></td></tr>
+<table width="961" align="center" height="20">
+<tr><td height="20" colspan="4" align="left" >
+	<p><div class="textdescrp"></div></p>
+</td></tr>
 <tr style="display:none;">
-	<td colspan="3" align="left" height="20" >
-		<input type="hidden" name="nosiri" id="nosiri" value="000003396288" />
+	<td colspan="4" align="left" height="20" >
+		<input type="hidden" name="nosiri" id="nosiri" value="" />
 		<input type="hidden" name="kod" id="kod" value="01" />
 		Kod Respon<input type="text" name="kod_respon" id="kod_respon" size="4" />
 		Status<input type="text" name="cara_terima" id="cara_terima" size="8" />
@@ -12,36 +14,60 @@
 	</td>
 </tr>
 <tr height="30">
-	<td width="221" align="left" class="textdescrp2">No. Pendaftaran Syarikat/Perniagaan :</td>
-	<td width="349" align="left" >
+	<td width="600" align="left" valign="top" class="textdescrp2">No.&nbsp;Pendaftaran&nbsp;Syarikat/Perniagaan&nbsp;:</td>
+	<td align="left" valign="top" >
 		<input type="text" name="no_ssm" id="no_ssm" value="" disabled="disabled" />
 		<input type="hidden" name="iduser" id="iduser" value="" />
 	</td>
-	<td width="375" rowspan="4" align="left">
+	<td width="600" rowspan="4" align="left">
 		<table width="108" align="center">
 		<tr><td width="98" bgcolor="#FF0000"><div align="center"><em>Error</em></div></td></tr>
 		<tr><td bgcolor="#bffcc0"><div align="center"><em>Force Accept</em></div></td></tr>
-		</table>
-		<table width="341" height="79" border="0" id="maklumat">
-		<tr><td width="88" bgcolor="#e9e7e9">No Siri</td><td width="272">-</td></tr>
-		<tr><td bgcolor="#e9e7e9">Syarikat</td><td>-</td></tr>
-		<tr><td bgcolor="#e9e7e9">Suku Tahun</td><td>1</td></tr>
+		</table><br>
+		<table border="1" id="maklumat">
+		<tr><td bgcolor="#e9e7e9">No Siri</td><td><?php echo $this->bentukJadual01[0]['newss'] ?></td></tr>
+		<tr><td bgcolor="#e9e7e9">Suku&nbsp;Tahun</td><td>1</td></tr>
 		<tr><td bgcolor="#e9e7e9">Tahun</td><td>2018</td></tr>
 		<tr><td bgcolor="#e9e7e9">BBU/SBU</td><td>SBU</td></tr>
 		</table>
 	</td>
-</tr>
-<tr height="30">
-	<td width="221" align="left" class="textdescrp2">Kod Industri Asal :</td>
-	<td width="349" align="left"><input type="text" name="msic" id="msic" value="49225" disabled="disabled"/></td>
+	<td width="600" rowspan="4" align="left">
+		<table border="1" id="maklumat"><?php
+$ulang = array('kod_negeri'=>'Kod&nbsp;Negeri',
+	'pusat_operasi'=>'Pusat&nbsp;Operasi',
+	'strata'=>'Strata',
+	'F0002'=>'Respon',
+	'msic2008'=>'Kod&nbsp;Industri',
+	);
+foreach ($ulang as $papar => $lihat):
+	echo "\n\t\t" . '<tr><td bgcolor="#e9e7e9">' . $lihat . '</td><td>'
+	. $this->bentukJadual01[0][$papar] . '</td></tr>';
+endforeach;
+
+echo "\n\t\t" . '<tr><td bgcolor="#e9e7e9">Keterangan&nbsp;MSIC</td><td>'
+. '<textarea cols="70" rows="1" style="resize:none;">' . $this->bentukJadual01[0]['F1201']
+. '</textarea></td></tr>' . "\n\t\t";
+?></table>
+	</td>
 </tr>
 <tr>
-	<td width="221" align="left" class="textdescrp2">Kod Industri Baru :</td>
-	<td width="349" align="left"><input name="msic_baru" type="text" value="49225" disabled="disabled"/></td>
+	<td align="left" class="textdescrp2">Syarikat :</td>
+	<td align="left"><input type="text" name="msic" value="<?php echo $this->bentukJadual01[0]['nama_pertubuhan'] ?>"
+		maxlength="70" size="70" disabled="disabled"></td>
 </tr>
 <tr>
-	<td width="221" align="left">&nbsp;</td>
-	<td><textarea name="msic_desc" id="msic_desc" cols="35" rows="3" style="resize:none;" disabled="disabled"></textarea></td>
+	<td align="left" class="textdescrp2">Kod Industri Asal :</td>
+	<td align="left"><input type="text" name="msic" id="msic" value="49225"
+	maxlength="60" size="60" disabled="disabled"></td>
+</tr>
+<tr>
+	<td align="left" class="textdescrp2">Kod Industri Baru :</td>
+	<td align="left"><input name="msic_baru" type="text" value="49225"
+	maxlength="60" size="60" disabled="disabled"></td>
+</tr>
+<tr>
+	<td align="left" class="textdescrp2">&nbsp;</td>
+	<td align="left"><textarea name="msic_desc" id="msic_desc" cols="70" rows="3" style="resize:none;" disabled="disabled"></textarea></td>
 </tr>
 </table>
 
