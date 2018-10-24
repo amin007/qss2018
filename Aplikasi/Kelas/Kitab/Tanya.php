@@ -209,6 +209,8 @@ class Tanya
 		$sql = $this->sql->bentukSqlSelect($myTable, $medan, $carian, $susun);
 		$result = $this->db->selectAll($sql);
 		//echo json_encode($result);
+		echo '<pre>$sql::' . htmlentities($sql) . '</pre><br>';
+		echo '<pre>$result::'; print_r($result); echo '</pre><br>';
 
 		return $result;
 	}
