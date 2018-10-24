@@ -63,10 +63,13 @@
 	<td align="left" class="textdescrp2" >1.1 Hasil kendalian / Perolehan / Jualan
 	<a href="nota/nota-1.php?a=315&b=01&c=49" onClick="return hs.htmlExpand(this, { objectType: 'iframe' } )">
 	<i class="fas fa-info-circle"></i></a></td>
-<?php $ulang = array('F0007a','F0007b','F0007c','F0007d','F0008a','F0008b','F0008c','F0008d');
+<?php
+//$ulang = array('F0007a','F0007b','F0007c','F0007d','F0008a','F0008b','F0008c','F0008d');
+$ulang = array('F0007a','F0007b','F0007c','F0007','F0008a','F0008b','F0008c','F0008');
 foreach ($ulang as $papar):?>
 	<td align="left"><?php echo $papar ?><br>
-		<input type="text" id="<?php echo $papar ?>" style="width:120px;text-align:right;" value="" 
+		<input type="text" id="<?php echo $papar ?>" style="width:120px;text-align:right;"
+		value="<?php echo $this->bentukJadual01[0][$papar] ?>"
 		class="auto" data-v-max="999999999999" data-v-min="-9999999999999"/>
 	</td>
 <?php endforeach; ?>
@@ -75,22 +78,28 @@ foreach ($ulang as $papar):?>
 	<td align="left" class="textdescrp2">1.2 Pendapatan lain
 	<a href="nota/nota-1-3.php" onClick="return hs.htmlExpand(this, { objectType: 'iframe' } )">
 	<i class="fas fa-info-circle"></i></a></td>
-<?php $ulang = array('F0009a','F0009b','F0009c','F0009d','F0010a','F0010b','F0010c','F0010d');
+<?php
+//$ulang = array('F0009a','F0009b','F0009c','F0009d','F0010a','F0010b','F0010c','F0010d');
+$ulang = array('F0009a','F0009b','F0009c','F0009','F0010a','F0010b','F0010c','F0010');
 foreach ($ulang as $papar):?>
 	<td align="left"><?php echo $papar ?><br>
-		<input type="text" id="<?php echo $papar ?>" style="width:120px;text-align:right;" value="" 
+		<input type="text" id="<?php echo $papar ?>" style="width:120px;text-align:right;"
+		value="<?php echo $this->bentukJadual01[0][$papar] ?>"
 		class="auto" data-v-max="999999999999" data-v-min="-9999999999999"/>
 	</td>
 <?php endforeach; ?>
 </tr>
 <tr>
 	<td height="28" align="left" class="textdescrp1">1.3 JUMLAH HASIL</td>
-<?php $ulang = array('F0011a','F0011b','F0011c','F0011d','F0012a','F0012b','F0012c','F0012d');
+<?php
+//$ulang = array('F0011a','F0011b','F0011c','F0011d','F0012a','F0012b','F0012c','F0012d');
+$ulang = array('F0011a','F0011b','F0011c','F0011','F0012a','F0012b','F0012c','F0012');
 foreach ($ulang as $papar):?>
 	<td align="left"><?php echo $papar ?><br>
 		<input type="text" id="<?php echo $papar ?>" 
-		style="width:120px;text-align:right;background-color:#e1e4e2;" 
-		value="" class="auto" data-v-max="999999999999" data-v-min="-9999999999999" readonly/>
+		style="width:120px;text-align:right;background-color:#e1e4e2;"
+		value="<?php //echo $this->bentukJadual01[0][$papar] ?>"
+		class="auto" data-v-max="999999999999" data-v-min="-9999999999999" readonly/>
 	</td>
 <?php endforeach; ?>
 </tr>
@@ -122,10 +131,11 @@ foreach ($ulang as $papar):?>
 		<a href="nota/nota-2-1.php?b=01" onClick="return hs.htmlExpand(this, { objectType: 'iframe' } )">
 		<i class="fas fa-info-circle"></i></a>
 	</td>
-<?php $ulang = array('F0013a','F0013b','F0013c','F0013d','F0014a','F0014b','F0014c','F0014d');
+<?php $ulang = array('F0013a','F0013b','F0013c','F0013','F0014a','F0014b','F0014c','F0014');
 foreach ($ulang as $papar):?>
 	<td align="left" ><div align="left"><?php echo $papar ?><br>
-		<input type="text" id="<?php echo $papar ?>" style="width:120px;text-align:right;" value="" 
+		<input type="text" id="<?php echo $papar ?>" style="width:120px;text-align:right;"
+		value="<?php echo $this->bentukJadual01[0][$papar] ?>"
 		class="auto" data-v-max="999999999999" data-v-min="-9999999999999"/>
      </div>
 	</td>
@@ -136,10 +146,11 @@ foreach ($ulang as $papar):?>
 		<a href="nota/nota-2-3.php" onClick="return hs.htmlExpand(this, { objectType: 'iframe' } )">
 		<i class="fas fa-info-circle"></i></a>
 	</td>
-<?php $ulang = array('F0015a','F0015b','F0015c','F0015d','F0016a','F0016b','F0016c','F0016d');
+<?php $ulang = array('F0015a','F0015b','F0015c','F0015','F0016a','F0016b','F0016c','F0016');
 foreach ($ulang as $papar):?>
 	<td align="left" ><div align="left"><?php echo $papar ?><br>
-		<input type="text" id="<?php echo $papar ?>" style="width:120px;text-align:right;" value="" 
+		<input type="text" id="<?php echo $papar ?>" style="width:120px;text-align:right;"
+		value="<?php echo $this->bentukJadual01[0][$papar] ?>"
 		class="auto" data-v-max="999999999999" data-v-min="-9999999999999"/>
      </div>
 	</td>
@@ -150,10 +161,11 @@ foreach ($ulang as $papar):?>
 		<a href="nota/nota-2-4.php" onClick="return hs.htmlExpand(this, { objectType: 'iframe' } )">
 		<i class="fas fa-info-circle"></i></a>
 	</td>
-<?php $ulang = array('F0017a','F0017b','F0017c','F0017d','F0018a','F0018b','F0018c','F0018d');
+<?php $ulang = array('F0017a','F0017b','F0017c','F0017','F0018a','F0018b','F0018c','F0018');
 foreach ($ulang as $papar):?>
 	<td align="left" ><div align="left"><?php echo $papar ?><br>
-		<input type="text" id="<?php echo $papar ?>" style="width:120px;text-align:right;" value="" 
+		<input type="text" id="<?php echo $papar ?>" style="width:120px;text-align:right;"
+		value="<?php echo $this->bentukJadual01[0][$papar] ?>"
 		class="auto" data-v-max="999999999999" data-v-min="-9999999999999"/>
      </div>
 	</td>
@@ -161,11 +173,12 @@ foreach ($ulang as $papar):?>
 </tr>
 <tr>
 	<td height="31" align="left" class="textdescrp1"><span class="textdescrp2">2.4 JUMLAH PERBELANJAAN</span></td>
-<?php $ulang = array('F0019a','F0019b','F0019c','F0019d','F0020a','F0020b','F0020c','F0020d');
+<?php $ulang = array('F0019a','F0019b','F0019c','F0019','F0020a','F0020b','F0020c','F0020');
 foreach ($ulang as $papar):?>
 	<td align="left" ><div align="left"><?php echo $papar ?><br>
 		<input type="text" id="<?php echo $papar ?>" 
-		style="width:120px;text-align:right;background-color:#e1e4e2;" value="" 
+		style="width:120px;text-align:right;background-color:#e1e4e2;"
+		value="<?php //echo $this->bentukJadual01[0][$papar] ?>"
 		class="auto" data-v-max="999999999999" data-v-min="-9999999999999"/>
      </div>
 	</td>
@@ -277,8 +290,6 @@ Penurunan Jumlah Perbelanjaan kurang daripada 30% berbanding suku tahun sebelumn
 Kenaikan Jumlah Pekerja melebihi 30% berbanding suku tahun sebelumnya.Sila nyatakan sebab berlakunya perbezaan tersebut. <br/>
 </div>
 <style>
-
-
 .menu1 {
    
     position:fixed;
