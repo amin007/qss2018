@@ -103,7 +103,7 @@ class Qss_Tanya extends \Aplikasi\Kitab\Tanya
 		$medan = '*';
 		$carian = $susun = null;
 		# semak database
-			$carian[] = array('fix'=>'x=', # cari x= / %like% / xlike
+			$carian[] = array('fix'=>'%like%', # cari x= / %like% / xlike
 				'atau'=>'WHERE', # WHERE / OR / AND
 				'medan' => $medanID, # cari dalam medan apa
 				'apa' => $dataID); # benda yang dicari//*/
