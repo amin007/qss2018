@@ -14,12 +14,13 @@ class Qss extends \Aplikasi\Kitab\Kawal
 	public function index()
 	{
 		# Set pemboleubah utama
-		$this->papar->tajuk = namaClass($this);
-		//echo '<hr> Nama class : ' . namaClass($this) . '<hr>';
+		//echo '<hr> Nama class : ' . __METHOD__ . '<hr>';
 
 		# Pergi papar kandungan
-		//$this->semakPembolehubah($this->papar->senarai); # Semak data dulu
-		$this->paparKandungan($this->_folder, 'index', $noInclude=0);
+		$lokasi = 'qss/cari/';
+		//echo '<br>location: ' . URL . $lokasi;
+		header('location: ' . URL . $lokasi); //*/
+		//$this->paparKandungan($this->_folder, 'index', $noInclude=0);
 	}
 ##-----------------------------------------------------------------------------------------
 	public function paparKandungan($folder, $fail, $noInclude)
@@ -65,7 +66,6 @@ class Qss extends \Aplikasi\Kitab\Kawal
 	{
 		//$this->papar->senarai[$myTable] = null;
 		$this->papar->myTable = $myTable;
-		$this->papar->_jadual = $myTable;
 		$this->papar->carian[] = 'semua';
 		$this->papar->c1 = $this->papar->c2 = null;
 		$this->papar->_pilih = $pilih;
@@ -100,6 +100,13 @@ class Qss extends \Aplikasi\Kitab\Kawal
 		$this->papar->senarai[$myJadual] = $this->tanya->//cariSql
 			cariSemuaData
 			("`$myJadual`", $medan, $carian, $susun);
+		if( count($this->papar->senarai[$myJadual]) == 0 ):
+			//echo '<hr>jumlah ' . $myJadual . ' kosong';
+			unset($this->papar->senarai[$myJadual]);
+		else:
+			$this->papar->bentukJadual01 = $this->papar->senarai[$myJadual];
+			$this->papar->_jadual = $myJadual;
+		endif;//*/
 		# Set pembolehubah untuk Papar
 		$this->kandunganPaparan($pilih, $myJadual);
 	}
@@ -114,6 +121,34 @@ class Qss extends \Aplikasi\Kitab\Kawal
 		echo '<pre>$nama->'; print_r($nama) . '</pre>| ';
 		echo 'Kod:' . \Aplikasi\Kitab\RahsiaHash::rahsia('md5', $nama) . ': ';
 		//echo 'Kod:' . RahsiaHash::create('sha256', $_POST['password'], HASH_PASSWORD_KEY) . ': ';
+	}
+#-------------------------------------------------------------------------------------------
+	public function cari($action = 'x')
+	{
+		# Set pemboleubah utama
+		$this->papar->idBorang = (isset($_GET['cari'])) ? $_GET['cari'] : null;
+		$random = rand(-30, 30);
+		$this->papar->pautan = URL . 'qss/temui/400/1/' . $random;
+		$fail = array('index','index1','index2','b_ubah','1cari');
+		$pilihFail = $fail[4];
+		$this->_folder = 'borang';
+
+		# Pergi papar kandungan
+		//$this->debugKandunganPaparan(); # Semak data dulu
+		$this->paparKandungan($this->_folder, $pilihFail, $noInclude=1);
+	}
+#-------------------------------------------------------------------------------------------
+	public function temui($a,$b,$c2) # daripada fungsi index()
+	{
+		# Set pembolehubah utama
+		//echo '<hr> Nama class : ' . __METHOD__ . '<hr>';
+		//$this->semakPembolehubah($_POST);
+		$cari = bersih($_POST['cari']);
+
+		# Pergi papar kandungan
+		$lokasi = 'qss/suku2/' . $cari;
+		//echo '<br>location: ' . URL . $lokasi;
+		header('location: ' . URL . $lokasi); //*/
 	}
 #-------------------------------------------------------------------------------------------
 	public function suku1($action = 'hasil')
