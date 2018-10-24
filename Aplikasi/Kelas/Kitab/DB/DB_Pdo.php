@@ -36,6 +36,21 @@ class DB_Pdo extends \PDO
 	}
 #------------------------------------------------------------------------------------------------------------------
 	/**
+	 * masalahIni
+	 * @param papar $masalah yang dialami
+	 * @exit
+	 */
+	public function masalahIni($masalah)
+	{
+		# true flag returns val rather than print;
+		$errorInfo = print_r($masalah, true);
+		$error  = 'PDO::errorInfo()';
+		$error .= '<pre>' . $errorInfo . '</pre>';
+		echo $error; # do what you wish with this var, write to log file etc...
+		exit;
+	}
+#------------------------------------------------------------------------------------------------------------------
+	/**
 	 * selectAll
 	 * @param string $sql An SQL string
 	 * @param array $array Paramters to bind
@@ -54,10 +69,9 @@ class DB_Pdo extends \PDO
 		$sth->execute();
 		$masalah = $sth->errorInfo(); # semak jika ada error
 		//echo "\nPDO::errorInfo()<hr><pre>"; print_r($masalah) . '</pre>';
-		if (strpos($masalah[2], 'Unknown column') !== false) 
-			$this->bigError($masalah);
+		if($masalah[0]=='00000') return $sth->fetchAll($fetchMode);
 		else # pulangkan pembolehubah
-			return $sth->fetchAll($fetchMode);
+			$this->masalahIni($masalah);//*/
 	}
 #------------------------------------------------------------------------------------------------------------------
 	/**
