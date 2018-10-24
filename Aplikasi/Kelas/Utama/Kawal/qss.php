@@ -39,11 +39,11 @@ class Qss extends \Aplikasi\Kitab\Kawal
 		echo '</pre>|';//*/
 	}
 ##-----------------------------------------------------------------------------------------
-	public function debugKandunganPaparan()
+	function debugKandunganPaparan()
 	{
 		echo '<hr>Nama class :' . __METHOD__ . '()<hr><pre>';
 		$semak = array('idBorang','senarai','myTable','_jadual','carian','c1','c2',
-			'medan','bentukJadual01','bentukJadual02','bentukJadual03',
+			'medanID','dataID','bentukJadual01','bentukJadual02','bentukJadual03',
 			'_pilih','_5p','template','pilihJadual','template2','pilihJadual2');
 		$takWujud = array(); $kira = 0;
 
@@ -71,12 +71,13 @@ class Qss extends \Aplikasi\Kitab\Kawal
 #==========================================================================================
 # mula - semak database
 ###------------------------------------------------------------------------------------------
-	function panggilTable($myJadual,$pilih,$medanID)
+	function panggilTable($myJadual,$pilih,$medanID,$dataID)
 	{
+		echo '<hr>Nama class :' . __METHOD__ . '()<hr>';
 		# Set pembolehubah utama
 		list($medan, $carian, $susun) = $this->tanya->setPencam($pilih,$medanID,$dataID);
-		$this->papar->senarai[$pilih] = $this->tanya->//cariSql
-			cariSemuaData
+		$this->papar->senarai[$pilih] = $this->tanya->cariSql
+			//cariSemuaData
 			($myJadual, $medan, $carian, $susun);
 		# Set pembolehubah untuk Papar
 		$this->kandunganPaparan($pilih, $myJadual);
@@ -103,22 +104,21 @@ class Qss extends \Aplikasi\Kitab\Kawal
 		$pilihFail = $this->pilihFail($action);
 
 		# Pergi papar kandungan
-		//$this->semakPembolehubah($this->papar->senarai); # Semak data dulu
+		//debugKandunganPaparan(); # Semak data dulu
 		$this->paparKandungan($this->_folder, $pilihFail, $noInclude=1);
 	}
 #-------------------------------------------------------------------------------------------
-	public function suku2($medanID = null, $suku = 2,$action = 'hasil')
+	public function suku2($dataID = null, $suku = 2,$action = 'hasil')
 	{
+		echo '<hr>Nama class :' . __METHOD__ . '()<hr>';
 		# Set pemboleubah utama
-		$this->papar->tajuk = namaClass($this);
-		//echo '<hr> Nama class : ' . namaClass($this) . '<hr>';
 		$this->papar->suku = $suku;
-		$this->papar->medanID = $medanID;
-		$this->pilihjadual($medanID);
+		$this->pilihjadual($dataID);
 		$pilihFail = $this->pilihFail($action);
 
 		# Pergi papar kandungan
-		//$this->semakPembolehubah($this->papar->senarai); # Semak data dulu
+		//echo '<pre>';
+		debugKandunganPaparan(); # Semak data dulu
 		//$this->paparKandungan($this->_folder, $pilihFail, $noInclude=1);
 	}
 #-------------------------------------------------------------------------------------------
@@ -138,8 +138,12 @@ class Qss extends \Aplikasi\Kitab\Kawal
 		return $pilihFail;
 	}
 #-------------------------------------------------------------------------------------------
-	function pilihJadual($medanID)
+	function pilihJadual($dataID)
 	{
+		echo '<hr>Nama class :' . __METHOD__ . '()<hr>';
+		$medanID = 'newss';
+		$this->papar->medanID = 'newss';
+		$this->papar->dataID = $dataID;
 		$senarai = array('01qss2018-q2-mk','02qss2018-q2-ejen_hartanah',
 		'03qss2018-q2-kesenian','04qss2018-q2-profesional','05qss2018-q2-penginapan',
 		'06qss2018-q2-pengangkutan_penyimpanan','07qss2018-q2-kesihatan',
@@ -147,7 +151,8 @@ class Qss extends \Aplikasi\Kitab\Kawal
 		'10qss2018-q2-pks','11qss2018-q2-pendidikan');
 
 		foreach($senarai as $myJadual):
-			$this->panggilTable($myJadual,'qss',$medanID);
+			//echo "<br>$myJadual ";
+			$this->panggilTable($myJadual,'semuaJadual',$medanID,$dataID);
 		endforeach;
 	}
 #-------------------------------------------------------------------------------------------
