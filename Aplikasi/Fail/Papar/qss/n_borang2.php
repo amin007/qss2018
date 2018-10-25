@@ -1,5 +1,3 @@
-<form id="form1" name="form1" method="post" action="pengguna_dalam/kemaskini/borang/borangA_proses.php">
-
 <table width="961" align="center" height="20">
 <tr><td height="20" colspan="4" align="left" >
 	<p><div class="textdescrp"></div></p>
@@ -70,7 +68,8 @@ echo "\n\t\t" . '<tr><td bgcolor="#e9e7e9">Keterangan&nbsp;MSIC</td><td>'
 	<td align="left"><textarea name="msic_desc" id="msic_desc" cols="70" rows="3" style="resize:none;" disabled="disabled"></textarea></td>
 </tr>
 </table>
-
+<!-- ************************************************************************************************************************************ -->
+<form id="form1" name="form1" method="post" action="pengguna_dalam/kemaskini/borang/borangA_proses.php">
 <!-- ************************************************************************************************************************************ -->
 <table width="99%" border="0" align="center" id="tbl2">
 <tr>
