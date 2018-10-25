@@ -4,6 +4,16 @@ $newss = (isset($this->bentukJadual01[0]['newss'])) ? $this->bentukJadual01[0]['
 $nama_pertubuhan = (isset($this->bentukJadual01[0]['nama_pertubuhan'])) ? $this->bentukJadual01[0]['nama_pertubuhan'] : null;
 $msic2008 = (isset($this->bentukJadual01[0]['msic2008'])) ? $this->bentukJadual01[0]['msic2008'] : null;
 $F1201 = (isset($this->bentukJadual01[0]['F1201'])) ? $this->bentukJadual01[0]['F1201'] : null;
+# tatasusunan yang lain
+$kp = (isset($this->bentukJadual02[0]['kp'])) ? $this->bentukJadual02[0]['kp'] : null;
+$kp2 = (isset($this->bentukJadual02[0]['msic2008'])) ? $this->bentukJadual02[0]['msic2008'] : null;
+$subsektor = (isset($this->bentukJadual02[0]['subsektor'])) ? $this->bentukJadual02[0]['subsektor'] : null;
+$industri = $kp . '|' . $kp2 . '|' . $subsektor;
+$alamat1 = (isset($this->bentukJadual02[0]['alamat1'])) ? $this->bentukJadual02[0]['alamat1'] : null;
+$alamat2 = (isset($this->bentukJadual02[0]['alamat2'])) ? $this->bentukJadual02[0]['alamat2'] : null;
+$poskod = (isset($this->bentukJadual02[0]['poskod'])) ? $this->bentukJadual02[0]['poskod'] : null;
+$bandar = (isset($this->bentukJadual02[0]['bandar'])) ? $this->bentukJadual02[0]['bandar'] : null;
+$alamat = $industri . "\n" . $alamat1 . ' ' . $alamat2 . ' ' . $poskod . ' ' . $bandar;
 ?>
 <table width="961" align="center" height="20">
 <tr><td height="20" colspan="4" align="left" >
@@ -77,10 +87,11 @@ endforeach;
 	value="<?php echo $F1201 ?>"
 	maxlength="60" size="60" disabled="disabled"></td>
 </tr>
-<!-- tr>
+<tr>
 	<td align="left" class="textdescrp2">&nbsp;</td>
-	<td align="left"><textarea name="msic_desc" id="msic_desc" cols="70" rows="3" style="resize:none;" disabled="disabled"></textarea></td>
-</tr -->
+	<td align="left"><textarea name="msic_desc" id="msic_desc" cols="70" rows="3" style="resize:none;"
+	disabled="disabled"><?php echo $alamat ?></textarea></td>
+</tr>
 </table>
 <!-- ************************************************************************************************************************************ -->
 <form id="form1" name="form1" method="post" action="pengguna_dalam/kemaskini/borang/borangA_proses.php">
