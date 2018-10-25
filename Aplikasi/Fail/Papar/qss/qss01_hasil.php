@@ -34,7 +34,7 @@ $link[2] = 'https://qss.stats.gov.my/qssv2/pagemenu.php?pref='
 ?>
 <br>Sektor : <?php echo $sektor ?> | <a href="<?php echo $link[0] ?>">Anjung</a>
 | <a target="_blank" href="<?php echo $link[1] ?>"><?php echo 'PDF'//$link[1] ?></a>
-| Suku 3 : <a target="_blank" href="<?php echo $link[2] ?>"><?php echo $link[2] ?></a>
+| <a target="_blank" href="<?php echo $link[2] ?>"><?php echo 'Suku 3'//$link[2] ?></a>
 <!-- isi borang mula ########################################################################################################## -->
 <?php include 'n_borang2.php'; ?>
 <!-- isi borang tamat ########################################################################################################## -->
