@@ -204,11 +204,14 @@ foreach ($ulang as $papar):?>
 <tr>
 	<td height="31" align="left" class="textdescrp1"><span class="textdescrp2">2.4 JUMLAH PERBELANJAAN</span></td>
 <?php $ulang = array('F0019a','F0019b','F0019c','F0019','F0020a','F0020b','F0020c','F0020');
-foreach ($ulang as $papar):?>
+foreach ($ulang as $papar):
+$jumlah = (isset($this->bentukJadual01[0][$papar])) ?
+	$this->bentukJadual01[0][$papar] : 0;
+?>
 	<td align="left" ><div align="left"><?php echo $papar ?><br>
 		<input type="text" id="<?php echo $papar ?>" 
 		style="width:120px;text-align:right;background-color:#e1e4e2;"
-		value="<?php echo $this->bentukJadual01[0][$papar] ?>"
+		value="<?php echo $jumlah ?>"
 		class="auto" data-v-max="999999999999" data-v-min="-9999999999999"/>
      </div>
 	</td>
