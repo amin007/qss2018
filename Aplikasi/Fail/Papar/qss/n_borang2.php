@@ -253,7 +253,6 @@ $jumlah = (isset($this->bentukJadual01[0][$papar])) ?
 </tr>
 <tr>
 	<td align="left" bgcolor="#FFFF99" class="textdescrp1">&nbsp;</td>
-	<td bgcolor="#FFFF99">Okt 2017</td><td bgcolor="#FFFF99">Nov 2017</td><td bgcolor="#FFFF99">Dis 2017</td>
 	<!-- td width="202" bgcolor="#FFFF99"><div align="center">Suku Tahun (4S 2017)<br />1 Oktober - 31 Disember 2017</div></td -->
 	<!-- td width="196" bgcolor="#FFFF99"><div align="center">Suku Tahun (1S 2018)<br />1 Januari - 31 Mac 2018</div></td -->
 	<?php
@@ -266,11 +265,11 @@ foreach ($ulangSuku as $papar):?>
 		<a href="nota/nota-3.php" onClick="return hs.htmlExpand(this, { objectType: 'iframe' } )">
 		<i class="fas fa-info-circle"></i></a>
 	</td>
-<?php $ulang = array('F0021a','F0021b','F0021c','F0021');
+<?php $ulang = array('F0021a','F0021b','F0021c');
 foreach ($ulang as $papar):
 $jumlah = (isset($this->bentukJadual01[0][$papar])) ?
 	$this->bentukJadual01[0][$papar] : 0; ?>
-	<td align="left" ><div align="left">RM
+	<td align="left" ><div align="left"><?php echo $papar ?><br>
 		<input type="text" style="width:120px;text-align:right;"
 		value="<?php echo $jumlah ?>"
 		class="auto" data-v-max="999999999999" data-v-min="-9999999999999"/>
@@ -282,11 +281,11 @@ $jumlah = (isset($this->bentukJadual01[0][$papar])) ?
 		style="width:120px;text-align:right;" value="1" 
 		tabindex="21" class="auto" data-v-max="999999999999" data-v-min="-9999999999999"/>
 		F0021</td>
-<?php $ulang = array('F0022a','F0022b','F0022c','F0022');
+<?php $ulang = array('F0022a','F0022b','F0022c');
 foreach ($ulang as $papar):
 $jumlah = (isset($this->bentukJadual01[0][$papar])) ?
 	$this->bentukJadual01[0][$papar] : 0; ?>
-	<td align="left" ><div align="left">RM
+	<td align="left" ><div align="left"><?php echo $papar ?><br>
 		<input type="text" style="width:120px;text-align:right;"
 		value="<?php echo $jumlah ?>"
 		class="auto" data-v-max="999999999999" data-v-min="-9999999999999"/>
