@@ -25,7 +25,7 @@ include 'diatas-am.php';
 	<script  language='JavaScript' type='text/javascript' src='<?php echo $pautan?>js_file/js/validasi/a_internaluser.js'></SCRIPT>	
 </div>
 */
-$link[0]= URL . 'qss/cari';
+$link[0]= URL . 'qss';
 $link[1]= 'https://qss.stats.gov.my/qssv2/pdf/pdf3.php?no_siri='
 . $this->dataID . '&sukutahun=' . $this->suku .'&tahun=2018';
 $link[2] = 'https://qss.stats.gov.my/qssv2/pagemenu.php?pref='
