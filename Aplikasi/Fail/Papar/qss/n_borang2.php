@@ -103,10 +103,12 @@ foreach ($ulangSuku as $papar):?>
 <?php
 //$ulang = array('F0007a','F0007b','F0007c','F0007d','F0008a','F0008b','F0008c','F0008d');
 $ulang = array('F0007a','F0007b','F0007c','F0007','F0008a','F0008b','F0008c','F0008');
-foreach ($ulang as $papar):?>
+foreach ($ulang as $papar):
+$jumlah = (isset($this->bentukJadual01[0][$papar])) ?
+	$this->bentukJadual01[0][$papar] : 0; ?>
 	<td align="left"><?php echo $papar ?><br>
 		<input type="text" id="<?php echo $papar ?>" style="width:120px;text-align:right;"
-		value="<?php echo $this->bentukJadual01[0][$papar] ?>"
+		value="<?php echo $jumlah ?>"
 		class="auto" data-v-max="999999999999" data-v-min="-9999999999999"/>
 	</td>
 <?php endforeach; ?>
@@ -118,10 +120,12 @@ foreach ($ulang as $papar):?>
 <?php
 //$ulang = array('F0009a','F0009b','F0009c','F0009d','F0010a','F0010b','F0010c','F0010d');
 $ulang = array('F0009a','F0009b','F0009c','F0009','F0010a','F0010b','F0010c','F0010');
-foreach ($ulang as $papar):?>
+foreach ($ulang as $papar):
+$jumlah = (isset($this->bentukJadual01[0][$papar])) ?
+	$this->bentukJadual01[0][$papar] : 0; ?>
 	<td align="left"><?php echo $papar ?><br>
 		<input type="text" id="<?php echo $papar ?>" style="width:120px;text-align:right;"
-		value="<?php echo $this->bentukJadual01[0][$papar] ?>"
+		value="<?php echo $jumlah ?>"
 		class="auto" data-v-max="999999999999" data-v-min="-9999999999999"/>
 	</td>
 <?php endforeach; ?>
@@ -131,11 +135,13 @@ foreach ($ulang as $papar):?>
 <?php
 //$ulang = array('F0011a','F0011b','F0011c','F0011d','F0012a','F0012b','F0012c','F0012d');
 $ulang = array('F0011a','F0011b','F0011c','F0011','F0012a','F0012b','F0012c','F0012');
-foreach ($ulang as $papar):?>
+foreach ($ulang as $papar):
+$jumlah = (isset($this->bentukJadual01[0][$papar])) ?
+	$this->bentukJadual01[0][$papar] : 0; ?>
 	<td align="left"><?php echo $papar ?><br>
 		<input type="text" id="<?php echo $papar ?>" 
 		style="width:120px;text-align:right;background-color:#e1e4e2;"
-		value="<?php //echo $this->bentukJadual01[0][$papar] ?>"
+		value="<?php //echo $jumlah ?>"
 		class="auto" data-v-max="999999999999" data-v-min="-9999999999999" readonly/>
 	</td>
 <?php endforeach; ?>
@@ -168,10 +174,12 @@ foreach ($ulang as $papar):?>
 		<i class="fas fa-info-circle"></i></a>
 	</td>
 <?php $ulang = array('F0013a','F0013b','F0013c','F0013','F0014a','F0014b','F0014c','F0014');
-foreach ($ulang as $papar):?>
+foreach ($ulang as $papar):
+$jumlah = (isset($this->bentukJadual01[0][$papar])) ?
+	$this->bentukJadual01[0][$papar] : 0; ?>
 	<td align="left" ><div align="left"><?php echo $papar ?><br>
 		<input type="text" id="<?php echo $papar ?>" style="width:120px;text-align:right;"
-		value="<?php echo $this->bentukJadual01[0][$papar] ?>"
+		value="<?php echo $jumlah ?>"
 		class="auto" data-v-max="999999999999" data-v-min="-9999999999999"/></div>
 	</td>
 <?php endforeach; ?>
@@ -182,10 +190,12 @@ foreach ($ulang as $papar):?>
 		<i class="fas fa-info-circle"></i></a>
 	</td>
 <?php $ulang = array('F0015a','F0015b','F0015c','F0015','F0016a','F0016b','F0016c','F0016');
-foreach ($ulang as $papar):?>
+foreach ($ulang as $papar):
+$jumlah = (isset($this->bentukJadual01[0][$papar])) ?
+	$this->bentukJadual01[0][$papar] : 0; ?>
 	<td align="left" ><div align="left"><?php echo $papar ?><br>
 		<input type="text" id="<?php echo $papar ?>" style="width:120px;text-align:right;"
-		value="<?php echo $this->bentukJadual01[0][$papar] ?>"
+		value="<?php echo $jumlah ?>"
 		class="auto" data-v-max="999999999999" data-v-min="-9999999999999"/></div>
 	</td>
 <?php endforeach; ?>
@@ -196,10 +206,12 @@ foreach ($ulang as $papar):?>
 		<i class="fas fa-info-circle"></i></a>
 	</td>
 <?php $ulang = array('F0017a','F0017b','F0017c','F0017','F0018a','F0018b','F0018c','F0018');
-foreach ($ulang as $papar):?>
+foreach ($ulang as $papar):
+$jumlah = (isset($this->bentukJadual01[0][$papar])) ?
+	$this->bentukJadual01[0][$papar] : 0; ?>
 	<td align="left" ><div align="left"><?php echo $papar ?><br>
 		<input type="text" id="<?php echo $papar ?>" style="width:120px;text-align:right;"
-		value="<?php echo $this->bentukJadual01[0][$papar] ?>"
+		value="<?php echo $jumlah ?>"
 		class="auto" data-v-max="999999999999" data-v-min="-9999999999999"/></div>
 	</td>
 <?php endforeach; ?>
@@ -209,8 +221,7 @@ foreach ($ulang as $papar):?>
 <?php $ulang = array('F0019a','F0019b','F0019c','F0019','F0020a','F0020b','F0020c','F0020');
 foreach ($ulang as $papar):
 $jumlah = (isset($this->bentukJadual01[0][$papar])) ?
-	$this->bentukJadual01[0][$papar] : 0;
-?>
+	$this->bentukJadual01[0][$papar] : 0; ?>
 	<td align="left" ><div align="left"><?php echo $papar ?><br>
 		<input type="text" id="<?php echo $papar ?>" 
 		style="width:120px;text-align:right;background-color:#e1e4e2;"
