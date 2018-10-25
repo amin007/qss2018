@@ -77,12 +77,16 @@ echo "\n\t\t" . '<tr><td bgcolor="#e9e7e9">Keterangan&nbsp;MSIC</td><td>'
 </tr>
 <tr>
 	<td height="39" align="left" bgcolor="#FFFF99" class="textdescrp1"><strong>1. HASIL</strong></td>
-	<td bgcolor="#FFFF99">Okt 2017</td><td bgcolor="#FFFF99">Nov 2017</td><td bgcolor="#FFFF99">Dis 2017</td>
-	<!-- td width="202" bgcolor="#FFFF99"  ><div align="center">Suku Tahun (4S 2017)<br />1 Oktober - 31 Disember 2017</div></td -->
-	<td bgcolor="#FFFF99"><div align="center">&nbsp;4S 2017</div></td>
-	<td bgcolor="#FFFF99">Jan 2018</td><td bgcolor="#FFFF99">Feb 2018</td><td bgcolor="#FFFF99">Mac 2018</td>
-	<!-- td width="196" bgcolor="#FFFF99"  ><div align="center">Suku Tahun (1S 2018)<br />1 Januari - 31 Mac 2018</div></td -->
-	<td bgcolor="#FFFF99"><div align="center">&nbsp;1S 2018</div></td>
+	<!-- td width="202" bgcolor="#FFFF99"><div align="center">Suku Tahun (4S 2017)<br />1 Oktober - 31 Disember 2017</div></td -->
+	<!-- td width="196" bgcolor="#FFFF99"><div align="center">Suku Tahun (1S 2018)<br />1 Januari - 31 Mac 2018</div></td -->
+	<?php
+//$ulangSuku = array('Okt 2017','Nov 2017','Dis 2017','&nbsp;4S 2017','Jan 2018','Feb 2018','Mac 2018','&nbsp;1S 2018');
+//$ulangSuku = array('Jan 2018','Feb 2018','Mac 2018','&nbsp;1S 2018','Apr 2018','Mei 2018','Jun 2018','&nbsp;2S 2018');
+$ulangSuku = array('Apr 2018','Mei 2018','Jun 2018','&nbsp;2S 2018','Jul 2018','Ogo 2018','Sep 2018','&nbsp;3S 2018');
+//$ulangSuku = array('Jul 2018','Ogo 2018','Sep 2018','&nbsp;3S 2018','Okt 2018','Nov 2018','Dis 2018','&nbsp;4S 2018');
+foreach ($ulangSuku as $papar):?>
+	<td bgcolor="#FFFF99" align="center"><?php echo $papar ?></td>
+<?php endforeach; ?>
 </tr>
 <tr>
 	<td align="left" class="textdescrp2" >1.1 Hasil kendalian / Perolehan / Jualan
@@ -144,12 +148,11 @@ foreach ($ulang as $papar):?>
 </tr>
 <tr>
 	<td height="39" align="left" bgcolor="#FFFF99" class="textdescrp1"><strong>2. PERBELANJAAN</strong></td>
-	<td bgcolor="#FFFF99">Okt 2017</td><td bgcolor="#FFFF99">Nov 2017</td><td bgcolor="#FFFF99">Dis 2017</td>
-	<!-- td width="202" bgcolor="#FFFF99"  ><div align="center">Suku Tahun (4S 2017)<br />1 Oktober - 31 Disember 2017</div></td -->
-	<td bgcolor="#FFFF99"  ><div align="center">(4S 2017)</div></td>
-	<td bgcolor="#FFFF99">Jan 2018</td><td bgcolor="#FFFF99">Feb 2018</td><td bgcolor="#FFFF99">Mac 2018</td>
-	<!-- td width="196" bgcolor="#FFFF99"  ><div align="center">Suku Tahun (1S 2018)<br />1 Januari - 31 Mac 2018</div></td -->
-	<td bgcolor="#FFFF99"  ><div align="center">(1S 2018)</div></td>
+	<!-- td width="202" bgcolor="#FFFF99"><div align="center">Suku Tahun (4S 2017)<br />1 Oktober - 31 Disember 2017</div></td -->
+	<!-- td width="196" bgcolor="#FFFF99"><div align="center">Suku Tahun (1S 2018)<br />1 Januari - 31 Mac 2018</div></td -->
+<?php foreach ($ulangSuku as $papar):?>
+	<td bgcolor="#FFFF99" align="center"><?php echo $papar ?></td>
+<?php endforeach; ?>
 </tr>
 <tr>
 	<td align="left" class="textdescrp2">2.1 Perbelanjaan kendalian / Kos Jualan
@@ -226,11 +229,12 @@ foreach ($ulang as $papar):?>
 <tr>
 	<td height="39" align="left" bgcolor="#FFFF99" class="textdescrp1">&nbsp;</td>
 	<td bgcolor="#FFFF99">Okt 2017</td><td bgcolor="#FFFF99">Nov 2017</td><td bgcolor="#FFFF99">Dis 2017</td>
-	<!-- td width="202" bgcolor="#FFFF99"  ><div align="center">Suku Tahun (4S 2017)<br />1 Oktober - 31 Disember 2017</div></td -->
-	<td bgcolor="#FFFF99"  ><div align="center">(4S 2017)</div></td>
-	<td bgcolor="#FFFF99">Jan 2018</td><td bgcolor="#FFFF99">Feb 2018</td><td bgcolor="#FFFF99">Mac 2018</td>
-	<!-- td width="196" bgcolor="#FFFF99"  ><div align="center">Suku Tahun (1S 2018)<br />1 Januari - 31 Mac 2018</div></td -->
-	<td bgcolor="#FFFF99"  ><div align="center">(1S 2018)</div></td>
+	<!-- td width="202" bgcolor="#FFFF99"><div align="center">Suku Tahun (4S 2017)<br />1 Oktober - 31 Disember 2017</div></td -->
+	<!-- td width="196" bgcolor="#FFFF99"><div align="center">Suku Tahun (1S 2018)<br />1 Januari - 31 Mac 2018</div></td -->
+	<?php
+foreach ($ulangSuku as $papar):?>
+	<td bgcolor="#FFFF99" align="center"><?php echo $papar ?></td>
+<?php endforeach; ?>
 </tr>
 <tr>
 	<td height="27" align="left" class="textdescrp1"><strong>3. JUMLAH PEKERJA</strong> &nbsp;
