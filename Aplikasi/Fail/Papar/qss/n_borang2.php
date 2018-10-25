@@ -164,8 +164,7 @@ foreach ($ulang as $papar):?>
 	<td align="left" ><div align="left"><?php echo $papar ?><br>
 		<input type="text" id="<?php echo $papar ?>" style="width:120px;text-align:right;"
 		value="<?php echo $this->bentukJadual01[0][$papar] ?>"
-		class="auto" data-v-max="999999999999" data-v-min="-9999999999999"/>
-     </div>
+		class="auto" data-v-max="999999999999" data-v-min="-9999999999999"/></div>
 	</td>
 <?php endforeach; ?>
 </tr>
@@ -179,8 +178,7 @@ foreach ($ulang as $papar):?>
 	<td align="left" ><div align="left"><?php echo $papar ?><br>
 		<input type="text" id="<?php echo $papar ?>" style="width:120px;text-align:right;"
 		value="<?php echo $this->bentukJadual01[0][$papar] ?>"
-		class="auto" data-v-max="999999999999" data-v-min="-9999999999999"/>
-     </div>
+		class="auto" data-v-max="999999999999" data-v-min="-9999999999999"/></div>
 	</td>
 <?php endforeach; ?>
 </tr>
@@ -194,8 +192,7 @@ foreach ($ulang as $papar):?>
 	<td align="left" ><div align="left"><?php echo $papar ?><br>
 		<input type="text" id="<?php echo $papar ?>" style="width:120px;text-align:right;"
 		value="<?php echo $this->bentukJadual01[0][$papar] ?>"
-		class="auto" data-v-max="999999999999" data-v-min="-9999999999999"/>
-     </div>
+		class="auto" data-v-max="999999999999" data-v-min="-9999999999999"/></div>
 	</td>
 <?php endforeach; ?>
 </tr>
@@ -206,7 +203,7 @@ foreach ($ulang as $papar):?>
 	<td align="left" ><div align="left"><?php echo $papar ?><br>
 		<input type="text" id="<?php echo $papar ?>" 
 		style="width:120px;text-align:right;background-color:#e1e4e2;"
-		value="<?php //echo $this->bentukJadual01[0][$papar] ?>"
+		value="<?php echo $this->bentukJadual01[0][$papar] ?>"
 		class="auto" data-v-max="999999999999" data-v-min="-9999999999999"/>
      </div>
 	</td>
