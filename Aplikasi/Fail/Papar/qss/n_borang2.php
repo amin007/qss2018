@@ -57,16 +57,18 @@ echo "\n\t\t" . '<tr><td bgcolor="#e9e7e9">Keterangan&nbsp;MSIC</td><td>'
 <tr>
 	<td align="left" class="textdescrp2">Syarikat :</td>
 	<td align="left"><input type="text" name="msic" value="<?php echo $this->bentukJadual01[0]['nama_pertubuhan'] ?>"
-		maxlength="70" size="70" disabled="disabled"></td>
+	maxlength="70" size="70" disabled="disabled"></td>
 </tr>
 <tr>
 	<td align="left" class="textdescrp2">Kod Industri Asal :</td>
-	<td align="left"><input type="text" name="msic" id="msic" value="49225"
+	<td align="left"><input type="text" name="msic" id="msic"
+	value="<?php echo $this->bentukJadual01[0]['msic2008'] ?>"
 	maxlength="60" size="60" disabled="disabled"></td>
 </tr>
 <tr>
 	<td align="left" class="textdescrp2">Kod Industri Baru :</td>
-	<td align="left"><input name="msic_baru" type="text" value="49225"
+	<td align="left"><input name="msic_baru" type="text"
+	value="<?php echo $this->bentukJadual01[0]['F1201'] ?>"
 	maxlength="60" size="60" disabled="disabled"></td>
 </tr>
 <!-- tr>
@@ -140,9 +142,9 @@ foreach ($ulang as $papar):?>
 </tr>
 <tr>
 	<td colspan="1" height="53" align="left" class="textdescrp2">
-	1.4 Jika jumlah hasil yang dilaporkan untuk suku tahun ini meningkat<br>
+	1.4 Catatan<!-- Jika jumlah hasil yang dilaporkan untuk suku tahun ini meningkat<br>
 	atau menurun sekurang-kurangnya 30% berbanding suku tahun<br>
-	sebelumnya,	sila nyatakan sebab berlakunya perbezaan tersebut.
+	sebelumnya,	sila nyatakan sebab berlakunya perbezaan tersebut. -->
 	</td>
 	<td colspan="6" align="left">
 		<textarea name="hasil_a" id="hasil_a" cols="100" rows="3"
