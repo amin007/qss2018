@@ -4,6 +4,7 @@ $pautan = URL . 'sumber/rangka-dawai/qss/';
 //echo '<pre>'; print_r($_SESSION); echo '</pre>';
 //echo '<pre>'; print_r($this->_jadual); echo '</pre>';
 //echo '<pre>'; print_r($this->bentukJadual01); echo '</pre>';
+//echo '<pre>'; print_r($this->bentukJadual02); echo '</pre>';
 //include 'diatas.php';
 include 'diatas-am.php';
 //include 'menu_atas.php';
