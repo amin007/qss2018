@@ -91,10 +91,10 @@ echo "\n\t\t" . '<tr><td bgcolor="#e9e7e9">Keterangan&nbsp;MSIC</td><td>'
 <!-- ************************************************************************************************************************************ -->
 <table width="99%" border="0" align="center" id="tbl2">
 <tr>
-	<td height="27" colspan="9" bgcolor="#FFFF99"><div align="center"><b>BAHAGIAN A: HASIL (Tidak termasuk CBP)</b></div></td>
+	<td colspan="9" bgcolor="#FFFF99"><div align="center"><b>BAHAGIAN A: HASIL (Tidak termasuk CBP)</b></div></td>
 </tr>
 <tr>
-	<td height="39" align="left" bgcolor="#FFFF99" class="textdescrp1"><strong>1. HASIL</strong></td>
+	<td align="left" bgcolor="#FFFF99" class="textdescrp1"><strong>1. HASIL</strong></td>
 	<!-- td width="202" bgcolor="#FFFF99"><div align="center">Suku Tahun (4S 2017)<br />1 Oktober - 31 Disember 2017</div></td -->
 	<!-- td width="196" bgcolor="#FFFF99"><div align="center">Suku Tahun (1S 2018)<br />1 Januari - 31 Mac 2018</div></td -->
 	<?php
@@ -168,10 +168,10 @@ $jumlah = (isset($this->bentukJadual01[0][$papar])) ?
 	</td>
 </tr>
 <tr>
-	<td height="27" colspan="9" bgcolor="#FFFF99"><div align="center"><b>BAHAGIAN B: PERBELANJAAN (Tidak termasuk CBP)</b></div></td>
+	<td colspan="9" bgcolor="#FFFF99"><div align="center"><b>BAHAGIAN B: PERBELANJAAN (Tidak termasuk CBP)</b></div></td>
 </tr>
 <tr>
-	<td height="39" align="left" bgcolor="#FFFF99" class="textdescrp1"><strong>2. PERBELANJAAN</strong></td>
+	<td align="left" bgcolor="#FFFF99" class="textdescrp1"><strong>2. PERBELANJAAN</strong></td>
 	<!-- td width="202" bgcolor="#FFFF99"><div align="center">Suku Tahun (4S 2017)<br />1 Oktober - 31 Disember 2017</div></td -->
 	<!-- td width="196" bgcolor="#FFFF99"><div align="center">Suku Tahun (1S 2018)<br />1 Januari - 31 Mac 2018</div></td -->
 <?php foreach ($ulangSuku as $papar):?>
@@ -253,10 +253,10 @@ $jumlah = (isset($this->bentukJadual01[0][$papar])) ?
 	</td>
 </tr>
 <tr>
-	<td height="27" colspan="9" bgcolor="#FFFF99"><div align="center"><b>BAHAGIAN C: BILANGAN PEKERJA (Pada akhir suku tahun)</b></div></td>
+	<td colspan="9" bgcolor="#FFFF99"><div align="center"><b>BAHAGIAN C: BILANGAN PEKERJA (Pada akhir suku tahun)</b></div></td>
 </tr>
 <tr>
-	<td height="39" align="left" bgcolor="#FFFF99" class="textdescrp1">&nbsp;</td>
+	<td align="left" bgcolor="#FFFF99" class="textdescrp1">&nbsp;</td>
 	<td bgcolor="#FFFF99">Okt 2017</td><td bgcolor="#FFFF99">Nov 2017</td><td bgcolor="#FFFF99">Dis 2017</td>
 	<!-- td width="202" bgcolor="#FFFF99"><div align="center">Suku Tahun (4S 2017)<br />1 Oktober - 31 Disember 2017</div></td -->
 	<!-- td width="196" bgcolor="#FFFF99"><div align="center">Suku Tahun (1S 2018)<br />1 Januari - 31 Mac 2018</div></td -->
