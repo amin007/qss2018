@@ -19,9 +19,10 @@ $F1201 = (isset($this->bentukJadual01[0]['F1201'])) ? $this->bentukJadual01[0]['
 	</td>
 </tr>
 <tr height="30">
-	<td width="600" align="left" valign="top" class="textdescrp2">No.&nbsp;Pendaftaran Syarikat/Perniagaan&nbsp;:</td>
+	<td width="600" align="left" valign="top" class="textdescrp2">No. SSM:</td>
 	<td align="left" valign="top">
 		<form class="mx-2 my-auto d-inline w-50" action="<?php echo URL ?>qss/temui/400/1/-16" method="POST">
+			No.&nbsp;Pendaftaran Syarikat /Perniagaan&nbsp;
 			<input type="text" name="cari"
 			value="<?php echo $newss ?>"
 			placeholder="Cari Newss / Nama" class="form-control" />
@@ -31,8 +32,8 @@ $F1201 = (isset($this->bentukJadual01[0]['F1201'])) ? $this->bentukJadual01[0]['
 	</td>
 	<td width="600" rowspan="4" align="left">
 		<table width="108" align="center">
-		<tr><td width="98" bgcolor="#FF0000"><div align="center"><em>Error</em></div></td></tr>
-		<tr><td bgcolor="#bffcc0"><div align="center"><em>Force Accept</em></div></td></tr>
+		<!-- tr><td width="98" bgcolor="#FF0000"><div align="center"><em>Error</em></div></td></tr>
+		<tr><td bgcolor="#bffcc0"><div align="center"><em>Force Accept</em></div></td></tr -->
 		<tr><td bgcolor="#87ceeb" align="center">Respon:<?php echo $respon ?></td></tr>
 		</table><br>
 		<table border="1" id="maklumat">
