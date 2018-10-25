@@ -18,19 +18,19 @@ $F1201 = (isset($this->bentukJadual01[0]['F1201'])) ? $this->bentukJadual01[0]['
 		<input  name="get_lang" id="get_lang" type="hidden" />
 	</td>
 </tr>
-<tr height="30">
-	<td width="600" align="left" valign="top" class="textdescrp2">No. SSM:</td>
+<tr height="0">
+	<td width="400" align="left" valign="top" class="textdescrp2">No. SSM:</td>
 	<td align="left" valign="top">
+		<!-- input type="text" name="no_ssm" id="no_ssm" value="" disabled="disabled" />
+		<input type="hidden" name="iduser" id="iduser" value="" / -->
 		<form class="mx-2 my-auto d-inline w-50" action="<?php echo URL ?>qss/temui/400/1/-16" method="POST">
 			No.&nbsp;Pendaftaran Syarikat /Perniagaan&nbsp;
 			<input type="text" name="cari"
 			value="<?php echo $newss ?>"
 			placeholder="Cari Newss / Nama" class="form-control" />
 		</form><!-- / class="form-inline" -->
-		<!-- input type="text" name="no_ssm" id="no_ssm" value="" disabled="disabled" />
-		<input type="hidden" name="iduser" id="iduser" value="" / -->
 	</td>
-	<td width="600" rowspan="4" align="left">
+	<td width="400" rowspan="4" align="left">
 		<table width="108" align="center">
 		<!-- tr><td width="98" bgcolor="#FF0000"><div align="center"><em>Error</em></div></td></tr>
 		<tr><td bgcolor="#bffcc0"><div align="center"><em>Force Accept</em></div></td></tr -->
@@ -43,13 +43,13 @@ $F1201 = (isset($this->bentukJadual01[0]['F1201'])) ? $this->bentukJadual01[0]['
 		<tr><td bgcolor="#e9e7e9">BBU/SBU</td><td>SBU</td></tr>
 		</table>
 	</td>
-	<td width="600" rowspan="4" align="left">
+	<td width="400" rowspan="4" align="left">
 		<table border="1" id="maklumat"><?php
 $ulang = array('kod_negeri'=>'Kod&nbsp;Negeri',
 	'pusat_operasi'=>'Pusat&nbsp;Operasi',
 	'strata'=>'Strata',
 	//'F0002'=>'Respon',
-	'msic2008'=>'Kod&nbsp;Industri',
+	//'msic2008'=>'Kod&nbsp;Industri',
 	);
 foreach ($ulang as $papar => $lihat):
 	$jumlah = (isset($this->bentukJadual01[0][$papar])) ?
@@ -57,17 +57,13 @@ foreach ($ulang as $papar => $lihat):
 	echo "\n\t\t" . '<tr><td bgcolor="#e9e7e9">' . $lihat . '</td><td>'
 	. $jumlah . '</td></tr>';
 endforeach;
-
-echo "\n\t\t" . '<tr><td bgcolor="#e9e7e9">Keterangan&nbsp;MSIC</td><td>'
-. '<textarea cols="50" rows="2" style="resize:none;">' . $F1201
-. '</textarea></td></tr>' . "\n\t\t";
 ?></table>
 	</td>
 </tr>
 <tr>
 	<td align="left" class="textdescrp2">Syarikat :</td>
 	<td align="left"><input type="text" name="msic" value="<?php echo $nama_pertubuhan ?>"
-	maxlength="70" size="70" disabled="disabled"></td>
+	maxlength="60" size="60" disabled="disabled"></td>
 </tr>
 <tr>
 	<td align="left" class="textdescrp2">Kod Industri Asal :</td>
@@ -270,25 +266,33 @@ foreach ($ulangSuku as $papar):?>
 		<a href="nota/nota-3.php" onClick="return hs.htmlExpand(this, { objectType: 'iframe' } )">
 		<i class="fas fa-info-circle"></i></a>
 	</td>
-<?php for ($i = 1; $i <=3; $i++):?>
+<?php $ulang = array('F0021a','F0021b','F0021c','F0021');
+foreach ($ulang as $papar):
+$jumlah = (isset($this->bentukJadual01[0][$papar])) ?
+	$this->bentukJadual01[0][$papar] : 0; ?>
 	<td align="left" ><div align="left">RM
-		<input type="text" style="width:120px;text-align:right;" value="" 
+		<input type="text" style="width:120px;text-align:right;"
+		value="<?php echo $jumlah ?>"
 		class="auto" data-v-max="999999999999" data-v-min="-9999999999999"/>
 		</div>
 	</td>
-<?php endfor; ?>
+<?php endforeach; ?>
 	<td>
 		<input  name="f2122c_p" type="text" id="f2122c_p" 
 		style="width:120px;text-align:right;" value="1" 
 		tabindex="21" class="auto" data-v-max="999999999999" data-v-min="-9999999999999"/>
 		F0021</td>
-<?php for ($i = 1; $i <=3; $i++):?>
+<?php $ulang = array('F0022a','F0022b','F0022c','F0022');
+foreach ($ulang as $papar):
+$jumlah = (isset($this->bentukJadual01[0][$papar])) ?
+	$this->bentukJadual01[0][$papar] : 0; ?>
 	<td align="left" ><div align="left">RM
-		<input type="text" style="width:120px;text-align:right;" value="" 
+		<input type="text" style="width:120px;text-align:right;"
+		value="<?php echo $jumlah ?>"
 		class="auto" data-v-max="999999999999" data-v-min="-9999999999999"/>
 		</div>
 	</td>
-<?php endfor; ?>
+<?php endforeach; ?>
 	<td>
 		<input  name="f2122c_c" type="text" id="f2122c_c" 
 		style="width:120px;text-align:right;" value="1" tabindex="22"
