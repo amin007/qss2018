@@ -12,10 +12,15 @@
 	</td>
 </tr>
 <tr height="30">
-	<td width="600" align="left" valign="top" class="textdescrp2">No.&nbsp;Pendaftaran&nbsp;Syarikat/Perniagaan&nbsp;:</td>
-	<td align="left" valign="top" >
-		<input type="text" name="no_ssm" id="no_ssm" value="" disabled="disabled" />
-		<input type="hidden" name="iduser" id="iduser" value="" />
+	<td width="600" align="left" valign="top" class="textdescrp2">No.&nbsp;Pendaftaran Syarikat/Perniagaan&nbsp;:</td>
+	<td align="left" valign="top">
+		<form class="mx-2 my-auto d-inline w-50" action="<?php echo URL ?>qss/temui/400/1/-16" method="POST">
+			<input type="text" name="cari"
+			value="<?php echo $this->bentukJadual01[0]['newss'] ?>"
+			placeholder="Cari Newss / Nama" class="form-control" />
+		</form><!-- / class="form-inline" -->
+		<!-- input type="text" name="no_ssm" id="no_ssm" value="" disabled="disabled" />
+		<input type="hidden" name="iduser" id="iduser" value="" / -->
 	</td>
 	<td width="600" rowspan="4" align="left">
 		<table width="108" align="center">
