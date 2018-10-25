@@ -111,6 +111,19 @@ class Qss extends \Aplikasi\Kitab\Kawal
 		$this->kandunganPaparan($pilih, $myJadual);
 	}
 ###------------------------------------------------------------------------------------------
+	function panggilTable01($myJadual,$pilih,$medanID,$dataID)
+	{
+		//echo '<hr>Nama class :' . __METHOD__ . '()';
+		# Set pembolehubah utama
+		//$jadual = explode('-', $myJadual);
+		list($medan, $carian, $susun) = $this->tanya->setPencam($pilih,$medanID,$dataID);
+		$this->papar->bentukJadual02 = $this->tanya->//cariSql
+			cariSemuaData
+			("`$myJadual`", $medan, $carian, $susun);
+		# Set pembolehubah untuk Papar
+		$this->kandunganPaparan($pilih, $myJadual);
+	}
+###------------------------------------------------------------------------------------------
 # tamat - semak database
 #==========================================================================================
 #-------------------------------------------------------------------------------------------
@@ -212,6 +225,7 @@ class Qss extends \Aplikasi\Kitab\Kawal
 			//echo "<br>RENAME TABLE `$myJadual` TO `$myJadual`; ";
 			$this->panggilTable($myJadual,'semuaJadual',$medanID,$dataID);
 		endforeach;
+			$this->panggilTable01('qss2018-q2-rangka','semuaJadual',$medanID,$dataID);
 	}
 #-------------------------------------------------------------------------------------------
 #==========================================================================================
