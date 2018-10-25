@@ -68,10 +68,10 @@ echo "\n\t\t" . '<tr><td bgcolor="#e9e7e9">Keterangan&nbsp;MSIC</td><td>'
 	<td align="left"><input name="msic_baru" type="text" value="49225"
 	maxlength="60" size="60" disabled="disabled"></td>
 </tr>
-<tr>
+<!-- tr>
 	<td align="left" class="textdescrp2">&nbsp;</td>
 	<td align="left"><textarea name="msic_desc" id="msic_desc" cols="70" rows="3" style="resize:none;" disabled="disabled"></textarea></td>
-</tr>
+</tr -->
 </table>
 <!-- ************************************************************************************************************************************ -->
 <form id="form1" name="form1" method="post" action="pengguna_dalam/kemaskini/borang/borangA_proses.php">
