@@ -26,6 +26,7 @@
 		<table width="108" align="center">
 		<tr><td width="98" bgcolor="#FF0000"><div align="center"><em>Error</em></div></td></tr>
 		<tr><td bgcolor="#bffcc0"><div align="center"><em>Force Accept</em></div></td></tr>
+		<tr><td bgcolor="#87ceeb" align="center">Respon:<?php echo $this->bentukJadual01[0]['F0002'] ?></td></tr>
 		</table><br>
 		<table border="1" id="maklumat">
 		<tr><td bgcolor="#e9e7e9">No Siri</td><td><?php echo $this->bentukJadual01[0]['newss'] ?></td></tr>
@@ -39,7 +40,7 @@
 $ulang = array('kod_negeri'=>'Kod&nbsp;Negeri',
 	'pusat_operasi'=>'Pusat&nbsp;Operasi',
 	'strata'=>'Strata',
-	'F0002'=>'Respon',
+	//'F0002'=>'Respon',
 	'msic2008'=>'Kod&nbsp;Industri',
 	);
 foreach ($ulang as $papar => $lihat):
