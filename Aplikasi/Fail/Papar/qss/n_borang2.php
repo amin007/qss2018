@@ -1,3 +1,10 @@
+<?php
+$respon = (isset($this->bentukJadual01[0]['F0002'])) ? $this->bentukJadual01[0]['F0002'] : null;
+$newss = (isset($this->bentukJadual01[0]['newss'])) ? $this->bentukJadual01[0]['newss'] : null;
+$nama_pertubuhan = (isset($this->bentukJadual01[0]['nama_pertubuhan'])) ? $this->bentukJadual01[0]['nama_pertubuhan'] : null;
+$msic2008 = (isset($this->bentukJadual01[0]['msic2008'])) ? $this->bentukJadual01[0]['msic2008'] : null;
+$F1201 = (isset($this->bentukJadual01[0]['F1201'])) ? $this->bentukJadual01[0]['F1201'] : null;
+?>
 <table width="961" align="center" height="20">
 <tr><td height="20" colspan="4" align="left" >
 	<p><div class="textdescrp"></div></p>
@@ -16,7 +23,7 @@
 	<td align="left" valign="top">
 		<form class="mx-2 my-auto d-inline w-50" action="<?php echo URL ?>qss/temui/400/1/-16" method="POST">
 			<input type="text" name="cari"
-			value="<?php echo $this->bentukJadual01[0]['newss'] ?>"
+			value="<?php echo $newss ?>"
 			placeholder="Cari Newss / Nama" class="form-control" />
 		</form><!-- / class="form-inline" -->
 		<!-- input type="text" name="no_ssm" id="no_ssm" value="" disabled="disabled" />
@@ -26,10 +33,10 @@
 		<table width="108" align="center">
 		<tr><td width="98" bgcolor="#FF0000"><div align="center"><em>Error</em></div></td></tr>
 		<tr><td bgcolor="#bffcc0"><div align="center"><em>Force Accept</em></div></td></tr>
-		<tr><td bgcolor="#87ceeb" align="center">Respon:<?php echo $this->bentukJadual01[0]['F0002'] ?></td></tr>
+		<tr><td bgcolor="#87ceeb" align="center">Respon:<?php echo $respon ?></td></tr>
 		</table><br>
 		<table border="1" id="maklumat">
-		<tr><td bgcolor="#e9e7e9">No Siri</td><td><?php echo $this->bentukJadual01[0]['newss'] ?></td></tr>
+		<tr><td bgcolor="#e9e7e9">No Siri</td><td><?php echo $newss ?></td></tr>
 		<tr><td bgcolor="#e9e7e9">Suku&nbsp;Tahun</td><td>1</td></tr>
 		<tr><td bgcolor="#e9e7e9">Tahun</td><td>2018</td></tr>
 		<tr><td bgcolor="#e9e7e9">BBU/SBU</td><td>SBU</td></tr>
@@ -44,31 +51,33 @@ $ulang = array('kod_negeri'=>'Kod&nbsp;Negeri',
 	'msic2008'=>'Kod&nbsp;Industri',
 	);
 foreach ($ulang as $papar => $lihat):
+	$jumlah = (isset($this->bentukJadual01[0][$papar])) ?
+	$this->bentukJadual01[0][$papar] : null;
 	echo "\n\t\t" . '<tr><td bgcolor="#e9e7e9">' . $lihat . '</td><td>'
-	. $this->bentukJadual01[0][$papar] . '</td></tr>';
+	. $jumlah . '</td></tr>';
 endforeach;
 
 echo "\n\t\t" . '<tr><td bgcolor="#e9e7e9">Keterangan&nbsp;MSIC</td><td>'
-. '<textarea cols="50" rows="2" style="resize:none;">' . $this->bentukJadual01[0]['F1201']
+. '<textarea cols="50" rows="2" style="resize:none;">' . $F1201
 . '</textarea></td></tr>' . "\n\t\t";
 ?></table>
 	</td>
 </tr>
 <tr>
 	<td align="left" class="textdescrp2">Syarikat :</td>
-	<td align="left"><input type="text" name="msic" value="<?php echo $this->bentukJadual01[0]['nama_pertubuhan'] ?>"
+	<td align="left"><input type="text" name="msic" value="<?php echo $nama_pertubuhan ?>"
 	maxlength="70" size="70" disabled="disabled"></td>
 </tr>
 <tr>
 	<td align="left" class="textdescrp2">Kod Industri Asal :</td>
 	<td align="left"><input type="text" name="msic" id="msic"
-	value="<?php echo $this->bentukJadual01[0]['msic2008'] ?>"
+	value="<?php echo $msic2008 ?>"
 	maxlength="60" size="60" disabled="disabled"></td>
 </tr>
 <tr>
 	<td align="left" class="textdescrp2">Kod Industri Baru :</td>
 	<td align="left"><input name="msic_baru" type="text"
-	value="<?php echo $this->bentukJadual01[0]['F1201'] ?>"
+	value="<?php echo $F1201 ?>"
 	maxlength="60" size="60" disabled="disabled"></td>
 </tr>
 <!-- tr>
