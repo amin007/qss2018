@@ -215,6 +215,8 @@ class Qss extends \Aplikasi\Kitab\Kawal
 			$pilihFail = 'tab03_aset';
 		elseif($action == 'tambahan'):
 			$pilihFail = 'tab04_tambahan';
+		elseif($action == 'edagang'):
+			$pilihFail = 'tab05_edagang';
 		else:
 			$fail = array('index','index1','index2','b_ubah','soalan4');
 			$pilihFail = $fail[2];
