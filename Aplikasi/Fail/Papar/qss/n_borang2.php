@@ -39,18 +39,8 @@
 	</td>
 	<td width="400" rowspan="4" align="left">
 		<table border="1" id="maklumat"><?php
-$ulang = array('kod_negeri'=>'Kod&nbsp;Negeri',
-	'pusat_operasi'=>'Pusat&nbsp;Operasi',
-	'strata'=>'Strata',
-	//'F0002'=>'Respon',
-	//'msic2008'=>'Kod&nbsp;Industri',
-	);
-foreach ($ulang as $papar => $lihat):
-	$jumlah = jumlah($this->bentukJadual01[0],$papar);
-	echo "\n\t\t" . '<tr><td bgcolor="#e9e7e9">' . $lihat . '</td><td>'
-	. $jumlah . '</td></tr>';
-endforeach;
-?></table>
+		paparTR($this->bentukJadual01[0],$this->bentukJadual02[0]);
+		?></table>
 	</td>
 </tr>
 <tr>
