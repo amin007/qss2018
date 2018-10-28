@@ -105,8 +105,10 @@ foreach ($ulangSuku as $papar):?>
 $ulang = array('F0007a','F0007b','F0007c','F0007','F0008a','F0008b','F0008c','F0008');
 foreach ($ulang as $papar):
 $jumlah = jumlah($this->bentukJadual01[0],$papar);
+$suku = ( in_array($papar,array('F0007','F0008')) ) ?
+	kiraJumlah($this->bentukJadual01[0],$papar) : $papar;
 ?>
-	<td align="left"><?php echo $papar ?><br>
+	<td align="left"><?php echo $suku ?><br>
 		<input type="text" id="<?php echo $papar ?>" style="width:120px;text-align:right;"
 		value="<?php echo $jumlah ?>"
 		class="auto" data-v-max="999999999999" data-v-min="-9999999999999"/>
