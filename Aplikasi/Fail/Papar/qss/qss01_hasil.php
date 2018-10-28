@@ -38,9 +38,8 @@ Sektor : <?php echo $sektor ?> | <a href="<?php echo $link[0] ?>">Anjung</a>
 <!-- isi borang mula ########################################################################################################## -->
 <?php
 include 'kiraFungsi.php';
-list($respon,$newss,$nama_pertubuhan,$msic2008,$F1201,$fe,$subsektor,$alamat)
+list($respon,$newss,$nama_pertubuhan,$msic2008,$F1201,$fe,$utama,$subsektor,$alamat)
 	= setNilaiAwal($this->bentukJadual01[0],$this->bentukJadual02[0]);
-
 include 'n_borang2.php'; ?>
 <!-- isi borang tamat ########################################################################################################## -->
 
