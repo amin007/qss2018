@@ -209,7 +209,7 @@ class Qss extends \Aplikasi\Kitab\Kawal
 		return $pilihFail;
 	}
 #-------------------------------------------------------------------------------------------
-	function pilihJadual($dataID)
+	function pilihSuku2($dataID)
 	{
 		//echo '<hr>Nama class :' . __METHOD__ . '()<hr>';
 		$medanID = 'newss';
