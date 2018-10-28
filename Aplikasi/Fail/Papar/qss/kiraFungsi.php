@@ -28,9 +28,15 @@ function jumlah($bentukJadual01,$papar)
 	$bentukJadual01[$papar] : 0;
 }
 #-----------------------------------------------------------------------------------------------
-function x()
+function kiraJumlah($bentukJadual01,$key)
 {
-	
+	$blnA = jumlah($bentukJadual01,$key . 'a');
+	$blnB = jumlah($bentukJadual01,$key . 'b');
+	$blnC = jumlah($bentukJadual01,$key . 'c');
+	$kira = $blnA + $blnB + $blnC;
+	$font = $key . '|<font color="red">' . $kira . '</font>';
+
+	return $font;
 }
 #-----------------------------------------------------------------------------------------------
 #-----------------------------------------------------------------------------------------------
