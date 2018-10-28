@@ -181,7 +181,7 @@ class Qss extends \Aplikasi\Kitab\Kawal
 		//echo '<hr>Nama class :' . __METHOD__ . '()<hr>';
 		# Set pemboleubah utama
 		$this->papar->suku = $suku;
-		$this->pilihjadual($dataID);
+		$this->pilihSuku2($dataID);
 		$pilihFail = $this->pilihFail($action);
 
 		# Pergi papar kandungan
