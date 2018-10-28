@@ -25,6 +25,29 @@ function setNilaiAwal($bentukJadual01,$bentukJadual02)
 	return array($respon,$newss,$nama_pertubuhan,$msic2008,$F1201,$fe,$utama,$subsektor,$alamat);
 }
 #-----------------------------------------------------------------------------------------------
+function paparTR($bentukJadual01,$bentukJadual02)
+{
+	$ulang = array('kod_negeri'=>'Kod&nbsp;Negeri',
+	'pusat_operasi'=>'Pusat&nbsp;Operasi',
+	'strata'=>'Strata',
+	);
+	foreach ($ulang as $papar => $lihat):
+		echo "\n\t\t" . '<tr><td bgcolor="#e9e7e9">' . $lihat . '</td><td>'
+		. jumlah($bentukJadual01,$papar) . '</td></tr>';
+	endforeach;
+	$ulang = $papar = $lihat = null;
+	$ulang = array(
+		'kp'=>'Kod Survei',
+		'msic_asal'=>'Kod&nbsp;Industri',
+		'cara_terima'=>'Cara Terima Borang',
+		);
+	foreach ($ulang as $papar => $lihat):
+		echo "\n\t\t" . '<tr><td bgcolor="#e9e7e9">' . $lihat . '</td><td>'
+		. jumlah($bentukJadual02,$papar) . '</td></tr>';
+	endforeach;
+	//*/
+}
+#-----------------------------------------------------------------------------------------------
 function jumlah($bentukJadual01,$papar)
 {
 	return (isset($bentukJadual01[$papar])) ?
