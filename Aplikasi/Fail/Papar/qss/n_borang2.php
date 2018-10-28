@@ -1,21 +1,3 @@
-<?php
-$respon = (isset($this->bentukJadual01[0]['F0002'])) ? $this->bentukJadual01[0]['F0002'] : null;
-$newss = (isset($this->bentukJadual01[0]['newss'])) ? $this->bentukJadual01[0]['newss'] : null;
-$nama_pertubuhan = (isset($this->bentukJadual01[0]['nama_pertubuhan'])) ? $this->bentukJadual01[0]['nama_pertubuhan'] : null;
-$msic2008 = (isset($this->bentukJadual01[0]['msic2008'])) ? $this->bentukJadual01[0]['msic2008'] : null;
-$F1201 = (isset($this->bentukJadual01[0]['F1201'])) ? $this->bentukJadual01[0]['F1201'] : null;
-# tatasusunan yang lain
-$fe = (isset($this->bentukJadual02[0]['fe'])) ? $this->bentukJadual02[0]['fe'] : null;
-$kp = (isset($this->bentukJadual02[0]['kp'])) ? $this->bentukJadual02[0]['kp'] : null;
-$kp2 = (isset($this->bentukJadual02[0]['msic2008'])) ? $this->bentukJadual02[0]['msic2008'] : null;
-$subsektor = (isset($this->bentukJadual02[0]['subsektor'])) ? $this->bentukJadual02[0]['subsektor'] : null;
-$industri = $kp . '|' . $kp2 . '|' . $subsektor;
-$alamat1 = (isset($this->bentukJadual02[0]['alamat1'])) ? $this->bentukJadual02[0]['alamat1'] : null;
-$alamat2 = (isset($this->bentukJadual02[0]['alamat2'])) ? $this->bentukJadual02[0]['alamat2'] : null;
-$poskod = (isset($this->bentukJadual02[0]['poskod'])) ? $this->bentukJadual02[0]['poskod'] : null;
-$bandar = (isset($this->bentukJadual02[0]['bandar'])) ? $this->bentukJadual02[0]['bandar'] : null;
-$alamat = $industri . "\n" . $alamat1 . ' ' . $alamat2 . ' ' . $poskod . ' ' . $bandar;
-?>
 <table width="961" align="center" height="20">
 <tr><td height="20" colspan="4" align="left" >
 	<p><div class="textdescrp"></div></p>
