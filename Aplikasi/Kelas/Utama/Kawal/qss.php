@@ -190,6 +190,20 @@ class Qss extends \Aplikasi\Kitab\Kawal
 		$this->paparKandungan($this->_folder, $pilihFail, $noInclude=1);
 	}
 #-------------------------------------------------------------------------------------------
+	public function suku3($dataID = null, $suku = 3, $action = 'hasil')
+	{
+		//echo '<hr>Nama class :' . __METHOD__ . '()<hr>';
+		# Set pemboleubah utama
+		$this->papar->suku = $suku;
+		$this->pilihSuku3($dataID);
+		$pilihFail = $this->pilihFail($action);
+
+		# Pergi papar kandungan
+		//$this->debugKandunganPaparan(); # Semak data dulu
+		//$this->_folder = 'borang'; //echo "$this->_folder|$pilihFail";
+		$this->paparKandungan($this->_folder, $pilihFail, $noInclude=1);
+	}
+#-------------------------------------------------------------------------------------------
 	function pilihFail($action = 'hasil')
 	{
 		if($action == 'rangka'):
@@ -226,6 +240,25 @@ class Qss extends \Aplikasi\Kitab\Kawal
 			$this->panggilTable($myJadual,'semuaJadual',$medanID,$dataID);
 		endforeach;
 			$this->panggilTable01('qss2018-q2-rangka','semuaJadual',$medanID,$dataID);
+	}
+#-------------------------------------------------------------------------------------------
+	function pilihSuku3($dataID)
+	{
+		//echo '<hr>Nama class :' . __METHOD__ . '()<hr>';
+		$medanID = 'newss';
+		$this->papar->medanID = $medanID;
+		$this->papar->dataID = $dataID;
+		$senarai = array('qss-q2-mk','qss-q2-ejen_hartanah',
+		'qss-q2-kesenian','qss-q2-profesional','qss-q2-penginapan',
+		'qss-q2-pengangkutan_penyimpanan','qss-q2-kesihatan',
+		'qss-q2-fnb','qss-q2-perkhidmatan_lain',
+		'qss-q2-pks','qss-q2-pendidikan');
+
+		foreach($senarai as $myJadual):
+			//echo "<br>RENAME TABLE `$myJadual` TO `$myJadual`; ";
+			$this->panggilTable($myJadual,'semuaJadual',$medanID,$dataID);
+		endforeach;
+			$this->panggilTable01('qss-q2-rangka','semuaJadual',$medanID,$dataID);
 	}
 #-------------------------------------------------------------------------------------------
 #==========================================================================================
