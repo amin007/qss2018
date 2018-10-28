@@ -307,7 +307,14 @@ $jumlah = jumlah($this->bentukJadual01[0],$papar);
 	</td>
 </tr>
 </table>
-
+<?php
+$ulang = stafGaji('Staf &  Gaji',$this->bentukJadual01[0]);
+//echo '<pre>'; print_r($ulang); echo '</pre>';
+$html = new \Aplikasi\Kitab\Html_Table;
+foreach ($ulang as $myTable => $row):
+	$html->papar_jadual($row, $myTable, $pilih = '1', $classTable = null);
+endforeach;//*/
+?>
 
 <div class='menu1' style='display: none'>
 <button id="btnHide">X</button><br/>
