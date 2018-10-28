@@ -46,8 +46,7 @@ $ulang = array('kod_negeri'=>'Kod&nbsp;Negeri',
 	//'msic2008'=>'Kod&nbsp;Industri',
 	);
 foreach ($ulang as $papar => $lihat):
-	$jumlah = (isset($this->bentukJadual01[0][$papar])) ?
-	$this->bentukJadual01[0][$papar] : null;
+	$jumlah = jumlah($this->bentukJadual01[0],$papar);
 	echo "\n\t\t" . '<tr><td bgcolor="#e9e7e9">' . $lihat . '</td><td>'
 	. $jumlah . '</td></tr>';
 endforeach;
