@@ -6,7 +6,7 @@
 	<td colspan="4" align="left" height="20" >
 		<input type="hidden" name="nosiri" id="nosiri" value="" />
 		<input type="hidden" name="kod" id="kod" value="01" />
-		Kod Respon<input type="text" name="kod_respon" id="kod_respon" size="4" value="123" />
+		Kod Respon<input type="text" name="kod_respon" id="kod_respon" size="4"/>
 		Status<input type="text" name="cara_terima" id="cara_terima" size="8" />
 		<input  name="get_lang" id="get_lang" type="hidden" />
 	</td>
