@@ -34,7 +34,7 @@
 		<tr><td bgcolor="#e9e7e9">No Siri</td><td><?php echo $newss ?></td></tr>
 		<tr><td bgcolor="#e9e7e9">Suku&nbsp;Tahun</td><td>1</td></tr>
 		<tr><td bgcolor="#e9e7e9">Tahun</td><td>2018</td></tr>
-		<tr><td bgcolor="#e9e7e9">BBU/SBU</td><td>SBU</td></tr>
+		<tr><td bgcolor="#e9e7e9">BBU/SBU</td><td><?php echo $utama ?></td></tr>
 		</table>
 	</td>
 	<td width="400" rowspan="4" align="left">
