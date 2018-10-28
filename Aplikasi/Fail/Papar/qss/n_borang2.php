@@ -5,6 +5,7 @@ $nama_pertubuhan = (isset($this->bentukJadual01[0]['nama_pertubuhan'])) ? $this-
 $msic2008 = (isset($this->bentukJadual01[0]['msic2008'])) ? $this->bentukJadual01[0]['msic2008'] : null;
 $F1201 = (isset($this->bentukJadual01[0]['F1201'])) ? $this->bentukJadual01[0]['F1201'] : null;
 # tatasusunan yang lain
+$fe = (isset($this->bentukJadual02[0]['fe'])) ? $this->bentukJadual02[0]['fe'] : null;
 $kp = (isset($this->bentukJadual02[0]['kp'])) ? $this->bentukJadual02[0]['kp'] : null;
 $kp2 = (isset($this->bentukJadual02[0]['msic2008'])) ? $this->bentukJadual02[0]['msic2008'] : null;
 $subsektor = (isset($this->bentukJadual02[0]['subsektor'])) ? $this->bentukJadual02[0]['subsektor'] : null;
@@ -23,7 +24,7 @@ $alamat = $industri . "\n" . $alamat1 . ' ' . $alamat2 . ' ' . $poskod . ' ' . $
 	<td colspan="4" align="left" height="20" >
 		<input type="hidden" name="nosiri" id="nosiri" value="" />
 		<input type="hidden" name="kod" id="kod" value="01" />
-		Kod Respon<input type="text" name="kod_respon" id="kod_respon" size="4" />
+		Kod Respon<input type="text" name="kod_respon" id="kod_respon" size="4" value="123" />
 		Status<input type="text" name="cara_terima" id="cara_terima" size="8" />
 		<input  name="get_lang" id="get_lang" type="hidden" />
 	</td>
@@ -45,6 +46,7 @@ $alamat = $industri . "\n" . $alamat1 . ' ' . $alamat2 . ' ' . $poskod . ' ' . $
 		<!-- tr><td width="98" bgcolor="#FF0000"><div align="center"><em>Error</em></div></td></tr>
 		<tr><td bgcolor="#bffcc0"><div align="center"><em>Force Accept</em></div></td></tr -->
 		<tr><td bgcolor="#87ceeb" align="center">Respon:<?php echo $respon ?></td></tr>
+		<tr><td bgcolor="#87ceeb" align="center">FE:<?php echo $fe ?></td></tr>
 		</table><br>
 		<table border="1" id="maklumat">
 		<tr><td bgcolor="#e9e7e9">No Siri</td><td><?php echo $newss ?></td></tr>
@@ -121,8 +123,8 @@ foreach ($ulangSuku as $papar):?>
 //$ulang = array('F0007a','F0007b','F0007c','F0007d','F0008a','F0008b','F0008c','F0008d');
 $ulang = array('F0007a','F0007b','F0007c','F0007','F0008a','F0008b','F0008c','F0008');
 foreach ($ulang as $papar):
-$jumlah = (isset($this->bentukJadual01[0][$papar])) ?
-	$this->bentukJadual01[0][$papar] : 0; ?>
+$jumlah = jumlah($this->bentukJadual01[0],$papar);
+?>
 	<td align="left"><?php echo $papar ?><br>
 		<input type="text" id="<?php echo $papar ?>" style="width:120px;text-align:right;"
 		value="<?php echo $jumlah ?>"
@@ -138,8 +140,8 @@ $jumlah = (isset($this->bentukJadual01[0][$papar])) ?
 //$ulang = array('F0009a','F0009b','F0009c','F0009d','F0010a','F0010b','F0010c','F0010d');
 $ulang = array('F0009a','F0009b','F0009c','F0009','F0010a','F0010b','F0010c','F0010');
 foreach ($ulang as $papar):
-$jumlah = (isset($this->bentukJadual01[0][$papar])) ?
-	$this->bentukJadual01[0][$papar] : 0; ?>
+$jumlah = jumlah($this->bentukJadual01[0],$papar);
+?>
 	<td align="left"><?php echo $papar ?><br>
 		<input type="text" id="<?php echo $papar ?>" style="width:120px;text-align:right;"
 		value="<?php echo $jumlah ?>"
@@ -153,8 +155,8 @@ $jumlah = (isset($this->bentukJadual01[0][$papar])) ?
 //$ulang = array('F0011a','F0011b','F0011c','F0011d','F0012a','F0012b','F0012c','F0012d');
 $ulang = array('F0011a','F0011b','F0011c','F0011','F0012a','F0012b','F0012c','F0012');
 foreach ($ulang as $papar):
-$jumlah = (isset($this->bentukJadual01[0][$papar])) ?
-	$this->bentukJadual01[0][$papar] : 0; ?>
+$jumlah = jumlah($this->bentukJadual01[0],$papar);
+?>
 	<td align="left"><?php echo $papar ?><br>
 		<input type="text" id="<?php echo $papar ?>" 
 		style="width:120px;text-align:right;background-color:#e1e4e2;"
@@ -192,8 +194,8 @@ $jumlah = (isset($this->bentukJadual01[0][$papar])) ?
 	</td>
 <?php $ulang = array('F0013a','F0013b','F0013c','F0013','F0014a','F0014b','F0014c','F0014');
 foreach ($ulang as $papar):
-$jumlah = (isset($this->bentukJadual01[0][$papar])) ?
-	$this->bentukJadual01[0][$papar] : 0; ?>
+$jumlah = jumlah($this->bentukJadual01[0],$papar);
+?>
 	<td align="left" ><div align="left"><?php echo $papar ?><br>
 		<input type="text" id="<?php echo $papar ?>" style="width:120px;text-align:right;"
 		value="<?php echo $jumlah ?>"
@@ -208,8 +210,8 @@ $jumlah = (isset($this->bentukJadual01[0][$papar])) ?
 	</td>
 <?php $ulang = array('F0015a','F0015b','F0015c','F0015','F0016a','F0016b','F0016c','F0016');
 foreach ($ulang as $papar):
-$jumlah = (isset($this->bentukJadual01[0][$papar])) ?
-	$this->bentukJadual01[0][$papar] : 0; ?>
+$jumlah = jumlah($this->bentukJadual01[0],$papar);
+?>
 	<td align="left" ><div align="left"><?php echo $papar ?><br>
 		<input type="text" id="<?php echo $papar ?>" style="width:120px;text-align:right;"
 		value="<?php echo $jumlah ?>"
@@ -224,8 +226,8 @@ $jumlah = (isset($this->bentukJadual01[0][$papar])) ?
 	</td>
 <?php $ulang = array('F0017a','F0017b','F0017c','F0017','F0018a','F0018b','F0018c','F0018');
 foreach ($ulang as $papar):
-$jumlah = (isset($this->bentukJadual01[0][$papar])) ?
-	$this->bentukJadual01[0][$papar] : 0; ?>
+$jumlah = jumlah($this->bentukJadual01[0],$papar);
+?>
 	<td align="left" ><div align="left"><?php echo $papar ?><br>
 		<input type="text" id="<?php echo $papar ?>" style="width:120px;text-align:right;"
 		value="<?php echo $jumlah ?>"
@@ -237,8 +239,8 @@ $jumlah = (isset($this->bentukJadual01[0][$papar])) ?
 	<td height="31" align="left" class="textdescrp1"><span class="textdescrp2">2.4 JUMLAH PERBELANJAAN</span></td>
 <?php $ulang = array('F0019a','F0019b','F0019c','F0019','F0020a','F0020b','F0020c','F0020');
 foreach ($ulang as $papar):
-$jumlah = (isset($this->bentukJadual01[0][$papar])) ?
-	$this->bentukJadual01[0][$papar] : 0; ?>
+$jumlah = jumlah($this->bentukJadual01[0],$papar);
+?>
 	<td align="left" ><div align="left"><?php echo $papar ?><br>
 		<input type="text" id="<?php echo $papar ?>" 
 		style="width:120px;text-align:right;background-color:#e1e4e2;"
@@ -278,8 +280,8 @@ foreach ($ulangSuku as $papar):?>
 	</td>
 <?php $ulang = array('F0021a','F0021b','F0021c');
 foreach ($ulang as $papar):
-$jumlah = (isset($this->bentukJadual01[0][$papar])) ?
-	$this->bentukJadual01[0][$papar] : 0; ?>
+$jumlah = jumlah($this->bentukJadual01[0],$papar);
+?>
 	<td align="left" ><div align="left"><?php echo $papar ?><br>
 		<input type="text" style="width:120px;text-align:right;"
 		value="<?php echo $jumlah ?>"
@@ -294,8 +296,8 @@ $jumlah = (isset($this->bentukJadual01[0][$papar])) ?
 		F0021</td>
 <?php $ulang = array('F0022a','F0022b','F0022c');
 foreach ($ulang as $papar):
-$jumlah = (isset($this->bentukJadual01[0][$papar])) ?
-	$this->bentukJadual01[0][$papar] : 0; ?>
+$jumlah = jumlah($this->bentukJadual01[0],$papar);
+?>
 	<td align="left" ><div align="left"><?php echo $papar ?><br>
 		<input type="text" style="width:120px;text-align:right;"
 		value="<?php echo $jumlah ?>"
