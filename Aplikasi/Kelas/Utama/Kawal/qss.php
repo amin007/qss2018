@@ -248,17 +248,18 @@ class Qss extends \Aplikasi\Kitab\Kawal
 		$medanID = 'newss';
 		$this->papar->medanID = $medanID;
 		$this->papar->dataID = $dataID;
-		$senarai = array('qss-q2-mk','qss-q2-ejen_hartanah',
-		'qss-q2-kesenian','qss-q2-profesional','qss-q2-penginapan',
-		'qss-q2-pengangkutan_penyimpanan','qss-q2-kesihatan',
-		'qss-q2-fnb','qss-q2-perkhidmatan_lain',
-		'qss-q2-pks','qss-q2-pendidikan');
+		$senarai = array('qss-q3-mk','qss-q3-ejen_hartanah',
+		'qss-q3-kesenian','qss-q3-profesional','qss-q3-penginapan',
+		'qss-q3-pengangkutan_penyimpanan','qss-q3-kesihatan',
+		'qss-q3-fnb','qss-q3-perkhidmatan_lain',
+		'qss-q3-pks','qss-q3-pendidikan');
 
 		foreach($senarai as $myJadual):
 			//echo "<br>RENAME TABLE `$myJadual` TO `$myJadual`; ";
 			$this->panggilTable($myJadual,'semuaJadual',$medanID,$dataID);
 		endforeach;
-			$this->panggilTable01('qss-q2-rangka','semuaJadual',$medanID,$dataID);
+			$this->panggilTable01('qss-q3-1rangka_proses','semuaJadual',$medanID,$dataID);
+			//$this->panggilTable02('qss-q3-1rangka_matnor','semuaJadual',$medanID,$dataID);
 	}
 #-------------------------------------------------------------------------------------------
 #==========================================================================================
