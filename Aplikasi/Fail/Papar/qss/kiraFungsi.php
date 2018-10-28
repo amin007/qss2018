@@ -65,6 +65,31 @@ function kiraJumlah($bentukJadual01,$key)
 	return $font;
 }
 #-----------------------------------------------------------------------------------------------
+function stafGaji($namajadual,$data)
+{
+	$ulang[$namajadual][] = array('Kategori'=>'(a)Pemilik',
+		'Bil'=>'01',
+		'Lelaki'=>$data['F1601'],
+		'Perempuan'=>$data['F1701'],
+		'Staf'=>$data['F1801'],
+		'Jumlah Gaji'=>null);
+	$ulang[$namajadual][] = array('(b)Pekerja bergaji(sepenuh masa)',
+		'02',$data['F1602'],$data['F1702'],$data['F1802'],$data['F1902']);
+	$ulang[$namajadual][] = array('Kategori'=>'(c)Pekerja bergaji(sambilan)',
+		'03',$data['F1603'],$data['F1703'],$data['F1803'],$data['F1903']);
+	$ulang[$namajadual][] = array('Kategori'=>'()Jumlah(a+b+c)',
+		'99',$data['F1699'],$data['F1799'],$data['F1899'],$data['F1999']);
+	return $ulang;
+}
+#-----------------------------------------------------------------------------------------------
+	/*//echo "\n" . '<table class="table table-bordered table-sm">';
+	echo "\n" . '<table class="excel">';
+	foreach($ulang as $key): echo "\n" . '<tr>';
+		foreach($key as $val):
+			echo '<td>' . $val . '</td>';
+		endforeach; echo '</tr>';
+	endforeach;
+	echo '</table>';*/
 #-----------------------------------------------------------------------------------------------
 #-----------------------------------------------------------------------------------------------
 #-----------------------------------------------------------------------------------------------
