@@ -9,7 +9,9 @@ function setNilaiAwal($bentukJadual01,$bentukJadual02)
 	$msic2008 = (isset($bentukJadual01['msic2008'])) ? $bentukJadual01['msic2008'] : null;
 	$F1201 = (isset($bentukJadual01['F1201'])) ? $bentukJadual01['F1201'] : null;
 	# tatasusunan yang lain
-	$fe = (isset($bentukJadual02['fe'])) ? $bentukJadual02['fe'] : null;
+	$fe = (isset($bentukJadual02['fe2018'])) ? $bentukJadual02['fe2018'] : null;
+	$utama = (isset($bentukJadual02['bbu_sbu'])) ? $bentukJadual02['bbu_sbu'] : null;
+	# gabung tatasusunan yang lain
 	$kp = (isset($bentukJadual02['kp'])) ? $bentukJadual02['kp'] : null;
 	$kp2 = (isset($bentukJadual02['msic2008'])) ? $bentukJadual02['msic2008'] : null;
 	$subsektor = (isset($bentukJadual02['subsektor'])) ? $bentukJadual02['subsektor'] : null;
@@ -20,7 +22,7 @@ function setNilaiAwal($bentukJadual01,$bentukJadual02)
 	$bandar = (isset($bentukJadual02['bandar'])) ? $bentukJadual02['bandar'] : null;
 	$alamat = $industri . "\n" . $alamat1 . ' ' . $alamat2 . ' ' . $poskod . ' ' . $bandar;
 
-	return array($respon,$newss,$nama_pertubuhan,$msic2008,$F1201,$fe,$subsektor,$alamat);
+	return array($respon,$newss,$nama_pertubuhan,$msic2008,$F1201,$fe,$utama,$subsektor,$alamat);
 }
 #-----------------------------------------------------------------------------------------------
 function jumlah($bentukJadual01,$papar)
