@@ -78,7 +78,7 @@
 </tr>
 <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
 <tr>
-	<td><b>6.</b><br><i>6.</i></td>
+	<td><b>6.</b></td>
 	<td colspan="8">
 		<b>PERKHIDMATAN ATAS TALIAN DAN e-DAGANG</b><br>
 		<i>ONLINE SERVICES AND e-COMMERCE</i>
@@ -317,18 +317,6 @@ $suku = ( in_array($papar,array($ulang[3],$ulang[7])) ) ?
 		class="auto" data-v-max="999999999999" data-v-min="-9999999999999"/>
 	</td>
 <?php endforeach; ?>
-</tr>
-<tr>
-	<td>&nbsp;</td>
-	<td colspan="1" height="60" align="left" class="textdescrp2">
-	2.5 Jika jumlah perbelanjaan yang dilaporkan untuk suku tahun ini meningkat<br>
-	atau menurun sekurang-kurangnya 30% berbanding suku tahun<br>
-	sebelumnya,	sila nyatakan sebab berlakunya perbezaan tersebut.
-	</td>
-	<td colspan="6" align="left">
-		<textarea name="perbelanjaan_b" id="perbelanjaan_b" cols="100" rows="3" 
-		style="resize:none;" tabindex="20">KERETA SEDANG DI BAIK PULIH SEPANJANG BULAN MAC</textarea>
-	</td>
 </tr>
 </table>
 <!-- ************************************************************************************************************************************ -->
