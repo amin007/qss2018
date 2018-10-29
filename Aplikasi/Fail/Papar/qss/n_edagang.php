@@ -273,9 +273,7 @@ $suku = paparFont($this->bentukJadual01[0],$papar);
 <?php $ulang = array('F1512a','F1512b','F1512c','F1512','F1513a','F1513b','F1513c','F1513');
 foreach ($ulang as $papar):
 $jumlah = jumlah($this->bentukJadual01[0],$papar);
-$suku = paparFont($this->bentukJadual01[0],$papar);
-/*$suku = ( in_array($papar,array($ulang[3],$ulang[7])) ) ?
-	kiraJumlah($this->bentukJadual01[0],$papar) : $papar;*/
+$suku = kiraJika($ulang,$this->bentukJadual01[0],$papar)
 ?>
 	<td align="left"><?php echo $suku ?><br>
 		<input type="text" id="<?php echo $papar ?>" style="width:120px;text-align:right;"
