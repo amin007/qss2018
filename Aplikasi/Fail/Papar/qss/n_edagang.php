@@ -311,8 +311,7 @@ $suku = ( in_array($papar,array($ulang[3],$ulang[7])) ) ?
 	kiraJumlah($this->bentukJadual01[0],$papar) : $papar;
 ?>
 	<td align="left"><?php echo $suku ?><br>
-		<input type="text" id="<?php echo $papar ?>" 
-		style="width:120px;text-align:right;background-color:#e1e4e2;"
+		<input type="text" id="<?php echo $papar ?>" style="width:120px;text-align:right;"
 		value="<?php echo $jumlah ?>"
 		class="auto" data-v-max="999999999999" data-v-min="-9999999999999"/>
 	</td>
