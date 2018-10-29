@@ -98,7 +98,39 @@ function paparData($bentukJadual01,$papar)
 	: '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
 }
 #-----------------------------------------------------------------------------------------------
+function pilihTajuk($suku)
+{
+	$sukuDuluBM = array(1=>'ST4',2=>'ST1',3=>'ST2',4=>'ST3');
+	$sukuDuluBI = array(1=>'Q4',2=>'Q1',3=>'Q2',4=>'Q3');
+	$sukuDuluTempoh[1] = '1 Oktober - 31 Disember ';
+	$sukuDuluTempoh[2] = '1 Januari - 31 Mac  ';
+	$sukuDuluTempoh[3] = '1 April - 30 Jun ';
+	$sukuDuluTempoh[4] = '1 Julai - 31 September ';
+	$sukuKiniBM = array(1=>'ST1',2=>'ST2',3=>'ST3',4=>'ST4');
+	$sukuKiniBI = array(1=>'Q1',2=>'Q2',3=>'Q3',4=>'Q4');
+	$sukuKiniTempoh[1] = '1 Januari - 31 Mac ';
+	$sukuKiniTempoh[2] = '1 April - 30 Jun ';
+	$sukuKiniTempoh[3] = '1 Julai - 31 September ';
+	$sukuKiniTempoh[4] = '1 Oktober - 31 Disember 2018 ';
+
+	return array($sukuDuluBM[$suku],$sukuDuluBI[$suku],$sukuDuluTempoh[$suku],
+	$sukuKiniBM[$suku],$sukuKiniBI[$suku],$sukuKiniTempoh[$suku]);
+}
 #-----------------------------------------------------------------------------------------------
+function paparTajuk($suku)
+{
+	list($sukuDuluBM,$sukuDuluBI,$sukuDuluTempoh,
+	$sukuKiniBM,$sukuKiniBI,$sukuKiniTempoh) = pilihTajuk($suku);
+	$tahun = '2018';
+	echo '<td colspan="4" align="center">'
+	. "\n\t\t" . '<strong>SUKU TAHUN (' . $sukuDuluBM . '&nbsp;' . $tahun . ')</strong>'
+	. "\n\t\t" . '/<i>QUARTER(' . $sukuDuluBI . '&nbsp;' . $tahun . ')</i>'
+	. "\n\t\t" . '<br>' . $sukuDuluTempoh . '</td>'
+	. "\n\t" . '<td colspan="4" align="center">'
+	. "\n\t\t" . '<strong>SUKU TAHUN (' . $sukuKiniBI . '&nbsp;' . $tahun . ')</strong>'
+	. "\n\t\t" . '/<i>QUARTER(' . $sukuKiniBI . '&nbsp;' . $tahun . ')</i>'
+	. "\n\t\t" . '<br>' . $sukuKiniTempoh . '</div></td>';
+}
 #-----------------------------------------------------------------------------------------------
 #-----------------------------------------------------------------------------------------------
 #-----------------------------------------------------------------------------------------------
