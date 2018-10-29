@@ -54,6 +54,14 @@ function jumlah($bentukJadual01,$papar)
 	$bentukJadual01[$papar] : 0;
 }
 #-----------------------------------------------------------------------------------------------
+function paparFont($bentukJadual01,$key)
+{
+	$data = (isset($bentukJadual01[$key])) ? $bentukJadual01[$key] : '&nbsp;';
+	$font = $key . '|<font color="red">' . $data . '</font>';
+
+	return $font;
+}
+#-----------------------------------------------------------------------------------------------
 function kiraJumlah($bentukJadual01,$key)
 {
 	$blnA = jumlah($bentukJadual01,$key . 'a');
