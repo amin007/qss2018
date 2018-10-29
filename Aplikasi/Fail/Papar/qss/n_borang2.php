@@ -261,9 +261,10 @@ $jumlah = jumlah($this->bentukJadual01[0],$papar);
 <?php endforeach; ?>
 	<td>
 		<input  name="f2122c_p" type="text" id="f2122c_p" 
-		style="width:120px;text-align:right;" value="1" 
-		tabindex="21" class="auto" data-v-max="999999999999" data-v-min="-9999999999999"/>
-		F0021</td>
+		style="width:120px;text-align:right;" value="1" tabindex="21"
+		class="auto" data-v-max="999999999999" data-v-min="-9999999999999"/>
+		F0021|<?php echo jumlah($this->bentukJadual01[0],'F0021'); ?>
+	</td>
 <?php $ulang = array('F0022a','F0022b','F0022c');
 foreach ($ulang as $papar):
 $jumlah = jumlah($this->bentukJadual01[0],$papar);
@@ -276,11 +277,12 @@ $jumlah = jumlah($this->bentukJadual01[0],$papar);
 	</td>
 <?php endforeach; ?>
 	<td>
-		<input  name="f2122c_c" type="text" id="f2122c_c" 
+		<input name="f2122c_c" type="text" id="f2122c_c"
 		style="width:120px;text-align:right;" value="1" tabindex="22"
-		onblur="this.value=addCommas(this.value);info_pekerja_A();" 
+		onblur="this.value=addCommas(this.value);info_pekerja_A();"
 		class="auto" data-v-max="999999999999" data-v-min="-9999999999999"/>
-		F0022</td>
+		F0022|<?php echo jumlah($this->bentukJadual01[0],'F0022'); ?>
+	</td>
 </tr>
 <tr>
 	<td colspan="1" height="60" align="left" class="textdescrp2">
