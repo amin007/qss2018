@@ -85,14 +85,32 @@
 	</td>
 </tr>
 <tr>
-	<td><b>6.1</b></td>
+	<td valign="top"><b>6.1</b></td>
 	<td colspan="8">
-	<b>Adakah pertubuhan tuan melakukan transaksi (jualan / pembelian) menggunakan internet?</b><br>
-	<i>Did your establishment conduct a transactions (sales / purchase) using the internet?</i>
-												
-				F1501			YA / YES				
-							Jika YA, sila ke Soalan 6.2 / If YES, please go to Question 6.2				
-	
+		<b>Adakah pertubuhan tuan melakukan transaksi (jualan / pembelian) menggunakan internet?</b><br>
+		<i>Did your establishment conduct a transactions (sales / purchase) using the internet?</i>
+		<table><tr>
+			<td>F1501</td>
+			<td>
+				<table border="1"><tr>
+				<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+				</tr></table>
+			</td>
+			<td><b>YA</b> / <i>YES</i> <br> <b>Jika YA, sila ke Soalan 6.2</b> / <i>If YES, please go to Question 6.2</i></td>
+			<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td>F1502</td>
+			<td>
+				<table border="1"><tr>
+				<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+				</tr></table>
+			</td>
+			<td><b>TIDAK</b> / <i>NO</i> <br> <b>Jika TIDAK, TAMAT di sini.</b> / <i>If NO, END here</i></td>
+		</tr></table>
 	</td>
 </tr>
 <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
