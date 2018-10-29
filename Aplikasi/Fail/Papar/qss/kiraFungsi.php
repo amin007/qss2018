@@ -62,6 +62,17 @@ function paparFont($bentukJadual01,$key)
 	return $font;
 }
 #-----------------------------------------------------------------------------------------------
+function kiraJika($ulang,$bentukJadual01,$key)
+{
+	if ( in_array($key,array($ulang[3],$ulang[7])) )
+		$font = kiraJumlah($bentukJadual01,$key);
+	else
+		$font = $key . '|<font color="blue">'
+		. jumlah($bentukJadual01,$key) . '</font>';
+
+	return $font;
+}
+#-----------------------------------------------------------------------------------------------
 function kiraJumlah($bentukJadual01,$key)
 {
 	$blnA = jumlah($bentukJadual01,$key . 'a');
