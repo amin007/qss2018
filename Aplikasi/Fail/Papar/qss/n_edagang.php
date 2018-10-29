@@ -127,7 +127,7 @@
 			<td>F1503</td>
 			<td>
 				<table border="1"><tr>
-				<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+				<td><?php echo paparData($this->bentukJadual01[0],'F1503'); ?></td>
 				</tr></table>
 			</td>
 			<td><b> Media social  (cth: Facebook, Instagram dan Blogs)</b><br>
@@ -145,7 +145,7 @@
 			<td>F1504</td>
 			<td>
 				<table border="1"><tr>
-				<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+				<td><?php echo paparData($this->bentukJadual01[0],'F1504'); ?></td>
 				</tr></table>
 			</td>
 			<td><b> Laman web kepunyaan sendiri</b><br>
@@ -157,7 +157,7 @@
 			<td>F1506</td>
 			<td>
 				<table border="1"><tr>
-				<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+				<td><?php echo paparData($this->bentukJadual01[0],'F1506'); ?></td>
 				</tr></table>
 			</td>
 			<td><b> Rangkaian persendirian yang ditetapkan (cth: extranet, EDI)</b><br>
@@ -171,7 +171,7 @@
 			<td>F1505</td>
 			<td>
 				<table border="1"><tr>
-				<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+				<td><?php echo paparData($this->bentukJadual01[0],'F1505'); ?></td>
 				</tr></table>
 			</td>
 			<td><b>Pasaran e-Dagang atas talian (cth: Lazada, Zalora)</b><br>
@@ -183,7 +183,7 @@
 			<td>F1507</td>
 			<td>
 				<table border="1"><tr>
-				<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+				<td><?php echo paparData($this->bentukJadual01[0],'F1507'); ?></td>
 				</tr></table>
 			</td>
 			<td><b> Aplikasi mudah alih (cth: Grab app, Lazada mobile app)</b><br>
@@ -204,7 +204,7 @@
 			<td>F1508</td>
 			<td>
 				<table border="1"><tr>
-				<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+				<td><?php echo paparData($this->bentukJadual01[0],'F1508'); ?></td>
 				</tr></table>
 			</td>
 			<td><b>Perkhidmatan pembayaran elektronik</b><br>
@@ -216,7 +216,7 @@
 			<td>F1509</td>
 			<td>
 				<table border="1"><tr>
-				<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+				<td><?php echo paparData($this->bentukJadual01[0],'F1509'); ?></td>
 				</tr></table>
 			</td>
 			<td><b>Bayaran tunai</b><br>
