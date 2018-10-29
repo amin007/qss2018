@@ -250,7 +250,7 @@
 		<b>Jumlah hasil yang diperoleh melalui transaksi atas talian</b><br>
 		<i>Total revenue earned from the online transactions</i>
 	</td>
-<?php $ulang = array('F1510a','F1510b','F1510c','F1510','F1511a','F1511b','F1511c','FF1511');
+<?php $ulang = array('F1510a','F1510b','F1510c','F1510','F1511a','F1511b','F1511c','F1511');
 foreach ($ulang as $papar):
 $jumlah = jumlah($this->bentukJadual01[0],$papar);
 $suku = paparFont($this->bentukJadual01[0],$papar);
@@ -270,7 +270,7 @@ $suku = paparFont($this->bentukJadual01[0],$papar);
 		<b>Jumlah perbelanjaan melalui transaksi  atas talian</b><br>
 		<i>Total expenditure through online transactions</i>
 	</td>
-<?php $ulang = array('F1512a','F1512b','F1512c','FF1512','F1513a','F1513b','F1513c','F1513');
+<?php $ulang = array('F1512a','F1512b','F1512c','F1512','F1513a','F1513b','F1513c','F1513');
 foreach ($ulang as $papar):
 $jumlah = jumlah($this->bentukJadual01[0],$papar);
 $suku = paparFont($this->bentukJadual01[0],$papar);
