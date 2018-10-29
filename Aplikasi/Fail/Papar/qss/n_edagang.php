@@ -134,7 +134,7 @@
 		</div><!-- class="col-4" -->
 		<div class="col-4"></div><!-- class="col-4" -->
 		</div><!-- class="row justify-content-between" -->
-		<b>e_Dagang</b>/<i>e-Dagang / e-Commerce: </i>
+		<strong>e_Dagang</strong>/<i>e-Dagang / e-Commerce: </i>
 		<div class="row justify-content-between">
 		<div class="col-4">
 			<table><tr>
@@ -226,10 +226,12 @@
 <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
 <tr><td colspan="10" bgcolor="#FFFF99" align="center">&nbsp;</td></tr>
 <tr><td colspan="10" bgcolor="#FFFF99" align="center">&nbsp;</td></tr>
-<tr bgcolor="#FFFF99">
+<tr>
 	<td valign="top">&nbsp;</td>
 	<td>
-		<strong>Atas talian</strong>/<i>Online</i>
+		<span class="badge badge-warning">
+		<strong>Atas talian</strong>/<i>Online</i> :
+		</span><!-- span class="badge badge-warning" -->
 	</td>
 <?php 
 //$ulangSuku = array('Okt 2017','Nov 2017','Dis 2017','&nbsp;4S 2017','Jan 2018','Feb 2018','Mac 2018','&nbsp;1S 2018');
@@ -237,7 +239,7 @@
 $ulangSuku = array('Apr 2018','Mei 2018','Jun 2018','&nbsp;2S 2018','Jul 2018','Ogo 2018','Sep 2018','&nbsp;3S 2018');
 //$ulangSuku = array('Jul 2018','Ogo 2018','Sep 2018','&nbsp;3S 2018','Okt 2018','Nov 2018','Dis 2018','&nbsp;4S 2018');
 foreach ($ulangSuku as $papar):?>
-	<td bgcolor="#FFFF99" align="center"><?php echo $papar ?></td>
+	<td align="center"><?php echo $papar ?></td>
 <?php endforeach; ?>
 </tr>
 <tr>
@@ -278,6 +280,15 @@ $suku = ( in_array($papar,array($ulang[3],$ulang[7])) ) ?
 	</td>
 <?php endforeach; ?>
 </tr>
+<tr>
+	<td valign="top">&nbsp;</td>
+	<td>
+		<span class="badge badge-warning">
+		<strong>e_Dagang</strong>/<i>e-Dagang / e-Commerce</i>:
+		</span><!-- span class="badge badge-warning" -->
+	</td>
+	<td colspan="8">&nbsp;</td>
+</td>
 <tr>
 	<td><b>6.6</b></td>
 	<td align="left" class="textdescrp2">
