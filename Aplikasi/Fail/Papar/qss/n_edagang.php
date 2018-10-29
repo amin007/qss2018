@@ -242,7 +242,7 @@
 	</td>
 <?php
 foreach (pilihBulan($this->suku) as $papar):?>
-	<td><div align="center"><?php echo $papar ?></div></td>
+	<td align="center"><?php echo $papar ?></td>
 <?php endforeach; ?>
 </tr>
 <tr>
