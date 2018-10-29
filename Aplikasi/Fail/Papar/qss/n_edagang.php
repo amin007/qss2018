@@ -228,7 +228,16 @@
 </tr>
 <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
 <tr><td colspan="10" bgcolor="#FFFF99" align="center">&nbsp;</td></tr>
-<tr><td colspan="10" bgcolor="#FFFF99" align="center">&nbsp;</td></tr>
+<tr>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td colspan="4" align="center">
+		<strong>SUKU TAHUN (ST2 2018)</strong>/<i>QUARTER (Q2 2018)</i>
+		<br>1 April - 30 Jun 2018</td>
+	<td colspan="4" align="center">
+		<strong>SUKU TAHUN (ST3 2018)</strong>/<i>QUARTER (Q3 2018)</i>
+		<br>1 Julai - 31 September 2018</div></td>
+</tr>
 <tr>
 	<td valign="top">&nbsp;</td>
 	<td>
