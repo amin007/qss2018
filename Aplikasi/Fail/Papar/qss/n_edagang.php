@@ -147,28 +147,32 @@
 	<td colspan="8">
 		<b>Sila nyatakan medium pembayaran yang digunakan oleh pertubuhan tuan bagi urusniaga menggunakan internet.  (Boleh pilih lebih daripada satu)</b><br>
 		<i>Please indicate the method of payment of your establishment used for transactions using the internet. (May choose more than one)</i>
-		<table><tr>
+		<div class="row justify-content-between">
+		<div class="col-4">
+			<table><tr>
 			<td>F1508</td>
 			<td>
 				<table border="1"><tr>
 				<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
 				</tr></table>
 			</td>
-			<td><b>Perkhidmatan pembayaran elektronik</b><i>Payment gateway</i></td>
-			<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-			<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-			<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-			<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-			<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-			<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td><b>Perkhidmatan pembayaran elektronik</b><br>
+			<i>Payment gateway</i></td>
+			</tr></table>
+		</div><!-- class="col-4" -->
+		<div class="col-4">
+			<table><tr>
 			<td>F1509</td>
 			<td>
 				<table border="1"><tr>
 				<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
 				</tr></table>
 			</td>
-			<td><b>Bayaran tunai</b><i>Cash on Delivery</i></td>
-		</tr></table>
+			<td><b>Bayaran tunai</b><br>
+			<i>Cash on Delivery</i></td>
+			</tr></table>
+		</div><!-- class="col-4" -->
+		</div><!-- class="row justify-content-between" -->
 	</td>
 </tr>
 <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
