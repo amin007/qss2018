@@ -77,12 +77,7 @@
 	<td align="left" bgcolor="#FFFF99" class="textdescrp1"><strong>1. HASIL</strong></td>
 	<!-- td width="202" bgcolor="#FFFF99"><div align="center">Suku Tahun (4S 2017)<br />1 Oktober - 31 Disember 2017</div></td -->
 	<!-- td width="196" bgcolor="#FFFF99"><div align="center">Suku Tahun (1S 2018)<br />1 Januari - 31 Mac 2018</div></td -->
-	<?php
-//$ulangSuku = array('Okt 2017','Nov 2017','Dis 2017','&nbsp;4S 2017','Jan 2018','Feb 2018','Mac 2018','&nbsp;1S 2018');
-//$ulangSuku = array('Jan 2018','Feb 2018','Mac 2018','&nbsp;1S 2018','Apr 2018','Mei 2018','Jun 2018','&nbsp;2S 2018');
-$ulangSuku = array('Apr 2018','Mei 2018','Jun 2018','&nbsp;2S 2018','Jul 2018','Ogo 2018','Sep 2018','&nbsp;3S 2018');
-//$ulangSuku = array('Jul 2018','Ogo 2018','Sep 2018','&nbsp;3S 2018','Okt 2018','Nov 2018','Dis 2018','&nbsp;4S 2018');
-foreach ($ulangSuku as $papar):?>
+<?php foreach(pilihBulan($this->suku) as $papar):?>
 	<td bgcolor="#FFFF99" align="center"><?php echo $papar ?></td>
 <?php endforeach; ?>
 </tr>
@@ -160,7 +155,7 @@ $suku = ( in_array($papar,array($ulang[3],$ulang[7])) ) ?
 	<td align="left" bgcolor="#FFFF99" class="textdescrp1"><strong>2. PERBELANJAAN</strong></td>
 	<!-- td width="202" bgcolor="#FFFF99"><div align="center">Suku Tahun (4S 2017)<br />1 Oktober - 31 Disember 2017</div></td -->
 	<!-- td width="196" bgcolor="#FFFF99"><div align="center">Suku Tahun (1S 2018)<br />1 Januari - 31 Mac 2018</div></td -->
-<?php foreach ($ulangSuku as $papar):?>
+<?php foreach(pilihBulan($this->suku) as $papar):?>
 	<td bgcolor="#FFFF99" align="center"><?php echo $papar ?></td>
 <?php endforeach; ?>
 </tr>
@@ -252,8 +247,7 @@ $suku = ( in_array($papar,array($ulang[3],$ulang[7])) ) ?
 	<td align="left" bgcolor="#FFFF99" class="textdescrp1">&nbsp;</td>
 	<!-- td width="202" bgcolor="#FFFF99"><div align="center">Suku Tahun (4S 2017)<br />1 Oktober - 31 Disember 2017</div></td -->
 	<!-- td width="196" bgcolor="#FFFF99"><div align="center">Suku Tahun (1S 2018)<br />1 Januari - 31 Mac 2018</div></td -->
-	<?php
-foreach ($ulangSuku as $papar):?>
+<?php foreach(pilihBulan($this->suku) as $papar):?>
 	<td bgcolor="#FFFF99" align="center"><?php echo $papar ?></td>
 <?php endforeach; ?>
 </tr>
