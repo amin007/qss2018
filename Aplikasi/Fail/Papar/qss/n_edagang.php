@@ -128,8 +128,8 @@
 				<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
 				</tr></table>
 			</td>
-			<td><b>Perkhidmatan pembayaran elektronik</b><br>
-			<i>Payment gateway</i></td>
+			<td><b> Media social  (cth: Facebook, Instagram dan Blogs)</b><br>
+			<i>Social media (e.g. Facebook, Instagram and Blogs)</i></td>
 			</tr></table>
 		</div><!-- class="col-4" -->
 		<div class="col-4"></div><!-- class="col-4" -->
@@ -144,11 +144,11 @@
 				<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
 				</tr></table>
 			</td>
-			<td><b>Perkhidmatan pembayaran elektronik</b><br>
-			<i>Payment gateway</i></td>
+			<td><b> Laman web kepunyaan sendiri</b><br>
+			<i>Website owned by your establishment</i></td>
 			</tr></table>
 		</div><!-- class="col-4" -->
-		<div class="col-4">
+		<div class="col-5">
 			<table><tr>
 			<td>F1506</td>
 			<td>
@@ -156,8 +156,8 @@
 				<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
 				</tr></table>
 			</td>
-			<td><b>Perkhidmatan pembayaran elektronik</b><br>
-			<i>Payment gateway</i></td>
+			<td><b> Rangkaian persendirian yang ditetapkan (cth: extranet, EDI)</b><br>
+			<i>Designated private network (e.g.: extranet, EDI)</i></td>
 			</tr></table>
 		</div><!-- class="col-4" -->
 		</div><!-- class="row justify-content-between" -->
@@ -170,11 +170,11 @@
 				<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
 				</tr></table>
 			</td>
-			<td><b>Perkhidmatan pembayaran elektronik</b><br>
-			<i>Payment gateway</i></td>
+			<td><b>Pasaran e-Dagang atas talian (cth: Lazada, Zalora)</b><br>
+			<i>Online e-Commerce marketplace (e.g.: Lazada, Zalora)</i></td>
 			</tr></table>
 		</div><!-- class="col-4" -->
-		<div class="col-4">
+		<div class="col-5">
 			<table><tr>
 			<td>F1507</td>
 			<td>
@@ -182,8 +182,8 @@
 				<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
 				</tr></table>
 			</td>
-			<td><b>Perkhidmatan pembayaran elektronik</b><br>
-			<i>Payment gateway</i></td>
+			<td><b> Aplikasi mudah alih (cth: Grab app, Lazada mobile app)</b><br>
+			<i>Mobile app (e.g.: Grab app, Lazada mobile app) </i></td>
 			</tr></table>
 		</div><!-- class="col-4" -->
 		</div><!-- class="row justify-content-between" -->
@@ -208,7 +208,7 @@
 			<i>Payment gateway</i></td>
 			</tr></table>
 		</div><!-- class="col-4" -->
-		<div class="col-4">
+		<div class="col-5">
 			<table><tr>
 			<td>F1509</td>
 			<td>
