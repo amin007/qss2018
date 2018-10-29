@@ -118,7 +118,9 @@
 	<td colspan="9">
 		<b>Sila nyatakan jenis platform yang digunakan oleh pertubuhan tuan bagi urusniaga menggunakan internet. (Boleh pilih lebih daripada satu)</b><br>
 		<i>Please indicate the type of platform of your establishment used for transactions using the internet. (May choose more than one)</i><br>
-		<b>Atas talian</b>/<i>Online</i>
+		<span class="badge badge-warning">
+		<strong>Atas talian</strong>/<i>Online</i> :
+		</span><!-- span class="badge badge-warning" -->
 		<div class="row justify-content-between">
 		<div class="col-4">
 			<table><tr>
@@ -134,7 +136,9 @@
 		</div><!-- class="col-4" -->
 		<div class="col-4"></div><!-- class="col-4" -->
 		</div><!-- class="row justify-content-between" -->
-		<strong>e_Dagang</strong>/<i>e-Dagang / e-Commerce: </i>
+		<span class="badge badge-warning">
+		<strong>e_Dagang</strong>/<i>e-Dagang / e-Commerce</i>:
+		</span><!-- span class="badge badge-warning" -->
 		<div class="row justify-content-between">
 		<div class="col-4">
 			<table><tr>
@@ -187,7 +191,6 @@
 			</tr></table>
 		</div><!-- class="col-4" -->
 		</div><!-- class="row justify-content-between" -->
-
 	</td>
 </tr>
 <tr>
