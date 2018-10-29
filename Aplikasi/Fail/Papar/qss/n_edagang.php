@@ -298,10 +298,13 @@ $suku = ( in_array($papar,array($ulang[3],$ulang[7])) ) ?
 <?php endforeach; ?>
 </tr>
 <tr>
-	<td>&nbsp;</td>
-	<td height="31" align="left" class="textdescrp1"><span class="textdescrp2">2.4 JUMLAH PERBELANJAAN</span></td>
+	<td><b>6.6</b></td>
+	<td align="left" class="textdescrp2">
+		<b>Jumlah perbelanjaan melalui transaksi e-Dagang</b><br>
+		<i>Total expenditure through e-Commerce transactions</i>
+	</td>
 <?php 
-$ulang = array('F0019a','F0019b','F0019c','F0019','F0020a','F0020b','F0020c','F0020');
+$ulang = array('F1516a','F1516b','F1516c','F1516','F1517a','F1517b','F1517c','F1517');
 foreach ($ulang as $papar):
 $jumlah = jumlah($this->bentukJadual01[0],$papar);
 $suku = ( in_array($papar,array($ulang[3],$ulang[7])) ) ?
