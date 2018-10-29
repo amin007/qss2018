@@ -93,7 +93,7 @@
 			<td>F1501</td>
 			<td>
 				<table border="1"><tr>
-				<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+				<td><?php echo paparData($this->bentukJadual01[0],'F1501'); ?></td>
 				</tr></table>
 			</td>
 			<td><b>YA</b> / <i>YES</i> <br> <b>Jika YA, sila ke Soalan 6.2</b> / <i>If YES, please go to Question 6.2</i></td>
@@ -106,7 +106,7 @@
 			<td>F1502</td>
 			<td>
 				<table border="1"><tr>
-				<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+				<td><?php echo paparData($this->bentukJadual01[0],'F1502'); ?></td>
 				</tr></table>
 			</td>
 			<td><b>TIDAK</b> / <i>NO</i> <br> <b>Jika TIDAK, TAMAT di sini.</b> / <i>If NO, END here</i></td>
