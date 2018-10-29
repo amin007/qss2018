@@ -78,15 +78,15 @@
 </tr>
 <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
 <tr>
-	<td><b>6.</b></td>
-	<td colspan="8">
+	<td valign="top"><b>6.</b></td>
+	<td colspan="9">
 		<b>PERKHIDMATAN ATAS TALIAN DAN e-DAGANG</b><br>
 		<i>ONLINE SERVICES AND e-COMMERCE</i>
 	</td>
 </tr>
 <tr>
 	<td valign="top"><b>6.1</b></td>
-	<td colspan="8">
+	<td colspan="9">
 		<b>Adakah pertubuhan tuan melakukan transaksi (jualan / pembelian) menggunakan internet?</b><br>
 		<i>Did your establishment conduct a transactions (sales / purchase) using the internet?</i>
 		<table><tr>
@@ -115,7 +115,7 @@
 </tr>
 <tr>
 	<td valign="top"><b>6.2</b></td>
-	<td colspan="8">
+	<td colspan="9">
 		<b>Sila nyatakan jenis platform yang digunakan oleh pertubuhan tuan bagi urusniaga menggunakan internet. (Boleh pilih lebih daripada satu)</b><br>
 		<i>Please indicate the type of platform of your establishment used for transactions using the internet. (May choose more than one)</i><br>
 		<b>Atas talian</b>/<i>Online</i>
@@ -192,7 +192,7 @@
 </tr>
 <tr>
 	<td valign="top"><b>6.3</b></td>
-	<td colspan="8">
+	<td colspan="9">
 		<b>Sila nyatakan medium pembayaran yang digunakan oleh pertubuhan tuan bagi urusniaga menggunakan internet.  (Boleh pilih lebih daripada satu)</b><br>
 		<i>Please indicate the method of payment of your establishment used for transactions using the internet. (May choose more than one)</i>
 		<div class="row justify-content-between">
@@ -321,3 +321,4 @@ $suku = ( in_array($papar,array($ulang[3],$ulang[7])) ) ?
 </table>
 <!-- ************************************************************************************************************************************ -->
 </form>
+<br><br><br><br><br>
