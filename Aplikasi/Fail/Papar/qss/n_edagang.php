@@ -240,13 +240,9 @@
 		<strong>Atas talian</strong>/<i>Online</i> :
 		</span><!-- span class="badge badge-warning" -->
 	</td>
-<?php 
-//$ulangSuku = array('Okt 2017','Nov 2017','Dis 2017','&nbsp;4S 2017','Jan 2018','Feb 2018','Mac 2018','&nbsp;1S 2018');
-//$ulangSuku = array('Jan 2018','Feb 2018','Mac 2018','&nbsp;1S 2018','Apr 2018','Mei 2018','Jun 2018','&nbsp;2S 2018');
-$ulangSuku = array('Apr 2018','Mei 2018','Jun 2018','&nbsp;2S 2018','Jul 2018','Ogo 2018','Sep 2018','&nbsp;3S 2018');
-//$ulangSuku = array('Jul 2018','Ogo 2018','Sep 2018','&nbsp;3S 2018','Okt 2018','Nov 2018','Dis 2018','&nbsp;4S 2018');
-foreach ($ulangSuku as $papar):?>
-	<td align="center"><?php echo $papar ?></td>
+<?php
+foreach (pilihBulan($this->suku) as $papar):?>
+	<td><div align="center"><?php echo $papar ?></div></td>
 <?php endforeach; ?>
 </tr>
 <tr>
