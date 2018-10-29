@@ -117,29 +117,77 @@
 	<td valign="top"><b>6.2</b></td>
 	<td colspan="8">
 		<b>Sila nyatakan jenis platform yang digunakan oleh pertubuhan tuan bagi urusniaga menggunakan internet. (Boleh pilih lebih daripada satu)</b><br>
-		<i>Please indicate the type of platform of your establishment used for transactions using the internet. (May choose more than one)</i>
-		<table><tr>
-			<td>F1501</td>
+		<i>Please indicate the type of platform of your establishment used for transactions using the internet. (May choose more than one)</i><br>
+		<b>Atas talian</b>/<i>Online</i>
+		<div class="row justify-content-between">
+		<div class="col-4">
+			<table><tr>
+			<td>F1503</td>
 			<td>
 				<table border="1"><tr>
 				<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
 				</tr></table>
 			</td>
-			<td><b>YA</b> / <i>YES</i> <br> <b>Jika YA, sila ke Soalan 6.2</b> / <i>If YES, please go to Question 6.2</i></td>
-			<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-			<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-			<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-			<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-			<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-			<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-			<td>F1502</td>
+			<td><b>Perkhidmatan pembayaran elektronik</b><br>
+			<i>Payment gateway</i></td>
+			</tr></table>
+		</div><!-- class="col-4" -->
+		<div class="col-4"></div><!-- class="col-4" -->
+		</div><!-- class="row justify-content-between" -->
+		<b>e_Dagang</b>/<i>e-Dagang / e-Commerce: </i>
+		<div class="row justify-content-between">
+		<div class="col-4">
+			<table><tr>
+			<td>F1504</td>
 			<td>
 				<table border="1"><tr>
 				<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
 				</tr></table>
 			</td>
-			<td><b>TIDAK</b> / <i>NO</i> <br> <b>Jika TIDAK, TAMAT di sini.</b> / <i>If NO, END here</i></td>
-		</tr></table>
+			<td><b>Perkhidmatan pembayaran elektronik</b><br>
+			<i>Payment gateway</i></td>
+			</tr></table>
+		</div><!-- class="col-4" -->
+		<div class="col-4">
+			<table><tr>
+			<td>F1506</td>
+			<td>
+				<table border="1"><tr>
+				<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+				</tr></table>
+			</td>
+			<td><b>Perkhidmatan pembayaran elektronik</b><br>
+			<i>Payment gateway</i></td>
+			</tr></table>
+		</div><!-- class="col-4" -->
+		</div><!-- class="row justify-content-between" -->
+		<div class="row justify-content-between">
+		<div class="col-4">
+			<table><tr>
+			<td>F1505</td>
+			<td>
+				<table border="1"><tr>
+				<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+				</tr></table>
+			</td>
+			<td><b>Perkhidmatan pembayaran elektronik</b><br>
+			<i>Payment gateway</i></td>
+			</tr></table>
+		</div><!-- class="col-4" -->
+		<div class="col-4">
+			<table><tr>
+			<td>F1507</td>
+			<td>
+				<table border="1"><tr>
+				<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+				</tr></table>
+			</td>
+			<td><b>Perkhidmatan pembayaran elektronik</b><br>
+			<i>Payment gateway</i></td>
+			</tr></table>
+		</div><!-- class="col-4" -->
+		</div><!-- class="row justify-content-between" -->
+
 	</td>
 </tr>
 <tr>
