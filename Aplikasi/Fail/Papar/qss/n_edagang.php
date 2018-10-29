@@ -71,7 +71,7 @@
 <!-- ************************************************************************************************************************************ -->
 <table width="99%" border="0" align="center" id="tbl2">
 <tr>
-	<td colspan="9" bgcolor="#FFFF99"><div align="center">
+	<td colspan="10" bgcolor="#FFFF99"><div align="center">
 	<b>BAHAGIAN E:  PERKHIDMATAN ATAS TALIAN DAN e-DAGANG</b><br>
 	<i>PART E: ONLINE SERVICES AND e-COMMERCE</i>
 	</b></div></td>
@@ -175,9 +175,9 @@
 <tr>
 	<td colspan="10" bgcolor="#FFFF99"><div align="center"><b>6.4</b></div></td>
 </tr>
-<tr>
+<tr bgcolor="#FFFF99">
 	<td>&nbsp;</td>
-	<td align="left" bgcolor="#FFFF99" class="textdescrp1"><strong>2. PERBELANJAAN</strong></td>
+	<td align="left" class="textdescrp1"><strong>2. PERBELANJAAN</strong></td>
 	<!-- td width="202" bgcolor="#FFFF99"><div align="center">Suku Tahun (4S 2017)<br />1 Oktober - 31 Disember 2017</div></td -->
 	<!-- td width="196" bgcolor="#FFFF99"><div align="center">Suku Tahun (1S 2018)<br />1 Januari - 31 Mac 2018</div></td -->
 <?php 
