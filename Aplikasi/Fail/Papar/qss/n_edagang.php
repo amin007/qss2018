@@ -242,7 +242,7 @@ foreach ($ulangSuku as $papar):?>
 </tr>
 <tr>
 	<td><b>6.4</b></td>
-	<td class="textdescrp2">
+	<td align="left" class="textdescrp2">
 		<b>Jumlah hasil yang diperoleh melalui transaksi atas talian</b><br>
 		<i>Total revenue earned from the online transactions</i>
 	</td>
@@ -260,12 +260,12 @@ $suku = ( in_array($papar,array($ulang[3],$ulang[7])) ) ?
 <?php endforeach; ?>
 </tr>
 <tr>
-	<td>&nbsp;</td>
-	<td align="left" class="textdescrp2">2.2 Perbelanjaan lain
-		<a href="nota/nota-2-3.php" onClick="return hs.htmlExpand(this, { objectType: 'iframe' } )">
-		<i class="fas fa-info-circle"></i></a>
+	<td><b>6.5</b></td>
+	<td align="left" class="textdescrp2">
+		<b>Jumlah perbelanjaan melalui transaksi  atas talian</b><br>
+		<i>Total expenditure through online transactions</i>
 	</td>
-<?php $ulang = array('F0015a','F0015b','F0015c','F0015','F0016a','F0016b','F0016c','F0016');
+<?php $ulang = array('F1512a','F1512b','F1512c','FF1512','F1513a','F1513b','F1513c','F1513');
 foreach ($ulang as $papar):
 $jumlah = jumlah($this->bentukJadual01[0],$papar);
 $suku = ( in_array($papar,array($ulang[3],$ulang[7])) ) ?
