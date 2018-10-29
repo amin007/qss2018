@@ -224,14 +224,13 @@
 	</td>
 </tr>
 <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
-<tr>
-	<td colspan="10" bgcolor="#FFFF99"><div align="center"><b>6.4</b></div></td>
-</tr>
+<tr><td colspan="10" bgcolor="#FFFF99" align="center">&nbsp;</td></tr>
+<tr><td colspan="10" bgcolor="#FFFF99" align="center">&nbsp;</td></tr>
 <tr bgcolor="#FFFF99">
-	<td>&nbsp;</td>
-	<td align="left" class="textdescrp1"><strong>2. PERBELANJAAN</strong></td>
-	<!-- td width="202" bgcolor="#FFFF99"><div align="center">Suku Tahun (4S 2017)<br />1 Oktober - 31 Disember 2017</div></td -->
-	<!-- td width="196" bgcolor="#FFFF99"><div align="center">Suku Tahun (1S 2018)<br />1 Januari - 31 Mac 2018</div></td -->
+	<td valign="top">&nbsp;</td>
+	<td>
+		<strong>Atas talian</strong>/<i>Online</i>
+	</td>
 <?php 
 //$ulangSuku = array('Okt 2017','Nov 2017','Dis 2017','&nbsp;4S 2017','Jan 2018','Feb 2018','Mac 2018','&nbsp;1S 2018');
 //$ulangSuku = array('Jan 2018','Feb 2018','Mac 2018','&nbsp;1S 2018','Apr 2018','Mei 2018','Jun 2018','&nbsp;2S 2018');
@@ -242,12 +241,12 @@ foreach ($ulangSuku as $papar):?>
 <?php endforeach; ?>
 </tr>
 <tr>
-	<td>&nbsp;</td>
-	<td align="left" class="textdescrp2">2.1 Perbelanjaan kendalian / Kos Jualan
-		<a href="nota/nota-2-1.php?b=01" onClick="return hs.htmlExpand(this, { objectType: 'iframe' } )">
-		<i class="fas fa-info-circle"></i></a>
+	<td><b>6.4</b></td>
+	<td class="textdescrp2">
+		<b>Jumlah hasil yang diperoleh melalui transaksi atas talian</b><br>
+		<i>Total revenue earned from the online transactions</i>
 	</td>
-<?php $ulang = array('F0013a','F0013b','F0013c','F0013','F0014a','F0014b','F0014c','F0014');
+<?php $ulang = array('F1510a','F1510b','F1510c','F1510','F1511a','F1511b','F1511c','FF1511');
 foreach ($ulang as $papar):
 $jumlah = jumlah($this->bentukJadual01[0],$papar);
 $suku = ( in_array($papar,array($ulang[3],$ulang[7])) ) ?
