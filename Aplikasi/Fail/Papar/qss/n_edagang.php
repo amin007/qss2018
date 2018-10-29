@@ -240,8 +240,7 @@
 		<strong>Atas talian</strong>/<i>Online</i> :
 		</span><!-- span class="badge badge-warning" -->
 	</td>
-<?php
-foreach(pilihBulan($this->suku) as $papar):?>
+<?php foreach(pilihBulan($this->suku) as $papar):?>
 	<td align="center"><?php echo $papar ?></td>
 <?php endforeach; ?>
 </tr>
