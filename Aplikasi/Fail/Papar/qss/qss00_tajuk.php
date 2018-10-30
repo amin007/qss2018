@@ -39,6 +39,7 @@
 	</td>
 	<td width="400" rowspan="4" align="left">
 		<table border="1" id="maklumat"><?php
+		if( isset($this->bentukJadual01[0]) && isset($this->bentukJadual02[0]) )
 		paparTR($this->bentukJadual01[0],$this->bentukJadual02[0]);
 		?></table>
 	</td>
