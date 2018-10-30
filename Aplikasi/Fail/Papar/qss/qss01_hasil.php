@@ -30,8 +30,11 @@ include 'dimenu-am.php';
 <!-- isi borang mula ########################################################################################################## -->
 <?php
 include 'kiraFungsi.php';
-list($respon,$newss,$nama_pertubuhan,$msic2008,$F1201,$fe,$utama,$subsektor,$alamat)
+if( isset($this->bentukJadual01[0]) && isset($this->bentukJadual02[0]) )
+	list($respon,$newss,$nama_pertubuhan,$msic2008,$F1201,$fe,$utama,$subsektor,$alamat)
 	= setNilaiAwal($this->bentukJadual01[0],$this->bentukJadual02[0]);
+else
+	$respon = $newss = $nama_pertubuhan = $msic2008 = $F1201 = $fe = $utama = $subsektor = $alamat = null;
 include 'qss00_tajuk.php';
 include 'n_borang2.php';
 ?>
