@@ -159,7 +159,7 @@ class Qss extends \Aplikasi\Kitab\Kawal
 		$cari = bersih($_POST['cari']);
 
 		# Pergi papar kandungan
-		$lokasi = 'qss/suku2/' . $cari;
+		$lokasi = 'qss/suku3/' . $cari;
 		//echo '<br>location: ' . URL . $lokasi;
 		header('location: ' . URL . $lokasi); //*/
 	}
