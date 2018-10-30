@@ -26,6 +26,7 @@ include 'dimenu-am.php';
 	<script  language='JavaScript' type='text/javascript' src='<?php echo $pautan?>js_file/js/validasi/a_internaluser.js'></SCRIPT>	
 </div>
 */
+?>
 <!-- isi borang mula ########################################################################################################## -->
 <?php
 include 'kiraFungsi.php';
