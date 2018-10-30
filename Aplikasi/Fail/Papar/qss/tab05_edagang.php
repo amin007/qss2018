@@ -7,7 +7,7 @@ $pautan = URL . 'sumber/rangka-dawai/qss/';
 //echo '<pre>'; print_r($this->bentukJadual02); echo '</pre>';
 //include 'diatas.php';
 include 'diatas-am.php';
-//include 'menu_atas.php';
+include 'dimenu-am.php';
 /*
 <div class="container_12">
 	<SCRIPT  language='JavaScript' type='text/javascript' src='<?php echo $pautan?>js_file/js/a_valid.js'></SCRIPT>
@@ -26,15 +26,6 @@ include 'diatas-am.php';
 	<script  language='JavaScript' type='text/javascript' src='<?php echo $pautan?>js_file/js/validasi/a_internaluser.js'></SCRIPT>	
 </div>
 */
-$sektor = (isset($this->_jadual)) ? $this->_jadual : null;
-$link[0]= URL . 'qss';
-$link[1]= 'https://qss.stats.gov.my/qssv2/pdf/pdf3.php?no_siri='
-. $this->dataID . '&sukutahun=' . $this->suku .'&tahun=2018';
-$link[2] = 'https://qss.stats.gov.my/qssv2/pagemenu.php?pref='
-. $this->suku . '&getSerial=' . $this->dataID . ''; ?>
-Sektor : <?php echo $sektor ?> | <a href="<?php echo $link[0] ?>">Anjung</a>
-| <a target="_blank" href="<?php echo $link[1] ?>"><?php echo 'PDF'//$link[1] ?></a>
-| <a target="_blank" href="<?php echo $link[2] ?>"><?php echo 'Suku 3'//$link[2] ?></a>
 <!-- isi borang mula ########################################################################################################## -->
 <?php
 include 'kiraFungsi.php';
