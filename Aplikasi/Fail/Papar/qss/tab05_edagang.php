@@ -40,6 +40,7 @@ Sektor : <?php echo $sektor ?> | <a href="<?php echo $link[0] ?>">Anjung</a>
 include 'kiraFungsi.php';
 list($respon,$newss,$nama_pertubuhan,$msic2008,$F1201,$fe,$utama,$subsektor,$alamat)
 	= setNilaiAwal($this->bentukJadual01[0],$this->bentukJadual02[0]);
+include 'qss00_tajuk.php';
 include 'n_edagang.php'; ?>
 <!-- isi borang tamat ########################################################################################################## -->
 
