@@ -137,7 +137,7 @@
 		<div class="col-4"></div><!-- class="col-4" -->
 		</div><!-- class="row justify-content-between" -->
 		<span class="badge badge-warning">
-		<strong>e_Dagang</strong>/<i>e-Dagang / e-Commerce</i>:
+		<strong>e-Dagang</strong>/<i>e-Commerce</i>:
 		</span><!-- span class="badge badge-warning" -->
 		<div class="row justify-content-between">
 		<div class="col-4">
@@ -285,7 +285,7 @@ $suku = kiraJika($ulang,$this->bentukJadual01[0],$papar);
 	<td valign="top">&nbsp;</td>
 	<td>
 		<span class="badge badge-warning">
-		<strong>e_Dagang</strong>/<i>e-Dagang / e-Commerce</i>:
+		<strong>e-Dagang</strong>/<i>e-Commerce</i>:
 		</span><!-- span class="badge badge-warning" -->
 	</td>
 	<td colspan="8">&nbsp;</td>
