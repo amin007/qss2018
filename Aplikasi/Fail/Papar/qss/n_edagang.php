@@ -186,7 +186,6 @@ foreach ($ulang as $papar):
 $jumlah = jumlah($this->bentukJadual01[0],$papar);
 $suku = kiraJika($ulang,$this->bentukJadual01[0],$papar);
 ?>
-?>
 	<td align="left"><?php echo $suku ?><br>
 		<input type="text" id="<?php echo $papar ?>" style="width:120px;text-align:right;"
 		value="<?php echo $jumlah ?>"
