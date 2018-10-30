@@ -20,8 +20,11 @@
 //$ulang = array('F0007a','F0007b','F0007c','F0007d','F0008a','F0008b','F0008c','F0008d');
 $ulang = array('F0007a','F0007b','F0007c','F0007','F0008a','F0008b','F0008c','F0008');
 foreach ($ulang as $papar):
-$jumlah = jumlah($this->bentukJadual01[0],$papar);
-$suku = kiraJika($ulang,$this->bentukJadual01[0],$papar);
+if( isset($this->bentukJadual01[0]) ):
+	$jumlah = jumlah($this->bentukJadual01[0],$papar);
+	$suku = kiraJika($ulang,$this->bentukJadual01[0],$papar);
+else: $jumlah = $suku = '0000';
+endif;
 ?>
 	<td align="left"><?php echo $suku ?><br>
 		<input type="text" id="<?php echo $papar ?>" style="width:120px;text-align:right;"
