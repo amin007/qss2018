@@ -1,3 +1,4 @@
+<?php if( isset($this->bentukJadual01[0]) ): ?>
 <form id="form1" name="form1" method="post" action="pengguna_dalam/kemaskini/borang/borangA_proses.php">
 <!-- ************************************************************************************************************************************ -->
 <table width="99%" border="0" align="center" id="tbl2">
@@ -20,11 +21,8 @@
 //$ulang = array('F0007a','F0007b','F0007c','F0007d','F0008a','F0008b','F0008c','F0008d');
 $ulang = array('F0007a','F0007b','F0007c','F0007','F0008a','F0008b','F0008c','F0008');
 foreach ($ulang as $papar):
-if( isset($this->bentukJadual01[0]) ):
-	$jumlah = jumlah($this->bentukJadual01[0],$papar);
-	$suku = kiraJika($ulang,$this->bentukJadual01[0],$papar);
-else: $jumlah = $suku = '0000';
-endif;
+$jumlah = jumlah($this->bentukJadual01[0],$papar);
+$suku = kiraJika($ulang,$this->bentukJadual01[0],$papar);
 ?>
 	<td align="left"><?php echo $suku ?><br>
 		<input type="text" id="<?php echo $papar ?>" style="width:120px;text-align:right;"
@@ -229,12 +227,16 @@ $jumlah = jumlah($this->bentukJadual01[0],$papar);
 </tr>
 </table>
 <?php
-$ulang = stafGaji('Staf &  Gaji',$this->bentukJadual01[0]);
-//echo '<pre>'; print_r($ulang); echo '</pre>';
-$html = new \Aplikasi\Kitab\Html_Table;
-foreach ($ulang as $myTable => $row):
-	$html->papar_jadual($row, $myTable, $pilih = '1', $classTable = null);
-endforeach;//*/
+	$ulang = stafGaji('Staf &  Gaji',$this->bentukJadual01[0]);
+	//echo '<pre>'; print_r($ulang); echo '</pre>';
+	$html = new \Aplikasi\Kitab\Html_Table;
+	foreach ($ulang as $myTable => $row):
+		$html->papar_jadual($row, $myTable, $pilih = '1', $classTable = null);
+	endforeach;//*/
+
+# jika $this->bentukJadual01[0] tidak wujud
+else: echo "\n" . '<hr>Data tidak wujud<hr>' . "\n";
+endif;
 ?>
 
 <div class='menu1' style='display: none'>
