@@ -108,7 +108,8 @@ class Cari_Tanya extends \Aplikasi\Kitab\Tanya
 		else:
 			foreach ($post['pilih'] as $key=>$cari)
 			{	//echo "\r$key => $cari ($myTable)| ";
-				$carian[] = $this->bentukCarian2($myTable, $post, $key, $cari);
+				$carian[] = $this->bentukCarian1($myTable, $post, $key, $cari);
+				//$carian[] = $this->bentukCarian2($myTable, $post, $key, $cari);
 				$cariID = $cari;
 			}
 		endif; //echo '<pre>$carian->'; print_r($carian); echo '</pre>';
@@ -119,6 +120,7 @@ class Cari_Tanya extends \Aplikasi\Kitab\Tanya
 	function bentukCarian1($myTable, $post, $key, $m0)
 	{
 		list($f1, $at, $m1, $m2, $apa) = $this->bentukPembolehubah($post, $key, $m0);
+		echo '<hr>$f1='.$f1.', $at='.$at.', $m1='.$m1.', $m2='.$m2.', $apa='.$apa.'<hr>';
 		if($myTable=='msic2008')
 		{
 			if ($m0=='msic')
@@ -136,11 +138,12 @@ class Cari_Tanya extends \Aplikasi\Kitab\Tanya
 	function bentukCarian2($myTable, $post, $key, $m0)
 	{
 		list($f1, $at, $m1, $m2, $apa) = $this->bentukPembolehubah($post, $key, $m0);
+		//echo '<hr>$f1='.$f1.', $at='.$at.', $m1='.$m1.', $m2='.$m2.', $apa='.$apa.'<hr>';
 		$carian = ($myTable=='msic2008') ?
 		( ($m0=='msic') ?
 			array('fix'=>$f1,'atau'=>$at,'medan'=>$m1,'apa'=>$apa)
 			: array('fix'=>$f1,'atau'=>$at,'medan'=>$m2,'apa'=>$apa) )
-			: array('fix'=>'%like%','atau'=>$at,'medan'=>$m0,'apa'=>$apa);
+			: array('fix'=>$f1,'atau'=>$at,'medan'=>$m0,'apa'=>$apa);
 		return $carian;
 	}
 #---------------------------------------------------------------------------------------------------#
