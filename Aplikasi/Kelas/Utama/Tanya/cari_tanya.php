@@ -101,6 +101,7 @@ class Cari_Tanya extends \Aplikasi\Kitab\Tanya
 	{
 		//echo '<hr>Nama class :' . __METHOD__ . '()<hr>';
 		//echo '<pre>$post->'; print_r($post); echo '</pre>';
+		echo '<pre>$_POST->'; print_r($_POST); echo '</pre>';
 		$carian = null; //' WHERE ' . $medan . ' like %:cariID% ', array(':cariID' => $cariID));
 		if($_POST==null || empty($_POST) ):
 			$carian .= null;
