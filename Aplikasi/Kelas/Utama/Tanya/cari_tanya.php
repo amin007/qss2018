@@ -97,6 +97,18 @@ class Cari_Tanya extends \Aplikasi\Kitab\Tanya
 		return array($f, $at, $m1, $m2, $apa);
 	}
 #---------------------------------------------------------------------------------------------------#
+	function bentukPembolehubah2($post, $key, $m0)
+	{
+		//echo '<hr>Nama class :' . __METHOD__ . '()<hr>';
+		$fx = isset($post['fix'][$key]) ? $post['fix'][$key] : null;
+		$f = ($fx=='x') ? 'x=' : '%like%';
+		$at = isset($post['atau'][$key]) ? $post['atau'][$key] : 'WHERE';
+		$m1 = $m2 = null;
+		$apa = isset($post['cari'][$key]) ? $post['cari'][$key] : null;
+
+		return array($f, $at, $m1, $m2, $apa);
+	}
+#---------------------------------------------------------------------------------------------------#
 	function bentukCarian($post, $myTable)
 	{
 		//echo '<hr>Nama class :' . __METHOD__ . '()<hr>';
@@ -119,18 +131,24 @@ class Cari_Tanya extends \Aplikasi\Kitab\Tanya
 #---------------------------------------------------------------------------------------------------#
 	function bentukCarian1($myTable, $post, $key, $m0)
 	{
-		list($f1, $at, $m1, $m2, $apa) = $this->bentukPembolehubah($post, $key, $m0);
-		echo '<hr>$f1='.$f1.', $at='.$at.', $m1='.$m1.', $m2='.$m2.', $apa='.$apa.'<hr>';
+		//echo '<hr>$at='.$at.', $m1='.$m1.', $m2='.$m2.',<hr>';
 		if($myTable=='msic2008')
 		{
+			list($f1, $at, $m1, $m2, $apa) = $this->bentukPembolehubah($post, $key, $m0);
 			if ($m0=='msic')
 				$carian = array('fix'=>$f1,'atau'=>$at,'medan'=>$m1,'apa'=>$apa);
 			else
 				$carian = array('fix'=>$f1,'atau'=>$at,'medan'=>$m2,'apa'=>$apa);
 		}
+		elseif($myTable=='JOHOR')
+		{
+			list($f1, $at, $m1, $m2, $apa) = $this->bentukPembolehubah2($post, $key, $m0);
+			echo '<hr>$myTable='.$myTable.'|$f1='.$f1.'|$m0='.$m0.'|$apa='.$apa.'<hr>';
+			$carian = array('fix'=>$f1,'atau'=>$at,'medan'=>$m0,'apa'=>$apa);
+		}//*/
 		else
 		{
-			$carian = array('fix'=>'%like%','atau'=>$at,'medan'=>$m0,'apa'=>$apa);
+			$carian = array('fix'=>$f1,'atau'=>$at,'medan'=>$m0,'apa'=>$apa);
 		}//*/
 		return $carian;
 	}
