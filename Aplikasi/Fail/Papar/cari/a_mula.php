@@ -135,7 +135,7 @@ for ( $u = 2 ; $u <= $ulang ; $u++ )
 	<div class="col-sm-<?php echo $saizLabel?>">
 		<div class="input-group">
 			<span class="input-group-addon">
-				<input type="radio" name="ikut">ASC
+				<input type="radio" name="ikut" value="ASC">ASC
 				<input type="radio" name="ikut" value="DESC">DESC
 				<br><br>LIMIT
 			</span>
