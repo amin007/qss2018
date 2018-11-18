@@ -143,12 +143,12 @@ class Cari_Tanya extends \Aplikasi\Kitab\Tanya
 		elseif($myTable=='JOHOR')
 		{
 			list($f1, $at, $m1, $m2, $apa) = $this->bentukPembolehubah2($post, $key, $m0);
-			echo '<hr>$myTable='.$myTable.'|$f1='.$f1.'|$m0='.$m0.'|$apa='.$apa.'<hr>';
+			//echo '<hr>$myTable='.$myTable.'|$f1='.$f1.'|$m0='.$m0.'|$apa='.$apa.'<hr>';
 			$carian = array('fix'=>$f1,'atau'=>$at,'medan'=>$m0,'apa'=>$apa);
 		}//*/
 		else
 		{
-			$carian = array('fix'=>$f1,'atau'=>$at,'medan'=>$m0,'apa'=>$apa);
+			$carian = array('fix'=>'%like%','atau'=>$at,'medan'=>$m0,'apa'=>$apa);
 		}//*/
 		return $carian;
 	}
