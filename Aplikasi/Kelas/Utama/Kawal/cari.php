@@ -149,8 +149,8 @@ class Cari extends \Aplikasi\Kitab\Kawal
 		echo '<pre>'; # semak output
 		echo 'Patah balik ke ' . $lokasi . '/' . $namajadual . '<hr>';
 		echo '$mesej = ' . $mesej . '';
-		echo '<br>$this->papar->carian :'; $this->semakRujuk($this->papar->carian);
-		echo '<br>$this->papar->senarai:'; $this->semakRujuk($this->papar->senarai);
+		echo '<br>$this->papar->carian :'; print_r($this->papar->carian);
+		echo '<br>$this->papar->senarai:'; print_r($this->papar->senarai);
 		echo '</pre>';
 	}
 #------------------------------------------------------------------------------------------
