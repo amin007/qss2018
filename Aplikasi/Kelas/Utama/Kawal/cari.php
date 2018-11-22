@@ -312,8 +312,8 @@ class Cari extends \Aplikasi\Kitab\Kawal
 				$medanAsal : $medanBaru;
 			list($carian,$cariID) = $this->tanya->bentukCarian($_POST['jika'], $myTable);
 			$this->papar->senarai[$myTable] = $this->tanya->
-				//cariSql("$jadual\r", $medan, $carian, $susun);
-				cariSemuaData("$jadual\r", $medan, $carian, $susun);
+				cariSql("$jadual\r", $medan, $carian, $susun);
+				//cariSemuaData("$jadual\r", $medan, $carian, $susun);
 		}# tamat ulang table//*/
 
 		$this->papar->carian = $cari;
