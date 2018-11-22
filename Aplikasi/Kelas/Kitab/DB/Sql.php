@@ -76,18 +76,16 @@ class Sql
 	{
 		$jika = null; //echo "\r($fix) +> $di $medan -> '$cariApa' |";
 		//array('or(x=)','or(%like%)')
+		$pecah = explode('|', $medan);
 		if($fix=='or(x=)') //" $di (`$cari`='$apa' OR msic2000='$apa')\r" :
-		{	$pecah = explode('|', $medan);
-			$jika .= " $di(`" . $pecah[0] . "` = '$cariApa' "
-			. " OR `" . $pecah[1] . "` = '$cariApa')\r";	}
+			$jika .= " $di(`" . $pecah[0] . "` = '$cariApa'"
+			. " OR `" . $pecah[1] . "` = '$cariApa')\r";
 		elseif($fix=='or2(x=)')
-		{	$pecah = explode('|', $medan);
 			$jika .= " $di(" . $pecah[0] . " = '$cariApa'"
-			. " OR " . $pecah[1] . " = '$cariApa')\r";	}
+			. " OR " . $pecah[1] . " = '$cariApa')\r";
 		elseif($fix=='or(%like%)')
-		{	$pecah = explode('|', $medan);
-			$jika .= " $di(`" . $pecah[0] . "` like '%$cariApa%' "
-			. " OR `" . $pecah[1] . "` like '%$cariApa%')\r";	}
+			$jika .= " $di(`" . $pecah[0] . "` like '%$cariApa%'"
+			. " OR `" . $pecah[1] . "` like '%$cariApa%')\r";
 
 		return $jika; //echo '<br>' . $jika;
 	}
