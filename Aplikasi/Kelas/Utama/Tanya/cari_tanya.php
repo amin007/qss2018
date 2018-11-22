@@ -131,10 +131,10 @@ class Cari_Tanya extends \Aplikasi\Kitab\Tanya
 #---------------------------------------------------------------------------------------------------#
 	function bentukCarian1($myTable, $post, $key, $m0)
 	{
-		//echo '<hr>$at='.$at.', $m1='.$m1.', $m2='.$m2.',<hr>';
 		if($myTable=='msic2008')
 		{
 			list($f1, $at, $m1, $m2, $apa) = $this->bentukPembolehubah($post, $key, $m0);
+			//echo '<hr>$at='.$at.', $m1='.$m1.', $m2='.$m2.',<hr>';
 			if ($m0=='msic')
 				$carian = array('fix'=>$f1,'atau'=>$at,'medan'=>$m1,'apa'=>$apa);
 			else
