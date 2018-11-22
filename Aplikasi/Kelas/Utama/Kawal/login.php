@@ -73,9 +73,9 @@ class Login extends \Aplikasi\Kitab\Kawal
 		$this->tanya->tambahBanyakNilai($myTable, $medan, $senaraiData); 
 		//$this->log_sql($myTable, $medan, $senaraiData);
 		# Semak data
-			//echo '<pre>$_POST='; print_r($_POST) . '</pre>';
-			//echo '<pre>$posmen='; print_r($posmen) . '</pre>';
-			//echo '<pre>$senaraiData='; print_r($senaraiData) . '</pre>';
+			//echo '<pre>$_POST='; print_r($_POST); echo '</pre>';
+			//echo '<pre>$posmen='; print_r($posmen); echo '</pre>';
+			//echo '<pre>$senaraiData='; print_r($senaraiData); echo '</pre>';
 
 		# Pergi papar kandungan
 		//echo '<br>location: ' . URL . $this->_folder . '/rangkabaru/selesai';
