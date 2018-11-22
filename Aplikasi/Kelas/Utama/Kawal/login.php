@@ -60,7 +60,7 @@ class Login extends \Aplikasi\Kitab\Kawal
 	function registerid()
 	{
 		# debug $_POST
-		//echo '<pre>Test $_POST->'; print_r($_POST) . '</pre>';
+		//echo '<pre>Test $_POST->'; print_r($_POST); echo '</pre>';
 
 		# Set pemboleubah utama
 		list($myTable, $medan01, $medan02, $medan) = dpt_senarai('jadual_login');
@@ -100,7 +100,7 @@ class Login extends \Aplikasi\Kitab\Kawal
 	function semakid()
 	{
 		# debug $_POST
-		//echo '<pre>Test $_POST->'; print_r($_POST) . '</pre>';
+		//echo '<pre>Test $_POST->'; print_r($_POST); echo '</pre>';
 
 		# semak data $this->tanya->ujiID(); 
 		//$this->tanya->semakid();
