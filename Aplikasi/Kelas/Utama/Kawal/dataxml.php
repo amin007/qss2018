@@ -194,7 +194,7 @@ class Dataxml extends \Aplikasi\Kitab\Kawal
 		//echo 'location: ' . URL . 'akaun/ubah/' . $paparID;
 		header('location: ' . URL . 'akaun/ubah/' . $paparID); //*/
 	}
-
+#---------------------------------------------------------------------------------------------------
 	function pecah5P($myTable, $posmen) 
 	{
 		$pecah5P = $posmen[$myTable]['pecah5P']; 
@@ -228,7 +228,7 @@ class Dataxml extends \Aplikasi\Kitab\Kawal
 
 		return $posmen; # pulangkan nilai
 	}
-
+#---------------------------------------------------------------------------------------------------
 	function buang($id) 
 	{
 		if (!empty($id)) 
@@ -250,5 +250,8 @@ class Dataxml extends \Aplikasi\Kitab\Kawal
 		//$this->semakPembolehubah(); # Semak data dulu
 		$this->paparKandungan($this->_folder, 'buang', $noInclude=1); # $noInclude=0
 	}
+#---------------------------------------------------------------------------------------------------
+#---------------------------------------------------------------------------------------------------
+#==================================================================================================================
 #==================================================================================================================
 }
