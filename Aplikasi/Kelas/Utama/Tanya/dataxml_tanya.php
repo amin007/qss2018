@@ -320,7 +320,13 @@ class Dataxml_Tanya extends \Aplikasi\Kitab\Tanya
 		'TAMAN UNGKU TUN AMINAH','TAMAN UNIVERSITI, SKUDAI','TAMAN USAHAWAN KEPONG UTARA','TAMAN UTAMA','TAMAN WANGSA PERMAI',
 		'TANDA DAN ','TMN PUTRA','TONGKANG PECAH','TRAINING ','TRANSPORTATION SERVICES','USJ 1','WANGSA MELAWATI','WEDDING PLANNER'
 		);
-/*
+
+		return $data;
+	}
+#----------------------------------------------------------------------------------------------------------#
+	public function susunDataMysql2()
+	{
+		/*
 (BROKERAGE FOR SHIP AND AIRCRA	2
 (CAMPING GROUNDS/SITES AND REC	2
 (CONSTRUCTION OF OTHER ENGINEE	2
