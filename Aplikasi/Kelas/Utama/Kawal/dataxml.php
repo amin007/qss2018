@@ -108,7 +108,7 @@ class Dataxml extends \Aplikasi\Kitab\Kawal
 	private function debug($paparData = null, $paparCarian = null) 
 	{
 		// $this->debug($this->papar->dataCantum, $this->papar->carian) # semak data
-		echo '<pre>'; 
+		echo '<pre>';
 		echo '$this->papar->dataCantum:<br>'; print_r($paparData);
 		echo '<br>$this->papar->carian:'; print_r($paparCarian);
 		echo '</pre>';
@@ -257,10 +257,26 @@ class Dataxml extends \Aplikasi\Kitab\Kawal
 	{
 		$ulangan = $this->tanya->susunDataMysql();
 
+		echo '<pre>';
 		foreach($ulangan as $papar):
-			echo "\rDELETE FROM ssmrob_info2 ".
-			"WHERE vchregistrationnumber = '$papar'";
+			echo "DELETE FROM ssmrob_info2 ".
+			"WHERE vchregistrationnumber = '$papar';\r";
 		endforeach;
+		echo "\r\r";
+		echo '</pre>';
+	}
+#---------------------------------------------------------------------------------------------------
+	function ulangDataMysql2()
+	{
+		$ulangan = $this->tanya->susunDataMysql2();
+
+		echo '<pre>';
+		foreach($ulangan as $papar):
+			echo "DELETE FROM ssmrob_info2 ".
+			"WHERE vchregistrationnumber = '$papar';\r";
+		endforeach;
+		echo "\r\r";
+		echo '</pre>';
 	}
 #---------------------------------------------------------------------------------------------------
 #==================================================================================================================
