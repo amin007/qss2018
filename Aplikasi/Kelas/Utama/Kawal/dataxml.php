@@ -275,7 +275,7 @@ class Dataxml extends \Aplikasi\Kitab\Kawal
 			echo "DELETE FROM ssmrob_info2 ".
 			"WHERE vchregistrationnumber = '$papar';\r";
 		endforeach;
-		echo "\r\r";
+		echo "\r\r.";
 		echo '</pre>';
 	}
 #---------------------------------------------------------------------------------------------------
