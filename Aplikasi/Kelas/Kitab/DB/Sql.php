@@ -201,11 +201,11 @@ class Sql
 	private function atur($mengira,$kumpul,$order,$dari,$max)
 	{
 		$susunan = "\r";
-			if ($kumpul!=null) $susunan .= " GROUP BY $kumpul\r";
-			if ($mengira!=null)$susunan .= " $mengira\r";
-			if ($order!=null)  $susunan .= " ORDER BY $order\r";
-			if ($max!=null)    $susunan .= ($dari==0) ? 
-				" LIMIT $max\r" : " LIMIT $dari,$max\r";
+		if ($kumpul!=null) $susunan .= " GROUP BY $kumpul\r";
+		if ($mengira!=null)$susunan .= " $mengira\r"; # HAVING c > 1
+		if ($order!=null)  $susunan .= " ORDER BY $order\r";
+		if ($max!=null)    $susunan .= ($dari==0) ?
+			" LIMIT $max\r" : " LIMIT $dari,$max\r";
 
 		return $susunan; //echo '<pre>$susunan:'; print_r($susunan); echo '</pre>';				
 	}
