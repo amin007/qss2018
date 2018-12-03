@@ -202,7 +202,7 @@ class Sql
 	{
 		$susunan = "\r";
 		if ($kumpul!=null) $susunan .= " GROUP BY $kumpul\r";
-		if ($mengira!=null)$susunan .= " $mengira\r"; # HAVING c > 1
+		if ($mengira!=null)$susunan .= " HAVING $mengira\r"; # HAVING c > 1
 		if ($order!=null)  $susunan .= " ORDER BY $order\r";
 		if ($max!=null)    $susunan .= ($dari==0) ?
 			" LIMIT $max\r" : " LIMIT $dari,$max\r";
