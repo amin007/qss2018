@@ -2,17 +2,17 @@
 namespace Aplikasi\Tanya; //echo __NAMESPACE__; 
 class Dataxml_Tanya extends \Aplikasi\Kitab\Tanya
 {
-#==========================================================================================
-#---------------------------------------------------------------------------------------------------#
+#===========================================================================================================
+#----------------------------------------------------------------------------------------------------------#
 	public function __construct() { parent::__construct(); }
-#---------------------------------------------------------------------------------------------------#
+#----------------------------------------------------------------------------------------------------------#
 	public function medanUbah2($cariID)
 	{
 		$senaraiMedan = 'no,Nama_Penuh nama,email,nohp';
 
 		return $senaraiMedan; # pulangkan pemboleubah
 	}
-#---------------------------------------------------------------------------------------------------#
+#----------------------------------------------------------------------------------------------------------#
 	public function tatasusunanCariID($jadual, $medan, $cari, $susun) 
 	{
 		# ada nilai
@@ -31,7 +31,7 @@ class Dataxml_Tanya extends \Aplikasi\Kitab\Tanya
 
 		return $hasil; # pulangkan pemboleubah
 	}
-#---------------------------------------------------------------------------------------------------#
+#----------------------------------------------------------------------------------------------------------#
 	public function tatasusunanCariMFG($jadual, $medan, $cari, $susun)
 	{
 		# ada nilai
@@ -48,7 +48,7 @@ class Dataxml_Tanya extends \Aplikasi\Kitab\Tanya
 
 		return $hasil; # pulangkan pemboleubah
 	}
-#---------------------------------------------------------------------------------------------------#
+#----------------------------------------------------------------------------------------------------------#
 	public function tatasusunanCariPPT($jadual, $medan, $cari, $susun)
 	{
 		# ada nilai
@@ -65,7 +65,7 @@ class Dataxml_Tanya extends \Aplikasi\Kitab\Tanya
 
 		return $hasil; # pulangkan pemboleubah
 	}
-#---------------------------------------------------------------------------------------------------#
+#----------------------------------------------------------------------------------------------------------#
 	public function tatasusunanUbah2A($jadual, $medan, $cari, $susun) 
 	{
 		# ada nilai - cantum semua tatasusunan dalam satu
@@ -125,7 +125,7 @@ class Dataxml_Tanya extends \Aplikasi\Kitab\Tanya
 
 		return $hasil; # pulangkan pemboleubah
 	}
-#---------------------------------------------------------------------------------------------------#
+#----------------------------------------------------------------------------------------------------------#
 	public function medanUbah($cariID) 
 	{
 		# Set pemboleubah
@@ -160,7 +160,7 @@ class Dataxml_Tanya extends \Aplikasi\Kitab\Tanya
 		# pulangkan pemboleubah
 		return $senaraiMedan;
 	}
-#---------------------------------------------------------------------------------------------------#
+#----------------------------------------------------------------------------------------------------------#
 	public function semakPost($senarai, $nilaiRM, $medanID, $dataID) 
 	{
         foreach ($_POST as $myTable => $value)
@@ -176,7 +176,7 @@ class Dataxml_Tanya extends \Aplikasi\Kitab\Tanya
 
 		return $posmen; # pulangkan nilai
 	}
-#---------------------------------------------------------------------------------------------------#
+#----------------------------------------------------------------------------------------------------------#
 	public function semakPosmen($posmen, $jadual) 
 	{
 		# valid guna gelung foreach
@@ -217,7 +217,7 @@ class Dataxml_Tanya extends \Aplikasi\Kitab\Tanya
 
 		return $posmen; # pulangkan nilai
 	}
-#---------------------------------------------------------------------------------------------------#
+#----------------------------------------------------------------------------------------------------------#
 	public function medanCari($cariID) 
 	{ 
 		# Set pemboleubah untuk sql
@@ -236,7 +236,7 @@ class Dataxml_Tanya extends \Aplikasi\Kitab\Tanya
 		# pulangkan pemboleubah
 		return $senaraiMedan;
 	}
-#---------------------------------------------------------------------------------------------------#
+#----------------------------------------------------------------------------------------------------------#
 	public function medanCari2($cariID) 
 	{ 
 		# Set pemboleubah untuk sql
@@ -253,7 +253,7 @@ class Dataxml_Tanya extends \Aplikasi\Kitab\Tanya
 		# pulangkan pemboleubah
 		return $senaraiMedan;
 	}
-#---------------------------------------------------------------------------------------------------#
+#----------------------------------------------------------------------------------------------------------#
 	public function tukar_data_xml($dataCantum,$xml_user_info)
 	{
 		# function call to convert array to xml
@@ -280,6 +280,6 @@ class Dataxml_Tanya extends \Aplikasi\Kitab\Tanya
 		}
 		//*/
 	}
-#---------------------------------------------------------------------------------------------------#
-#==========================================================================================
+#----------------------------------------------------------------------------------------------------------#
+#===========================================================================================================
 }
