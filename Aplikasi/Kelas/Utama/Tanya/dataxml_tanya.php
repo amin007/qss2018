@@ -76,7 +76,8 @@ class Dataxml_Tanya extends \Aplikasi\Kitab\Tanya
 						'msic2000' => '93099p',
 						'msic' => '96094',
 						'keterangan' => 'Perkhidmatan jagaan haiwan(2)',
-						'notakaki' => '(2) Termasuk: penumpangan, perapian, mendudukkan dan melatih binatang peliharaan',
+						'notakaki' => '(2) Termasuk: penumpangan, perapian, mendudukkan '
+						. 'dan melatih binatang peliharaan',
 					),
 				),
 			'msic_v1' => array (
@@ -85,8 +86,10 @@ class Dataxml_Tanya extends \Aplikasi\Kitab\Tanya
 						'kp' => '85',
 						'staf' => NULL,
 						'keterangan' => 'Perkhidmatan jagaan haiwan',
-						'notakaki' => 'Pet care services INCLUDE boarding, grooming, sitting and training pets '
-								. 'NOT INCLUDE veterinary activities, see 7500 activities of fitness centres, see 93118',
+						'notakaki' => 'Pet care services INCLUDE boarding, grooming, '
+						. 'sitting and training pets '
+						. 'NOT INCLUDE veterinary activities, see 7500 activities of '
+						. 'fitness centres, see 93118',
 					),
 			),
 			'msic_bandingan' => array (
@@ -152,7 +155,8 @@ class Dataxml_Tanya extends \Aplikasi\Kitab\Tanya
 			. ' 	concat_ws("="," nofax",nofax)' . "\r"
  			. ' ) as dataHubungi,'
 			. 'concat_ws(" ",alamat1,alamat2,poskod,bandar) as alamat,' . "\r"
-			//. 'concat_ws(" ",no,batu,( if (jalan is null, "", concat("JALAN ",jalan) ) ),tmn_kg,poskod,dp_baru) alamat_baru,' . "\r"
+			//. 'concat_ws(" ",no,batu,( if (jalan is null, "", concat("JALAN ",jalan) ) ),'
+			//. 'tmn_kg,poskod,dp_baru) alamat_baru,' . "\r"
 			. 'tel,notel,fax,nofax,responden,orang,email,esurat,'
 			. 'hasil,belanja,gaji,aset,staf,stok' . "\r" 
 			. '';
