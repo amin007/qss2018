@@ -3,6 +3,7 @@ namespace Aplikasi\Kawal; //echo __NAMESPACE__;
 class Dataxml extends \Aplikasi\Kitab\Kawal
 {
 #====================================================================================================
+##------------------------------------------------------------------------------------------
 	public function __construct()
 	{
 		parent::__construct();
@@ -10,9 +11,9 @@ class Dataxml extends \Aplikasi\Kitab\Kawal
 		\Aplikasi\Kitab\Kebenaran::kawalKeluar();
 		$this->_folder = huruf('kecil', namaClass($this));
 	}
-
+##------------------------------------------------------------------------------------------
 	public function index() { echo '<br>class Akaun::index() extend Kawal<br>'; }
-
+##------------------------------------------------------------------------------------------
 	public function paparKandungan($folder, $fail, $noInclude)
 	{	
 		//$theme = array(0,1,2,3,4);
@@ -27,13 +28,14 @@ class Dataxml extends \Aplikasi\Kitab\Kawal
 			//'mobile/mobile',$jenis,0); # $noInclude=0
 		//*/
 	}
-
+##------------------------------------------------------------------------------------------
 	public function semakPembolehubah($senarai)
 	{
 		echo '<pre>$senarai:<br>';
 		print_r($senarai);
 		echo '</pre>|';//*/
 	}
+##------------------------------------------------------------------------------------------
 #====================================================================================================
 #---------------------------------------------------------------------------------------------------
 	public function papar($jadual = null, $cariID = null)
