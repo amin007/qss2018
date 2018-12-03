@@ -251,6 +251,15 @@ class Dataxml extends \Aplikasi\Kitab\Kawal
 		$this->paparKandungan($this->_folder, 'buang', $noInclude=1); # $noInclude=0
 	}
 #---------------------------------------------------------------------------------------------------
+	function ulangDataMysql()
+	{
+		$ulangan = $this->tanya->susunDataMysql();
+
+		foreach($ulangan as $papar):
+			echo "\rDELETE FROM ssmrob_info2 ".
+			"WHERE vchregistrationnumber = '$papar'";
+		endforeach;
+	}
 #---------------------------------------------------------------------------------------------------
 #==================================================================================================================
 #==================================================================================================================
