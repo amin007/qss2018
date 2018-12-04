@@ -253,27 +253,27 @@ class Dataxml extends \Aplikasi\Kitab\Kawal
 		$this->paparKandungan($this->_folder, 'buang', $noInclude=1); # $noInclude=0
 	}
 #---------------------------------------------------------------------------------------------------
-	function ulangDataMysql($myTable)
+	function ulangDataMysql($myTable,$myID)
 	{
 		$ulangan = $this->tanya->susunDataMysql();
 
 		echo '<pre>';
 		foreach($ulangan as $papar):
 			echo "DELETE FROM $myTable ".
-			"WHERE vchregistrationnumber = '$papar';\r";
+			"WHERE $myID = '$papar';\r";
 		endforeach;
 		echo "\r\r.";
 		echo '</pre>';
 	}
 #---------------------------------------------------------------------------------------------------
-	function ulangDataMysql2($myTable)
+	function ulangDataMysql2($myTable,$myID)
 	{
 		$ulangan = $this->tanya->susunDataMysql2();
 
 		echo '<pre>';
 		foreach($ulangan as $papar):
 			echo "DELETE FROM $myTable ".
-			"WHERE vchregistrationnumber = '$papar';\r";
+			"WHERE $myID = '$papar';\r";
 		endforeach;
 		echo "\r\r.";
 		echo '</pre>';
