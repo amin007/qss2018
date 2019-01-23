@@ -26,6 +26,8 @@ include 'dimenu-am.php';
 	<script  language='JavaScript' type='text/javascript' src='<?php echo $pautan?>js_file/js/validasi/a_internaluser.js'></SCRIPT>	
 </div>
 */
+//print_r($this->bentukJadual01[0]);
+//print_r($this->bentukJadual02[0]);
 ?>
 <!-- isi borang mula ########################################################################################################## -->
 <?php
