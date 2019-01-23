@@ -254,14 +254,15 @@ class Qss extends \Aplikasi\Kitab\Kawal
 		'qss-q3-kesenian','qss-q3-profesional','qss-q3-penginapan',
 		'qss-q3-pengangkutan_penyimpanan','qss-q3-kesihatan',
 		'qss-q3-fnb','qss-q3-perkhidmatan_lain',
-		'qss-q3-pks','qss-q3-pendidikan');
+		'qss-q3-pks','qss-q3-pendidikan','qss2018-q3-1rangka_matnor');
 
 		foreach($senarai as $myJadual):
 			//echo "<br>RENAME TABLE `$myJadual` TO `$myJadual`; ";
 			$this->panggilTable($myJadual,'semuaJadual',$medanID,$dataID);
 		endforeach;
-			$this->panggilTable01('qss-q3-1rangka_proses','semuaJadual',$medanID,$dataID);
-			//$this->panggilTable02('qss-q3-1rangka_matnor','semuaJadual',$medanID,$dataID);
+			//$this->panggilTable01('qss-q3-1rangka_proses','semuaJadual',$medanID,$dataID);
+			//$this->panggilTable01('qss-q3-1rangka_matnor','semuaJadual',$medanID,$dataID);
+			$this->panggilTable01('qss2018-q3-1rangka_matnor','semuaJadual',$medanID,$dataID);
 	}
 #-------------------------------------------------------------------------------------------
 #==========================================================================================
