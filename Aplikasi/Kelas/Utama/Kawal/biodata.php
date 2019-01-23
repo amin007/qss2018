@@ -67,8 +67,8 @@ class Biodata extends \Aplikasi\Kitab\Kawal
 		$sesi = \Aplikasi\Kitab\Sesi::init();
 		//echo '<pre>MENU_ATAS - $_SESSION:'; print_r($_SESSION, 1); echo '</pre><br>';
 		# set pembolehubah
-		$pengguna = \Aplikasi\Kitab\Sesi::get('namaPendek');
-		$level = \Aplikasi\Kitab\Sesi::get('levelPengguna');
+		$pengguna = \Aplikasi\Kitab\Sesi::get('be18_namaPendek');
+		$level = \Aplikasi\Kitab\Sesi::get('be18_levelPengguna');
 
 		return array($pengguna, $level);
 	}
