@@ -10,7 +10,7 @@
  style="background: url('<?php echo GAMBAR ?>') no-repeat center center fixed;background-size: cover;"
 */
 // papar title
-echo Tajuk_Muka_Surat;
+echo Tajuk_Muka_Surat2;
 
 $dpt_url = dpt_url();
 echo (empty($dpt_url[2])) ? null : '[' . $_GET['url'] . ']';
