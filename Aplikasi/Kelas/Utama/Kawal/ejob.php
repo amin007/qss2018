@@ -181,6 +181,7 @@ class Ejob extends \Aplikasi\Kitab\Kawal
 	{
 		//echo '<hr>Nama class :' . __METHOD__ . '()<hr>';
 		//echo '<hr><a target="_blank" href="https://ejob.stats.gov.my">Ejob</a><hr>';
+		define('Tajuk_Muka_Surat2', $this->_folder);
 
 		# Pergi papar kandungan
 		//$this->_folder = '';
