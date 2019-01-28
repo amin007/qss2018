@@ -179,8 +179,14 @@ class Ejob extends \Aplikasi\Kitab\Kawal
 #-------------------------------------------------------------------------------------------
 	function paparPautan()
 	{
-		echo '<hr>Nama class :' . __METHOD__ . '()<hr>';
-		echo '<a target="_blank" href="https://ejob.stats.gov.my">Ejob</a>';
+		//echo '<hr>Nama class :' . __METHOD__ . '()<hr>';
+		//echo '<hr><a target="_blank" href="https://ejob.stats.gov.my">Ejob</a><hr>';
+
+		# Pergi papar kandungan
+		//$this->_folder = '';
+		$fail = array('1cari','kira-ot','b_ubah');
+		//echo '<br>$fail = ' . $fail[0] . '<hr>';
+		$this->paparKandungan($this->_folder, $fail[1], $noInclude=1);//*/
 	}
 #-------------------------------------------------------------------------------------------
 	function paparJadual()
