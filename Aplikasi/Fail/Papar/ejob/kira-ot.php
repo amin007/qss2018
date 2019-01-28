@@ -22,15 +22,11 @@ include 'atas/menu_atas.php';
 <div class="form-row">
 	<div class="form-group col-md-3">
 		<label for="inputBilStaf">Bil Staf</label>
-		<input type="text" class="form-control" id="bilStaf" value="9">
-	</div>
-	<div class="form-group col-md-3">
-		<label for="inputOtStaf">Jum OT Staf</label>
-		<input type="text" class="form-control" id="jumOtStaf" value="307">
+		<input type="text" class="form-control" id="bilStaf" value="5">
 	</div>
 	<div class="form-group col-md-3">
 		<label for="inputJumGaji">Jum Gaji Staf</label>
-		<input type="text" class="form-control" id="jumGajiStaf" value="17040">
+		<input type="text" class="form-control" id="jumGajiStaf" value="22560">
 	</div>
 </div>
 <!-- ========================================================================================================= -->
@@ -45,7 +41,7 @@ include 'atas/menu_atas.php';
 	</div>
 	<div class="form-group col-md-3">
 		<label for="inputBulan">Gaji*Bulan</label>
-		<input type="text" class="form-control" id="gajibulan">
+		<input type="text" class="form-control" id="gajibulan" readonly>
 	</div>
 </div>
 <!-- ========================================================================================================= -->
@@ -62,15 +58,35 @@ include 'atas/menu_atas.php';
 <!-- ========================================================================================================= -->
 <div class="form-row">
 	<div class="form-group col-md-3">
-		<label for="inpuTeksKira">Kira Jam OT</label>
-		<input type="text" class="form-control" id="teksKira01">
+		<label for="inputOtJam">Kira Jam OT</label>
+		<input type="text" class="form-control" id="otjam" readonly>
 	</div>
 	<div class="form-group col-md-3">
-		<label for="inpuTeksKira">Kira Bayaran OT</label>
-		<input type="text" class="form-control" id="teksKira02">
+		<label for="inputOtStaf">Jum OT Staf - fix</label>
+		<input type="text" class="form-control" id="xotstaf">
+	</div>
+	<div class="form-group col-md-3">
+		<label for="inputotbayaran">Kira Bayaran OT</label>
+		<input type="text" class="form-control" id="otbayaran" readonly>
 	</div>
 </div>
 <!-- ========================================================================================================= -->
+<div class="form-row">
+	<div class="form-group col-md-3">
+		<label for="inputOtJam">Kira Jam OT</label>
+		<input type="text" class="form-control" id="otjam2" readonly>
+	</div>
+	<div class="form-group col-md-3">
+		<label for="inputotbayaran">Kira Bayaran OT - fix</label>
+		<input type="text" class="form-control" id="xotbayaran">
+	</div>
+	<div class="form-group col-md-3">
+		<label for="inputOtStaf">Jum OT Staf</label>
+		<input type="text" class="form-control" id="otstaf" readonly>
+	</div>
+</div>
+<!-- ========================================================================================================= -->
+
 </form>
 
 <?php echo "\n"; ?><!-- Footer
@@ -101,22 +117,19 @@ if (isset($this->js))
 <script>
 $('#gaji').keyup(function(){
 	var bilStaf;
-	var jumOtStaf;
 	var jumGajiStaf;
 	bilStaf = parseFloat($('#bilStaf').val());
-	jumOtStaf = parseFloat($('#jumOtStaf').val());
 	jumGajiStaf = parseFloat($('#jumGajiStaf').val());
 	var gajiSebulan = jumGajiStaf / bilStaf;
 	/* ================================================================== */
-	var bulan;
-	bulan = parseFloat($('#bulan').val());
+	var bulan; bulan = parseFloat($('#bulan').val());
 	var gajibulan = gajiSebulan * bulan; /* kira teks1 */
 	/* ================================================================== */
 	$('#gaji').val(gajiSebulan.toFixed(0));
 	$('#gajibulan').val(gajibulan.toFixed(0));
 });
 
-$('#teksKira01').keyup(function(){
+$('#otjam').keyup(function(){
 	var gaji; var bulan;
 	var harisetahun; var jamsehari;
 	var teks1; var teks2;
@@ -127,14 +140,28 @@ $('#teksKira01').keyup(function(){
 	jamsehari = parseFloat($('#jamsehari').val());
 	teks2 = harisetahun * jamsehari; /* kira teks2 */
 	/*var teksKira = (gaji * bulan)/(harisetahun * jamsehari);*/
-	var teksKira01 = teks1 / teks2;
+	var otjam = teks1 / teks2;
 	/* ================================================================== */
-	var jumOtStaf;
-	jumOtStaf = parseFloat($('#jumOtStaf').val());
-	var teksKira02 = teksKira01 * jumOtStaf;
+	$('#otjam').val(otjam.toFixed(0));
+	$('#otjam2').val(otjam.toFixed(0));
+});
+
+$('#xotstaf').keyup(function(){
+	var otjam; otjam = parseFloat($('#otjam').val());
+	var xotstaf; xotstaf = parseFloat($('#xotstaf').val());
 	/* ================================================================== */
-	$('#teksKira01').val(teksKira01.toFixed(0));
-	$('#teksKira02').val(teksKira02.toFixed(0));
+	var otbayaran = xotstaf * otjam;
+	/* ================================================================== */
+	$('#otbayaran').val(otbayaran.toFixed(0));
+});
+
+$('#xotbayaran').keyup(function(){
+	var otjam; otjam = parseFloat($('#otjam').val());
+	var xotbayaran; xotbayaran = parseFloat($('#xotbayaran').val());
+	/* ================================================================== */
+	var otstaf = xotbayaran / otjam;
+	/* ================================================================== */
+	$('#otstaf').val(otstaf.toFixed(0));
 });
 
 </script>
