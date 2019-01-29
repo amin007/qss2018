@@ -103,7 +103,8 @@ echo $theme = (isset($theme)) ? $theme : null; ?>
 <!-- khas untuk jquery dan js2 lain
 ================================================== -->
 <script type="text/javascript" src="<?=JQUERY?>"></script>
-<script type="text/javascript" src="<?=BOOTSTRAPJS411?>"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script type="text/javascript" src="<?=BOOTSTRAPJS413?>"></script>
 <?php
 if (isset($this->js))
 {
