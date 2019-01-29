@@ -13,7 +13,7 @@ $iconFA['Power'] = '<i class="fas fa-power-off"></i>';
 $pilihMenu = '4.1.3';
 
 if($pilihMenu == '4.1.3'): echo "\n";?>
-<!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+<!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
 	<div class="collapse navbar-collapse" id="navbarSupportedContent">
 		<ul class="navbar-nav ml-auto">
 		<li class="nav-item dropdown">
@@ -22,9 +22,7 @@ if($pilihMenu == '4.1.3'): echo "\n";?>
 				<?=$iconFA['User']?>Staf
 			</a>
 			<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-			<li><a class="dropdown-item"  href="<?php echo URL ?>biodata/ubah">
-					<?=$iconFA['User']?>Profile <?=$pengguna?>
-				</a></li>
+			<li><a class="dropdown-item"  href="<?php echo URL ?>biodata/ubah"><?=$iconFA['User']?>Profile <?=$pengguna?></a></li>
 			<li class="dropdown-divider"></li>
 			<li><a class="dropdown-item" href="<?php echo URL ?>rangkabaru/masukdata/1"><?=$iconFA['Barcode']?>Tambah Kes</a></li>
 			<li><a class="dropdown-item" href="<?php echo URL ?>operasi/batch"><?=$iconFA['Barcode']?>Semak Barcode</a></li>
@@ -52,10 +50,11 @@ if($pilihMenu == '4.1.3'): echo "\n";?>
 			data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 				<?=$iconFA['Stats']?>Laporan
 			</a>
-			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-				<a class="dropdown-item" href="#">Action1</a>
-				<a class="dropdown-item" href="#">Action2</a>
-			</div>
+			<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+			<li><a class="dropdown-item" href="#">Mingguan</a></li>
+			<li><a class="dropdown-item" href="#">Bulanan</a></li>
+			<li><a class="dropdown-item" href="#">Suku Tahunan</a></li>
+			</ul>
 		</li>
 		<li class="nav-item dropdown">
 			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -70,7 +69,7 @@ if($pilihMenu == '4.1.3'): echo "\n";?>
 		</li>
 		</ul>
 	</div>
-<!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+<!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
 <?php 
 elseif($pilihMenu == '1'): echo "\n";?>
 <!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
