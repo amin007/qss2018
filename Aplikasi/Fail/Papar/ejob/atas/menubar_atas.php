@@ -21,28 +21,31 @@ if($pilihMenu == '4.1.3'): echo "\n";?>
 			data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 				<?=$iconFA['User']?>Staf
 			</a>
-			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-				<a class="dropdown-item"  href="<?php echo URL ?>biodata/ubah">
+			<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+			<li><a class="dropdown-item"  href="<?php echo URL ?>biodata/ubah">
 					<?=$iconFA['User']?>Profile <?=$pengguna?>
-				</a>
-				<hr>
-				<a class="dropdown-item" href="<?php echo URL ?>rangkabaru/masukdata/1"><?=$iconFA['Barcode']?>Tambah Kes</a>
-				<a class="dropdown-item" href="<?php echo URL ?>operasi/batch"><?=$iconFA['Barcode']?>Semak Barcode</a>
-				<a class="dropdown-item" href="<?php echo URL ?>operasi/hantar"><?=$iconFA['Barcode']?>Hantar Kes</a>
-				<a class="dropdown-item" href="<?php echo URL ?>prosesan/batch"><?=$iconFA['Barcode']?>Terima Di Prosesan</a>
-				<hr>
-				<a class="dropdown-item" href="<?php echo URL ?>ruangtamu/logout"><?=$iconFA['User']?>Keluar</a>
-			</div>
+				</a></li>
+			<li class="dropdown-divider"></li>
+			<li><a class="dropdown-item" href="<?php echo URL ?>rangkabaru/masukdata/1"><?=$iconFA['Barcode']?>Tambah Kes</a></li>
+			<li><a class="dropdown-item" href="<?php echo URL ?>operasi/batch"><?=$iconFA['Barcode']?>Semak Barcode</a></li>
+			<li><a class="dropdown-item" href="<?php echo URL ?>operasi/hantar"><?=$iconFA['Barcode']?>Hantar Kes</a></li>
+			<li><a class="dropdown-item" href="<?php echo URL ?>prosesan/batch"><?=$iconFA['Barcode']?>Terima Di Prosesan</a></li>
+			<li class="dropdown-divider"></li>
+			<li><a class="dropdown-item" href="<?php echo URL ?>ruangtamu/logout"><?=$iconFA['User']?>Keluar</a>
+			</ul>
 		</li>
 		<li class="nav-item dropdown">
 			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
 			data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 				<?=$iconFA['Filter']?>Cari
 			</a>
-			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-				<a class="dropdown-item" href="#">Action1</a>
-				<a class="dropdown-item" href="#">Action2</a>
-			</div>
+			<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+			<li><a class="dropdown-item" href="<?php echo URL ?>cari/tentang/msic/1"><?=$iconFA['Filter']?>MSIC</a></li>
+			<li><a class="dropdown-item" href="<?php echo URL ?>cari/tentang/produk/1"><?=$iconFA['Filter']?>PRODUK</a></li>
+			<li><a class="dropdown-item" href="<?php echo URL ?>cari/tentang/johor/2"><?=$iconFA['Filter']?>LOKALITI JOHOR</a></li>
+			<li><a class="dropdown-item" href="<?php echo URL ?>cari/tentang/malaysia/2"><?=$iconFA['Filter']?>LOKALITI MALAYSIA</a></li>
+			<li><a class="dropdown-item" href="<?php echo URL ?>cari/tentang/prosesan/1"><?=$iconFA['Filter']?>Prosesan</a></li>
+			</ul>
 		</li>
 		<li class="nav-item dropdown">
 			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -59,10 +62,11 @@ if($pilihMenu == '4.1.3'): echo "\n";?>
 			data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 				<?=$iconFA['Ask']?>Bantuan
 			</a>
-			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-				<a class="dropdown-item" href="#">Action1</a>
-				<a class="dropdown-item" href="#">Action2</a>
-			</div>
+			<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+			<li><a class="dropdown-item" href="#">Sistem</a></li>
+			<li><a class="dropdown-item" href="<?php echo URL ?>forum/perdana">Forum</a></li>
+			<li><a class="dropdown-item" href="<?php echo URL ?>mesej/utama">Email</a></li>
+			</ul>
 		</li>
 		</ul>
 	</div>
