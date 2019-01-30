@@ -1,9 +1,9 @@
 <!-- menu_atas.php A0 --><?php 
 $sesi = \Aplikasi\Kitab\Sesi::init();
-//echo '<pre>MENU_ATAS - $_SESSION:', print_r($_SESSION, 1) . '</pre><br>';
+//echo '<pre>MENU_ATAS - $_SESSION:'; print_r($_SESSION); echo '</pre><br>';
 # set pembolehubah
-$pengguna = \Aplikasi\Kitab\Sesi::get('namaPendek');
-$level = \Aplikasi\Kitab\Sesi::get('levelPengguna');
+$pengguna = \Aplikasi\Kitab\Sesi::get('bs_namaPendek');
+$level = \Aplikasi\Kitab\Sesi::get('bs_levelPengguna');
 
 $senaraiPengguna = array('pentadbir','biasa');
 $senaraiPentadbir = array('pentadbir','biasa');
@@ -30,7 +30,7 @@ echo "\n\n";
 	aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
 	</button>
-<!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ --
+<!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
 <form class="mx-2 my-auto d-inline w-50" action="<?php //echo $this->pautan ?>" method="POST">
 <div class="input-group">
 	<div class="input-group-btn">
