@@ -6,17 +6,18 @@ include 'atas/menu_atas.php';
 <form class="container">
 <!-- ========================================================================================================= -->
 <div class="form-row">
-	<div class="form-group col-md-12"><pre>
-		Furmula:
-		Gaji Pokok X 12 bulan
-		-------------------------
-		(bil. hari bekerja dlm setahun) 313 X 8 (jam sehari)
-
-		Contoh
-		<font color="red">1500</font> X 12
-		--------------
-		313 x 8</pre>
-	</div>
+	<div class="form-group col-md-6"><pre>
+Furmula:
+Gaji Pokok X 12 bulan
+-------------------------
+(bil. hari bekerja dlm setahun) 313 X 8 (jam sehari)
+	</pre></div>
+	<div class="form-group col-md-4"><pre>
+Contoh
+<font color="red">1500</font> X 12
+--------------
+313 x 8
+	</pre></div>
 </div>
 <!-- ========================================================================================================= -->
 <div class="form-row">
