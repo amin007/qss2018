@@ -10,10 +10,10 @@ ul, ol {margin: 0;}
 p {margin: 0;}
 
 html, body{
-  	font-family: 'Roboto', sans-serif;
-    font-size: 100%;
-  	background:#000;
-  	overflow-x: hidden;
+	font-family: 'Roboto', sans-serif;
+	font-size: 100%;
+	/*background:#000;*/
+	overflow-x: hidden;
 }
 body a{
 	transition:0.5s all;
@@ -2036,7 +2036,7 @@ h2.form-heading {
   width: 100%;
 }
 body#login{
-  background: url(../images/bg.jpg)no-repeat;
+  /*background: url(../images/bg.jpg) no-repeat center center fixed;*/
   background-size:cover;
   -webkit-background-size:cover;
   -moz-background-size:cover;
