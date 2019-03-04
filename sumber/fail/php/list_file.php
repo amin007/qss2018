@@ -80,7 +80,9 @@ function list_files()
 #-------------------------------------------------------------------------------------------------------------
 function getWebsite()
 {
-	$papar = array('./newss/'=>'//newss.stats.gov.my',
+	$papar = array(
+		'./espl/'=>'//espl.stats.gov.my/spl',
+		'./newss/'=>'//newss.stats.gov.my',
 		'./msic/'=>'//msic.stats.gov.my',
 		'./eBGB/'=>'https://ebgb.dosm.gov.my',
 		'./qss/'=>'//qss.stats.gov.my',
