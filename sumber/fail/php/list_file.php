@@ -46,7 +46,7 @@ function getFileList($dir)
 	return $retval;
 }
 #-------------------------------------------------------------------------------------------------------------
-function pautan02($name,$web)
+function pautan($name,$web)
 {
 	return '<i class="far fa-folder fa-spin"></i>'
 	. '<a target="_blank" href="' . $web . '">'
