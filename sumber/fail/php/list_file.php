@@ -65,7 +65,7 @@ function list_files()
 	endforeach;
 	foreach($dirlist as $key02 => $value):
 		if ($value['type'] == 'dir'):
-			echo "\n" . pautan($value['name']);
+			echo "\n" . pautan($value['name'],$value['name']);
 		else:echo '';endif;
 	endforeach;
 	dibawah();
