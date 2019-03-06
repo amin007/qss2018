@@ -61,7 +61,7 @@ function list_files()
 	//echo '<tr><td> name</td><td> type</td><td> size</td><td> lastmod</td></tr>';
 	diatas();
 	foreach($weblist as $name => $web):
-		echo "\n" . pautan02($name,$web);
+		echo "\n" . pautan($name,$web);
 	endforeach;
 	foreach($dirlist as $key02 => $value):
 		if ($value['type'] == 'dir'):
