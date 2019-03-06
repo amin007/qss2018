@@ -84,6 +84,7 @@ function getWebsite()
 		'./espl/'=>'//espl.stats.gov.my/spl',
 		'./newss/'=>'//newss.stats.gov.my',
 		'./msic/'=>'//msic.stats.gov.my',
+		'./emasco/'=>'https://www.jobsmalaysia.gov.my/emasco',
 		'./eBGB/'=>'https://ebgb.dosm.gov.my',
 		'./qss/'=>'//qss.stats.gov.my',
 		'./ejob/'=>'//ejob.stats.gov.my'
