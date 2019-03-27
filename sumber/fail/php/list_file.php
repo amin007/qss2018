@@ -48,7 +48,10 @@ function getFileList($dir)
 #-------------------------------------------------------------------------------------------------------------
 function pautan($name,$web)
 {
-	return '<i class="far fa-folder fa-spin"></i>'
+	$icon1 = '<i class="fas fa-globe-asia fa-spin"></i>';
+	$icon2 = '<i class="far fa-folder fa-spin"></i>';
+	$icon = ($name != $web) ? $icon1 : $icon2;
+	return '' . $icon
 	. '<a target="_blank" href="' . $web . '">'
 	. $name . '</a><hr>';
 }
