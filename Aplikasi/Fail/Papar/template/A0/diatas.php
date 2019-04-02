@@ -19,7 +19,7 @@ echo (empty($dpt_url[2])) ? null : '[' . $_GET['url'] . ']';
 <link href="<?=FONTAWESOME?>" rel="stylesheet" type="text/css">
 <link href="<?=BOOTSTRAPCSS?>" rel="stylesheet" type="text/css">
 <?php
-if (isset($this->css)) 
+if (isset($this->css))
 {
 	foreach ($this->css as $css)
 	{
@@ -47,12 +47,12 @@ table.excel thead th, table.excel tbody th {
 }
 table.excel tbody th { text-align:center; vertical-align: top; }
 table.excel tbody td { vertical-align:bottom; }
-table.excel tbody td 
-{ 
+table.excel tbody td
+{
 	padding: 0 3px; border: 1px solid #aaaaaa;
 	background:#ffffff;
 }
 .fa-input {font-family: FontAwesome}
 </style>
-</head>  
+</head>
 <body>

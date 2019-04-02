@@ -33,7 +33,7 @@ $themeFlat = $flat[rand(0, count($flat)-1)];
     <link rel="stylesheet" type="text/css" href="<?=$url?>dist/lib/css/checkbox3.min.css">
     <link rel="stylesheet" type="text/css" href="<?=$url?>dist/lib/css/jquery.dataTables.min.css">
     <link rel="stylesheet" type="text/css" href="<?=$url?>dist/lib/css/dataTables.bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="<?=$url?>dist/lib/css/select2.min.css">	
+    <link rel="stylesheet" type="text/css" href="<?=$url?>dist/lib/css/select2.min.css">
     <!-- CSS App -->
     <link rel="stylesheet" type="text/css" href="<?=$url?>css/style.css">
     <link rel="stylesheet" type="text/css" href="<?=$url?>css/themes/<?=$themeFlat?>.css">

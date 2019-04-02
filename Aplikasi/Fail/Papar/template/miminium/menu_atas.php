@@ -8,8 +8,8 @@
 					<span class="middle"></span>
 					<span class="bottom"></span>
 				</div>
-				<a href="index.html" class="navbar-brand"><b> 
-				<?php //echo Tajuk_Muka_Surat; 
+				<a href="index.html" class="navbar-brand"><b>
+				<?php //echo Tajuk_Muka_Surat;
 				echo '<img src="'.URL.'sumber/gambar/logo3.png" height="40" width="40">';
 				echo '<small>BE16</small>';
 				$namaPegawai = \Aplikasi\Kitab\Sesi::get('namaPegawai');
@@ -32,7 +32,7 @@
 				<ul class="nav navbar-nav navbar-right user-nav">
 				<li class="user-name"><span><?php echo $namaPegawai ?></span></li>
 				<li class="dropdown avatar-dropdown">
-					<img src="<?=$url?>asset/img/avatar.jpg" class="img-circle avatar" alt="user name" 
+					<img src="<?=$url?>asset/img/avatar.jpg" class="img-circle avatar" alt="user name"
 					data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"/>
 					<ul class="dropdown-menu user-dropdown">
 					<li><a href="#"><span class="fa fa-user"></span> My Profile</a></li>
@@ -49,9 +49,8 @@
 				</li>
 				<li ><a href="#" class="opener-right-menu"><span class="fa fa-coffee"></span></a></li>
 				</ul>
-				<!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->			  
+				<!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
 			</div>
 		</div>
 	</nav>
 	<!-- end: Header -->
-	

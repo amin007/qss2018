@@ -26,7 +26,6 @@
 	});
 </script>
 <!-- //map -->
-	
 
 	<div class="col-md-6 col_5">
 		<div id="chart_container">
@@ -36,7 +35,7 @@
 	</div>
 <!-- Graph JavaScript -->
 <script src="<?=$url?>js/d3.v3.js"></script>
-<script src="<?=$url?>js/rickshaw.js"></script>	
+<script src="<?=$url?>js/rickshaw.js"></script>
 <script>
 var seriesData = [ [], [], [], [], [] ];
 var random = new Rickshaw.Fixtures.RandomData(50);
@@ -48,7 +47,7 @@ for (var i = 0; i < 75; i++) {
 var graph = new Rickshaw.Graph( {
 	element: document.getElementById("chart"),
 	renderer: 'multi',
-	
+
 	dotSize: 5,
 	series: [
 		{
@@ -87,7 +86,5 @@ var detail = new Rickshaw.Graph.HoverDetail({
 	graph: graph
 });
 </script>
-
-
-	<div class="clearfix"> </div>
+<div class="clearfix"> </div>
 </div>

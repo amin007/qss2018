@@ -1,4 +1,4 @@
-<?php 
+<?php
 include 'menu-tengah-atas-01.php';
 //include 'menu-tengah-atas-02.1.php';
 //include 'menu-tengah-atas-02.2.php';
@@ -10,7 +10,8 @@ include 'menu-tengah-atas-01.php';
 	</div><!-- class="row content-container" -->
 	<footer class="app-footer">
 	<div class="wrapper">
-		<span class="pull-right"><?php echo $template ?> <a href="#"><i class="fa fa-long-arrow-up"></i></a></span> 
+		<span class="pull-right"><?php echo $template ?>
+		<a href="#"><i class="fa fa-long-arrow-up"></i></a></span>
 		&copy; 2015 Copyright.
 	</div>
 	</footer>

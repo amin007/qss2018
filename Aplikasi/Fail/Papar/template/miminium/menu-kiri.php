@@ -6,15 +6,12 @@ elseif($pilih==1):?>
 				<li><div class="left-bg"></div></li>
 					<li class="time">
 						<h1 class="animated fadeInLeft">22:00</h1>
-						<p class="animated fadeInRight"><?php
-						echo 'Sat,October 1st 2029';
-						//echo date('dd mmm yyyy');
-						?></p>
+						<p class="animated fadeInRight"><?php echo 'Sat,October 1st 2029';//echo date('dd mmm yyyy'); ?></p>
 					</li>
 				<li class="ripple">
 					<a class="tree-toggle nav-header">
-						<span class="fa fa-check-square-o"></span> Forms  
-						<span class="fa-angle-right fa right-arrow text-right"></span> 
+						<span class="fa fa-check-square-o"></span> Forms
+						<span class="fa-angle-right fa right-arrow text-right"></span>
 					</a>
 					<ul class="nav nav-list tree">
 						<li><a href="formelement.html">Form Element</a></li>
@@ -25,8 +22,8 @@ elseif($pilih==1):?>
 				</li>
 				<li class="ripple">
 					<a class="tree-toggle nav-header">
-						<span class="fa fa-table"></span> Tables  
-						<span class="fa-angle-right fa right-arrow text-right"></span> 
+						<span class="fa fa-table"></span> Tables
+						<span class="fa-angle-right fa right-arrow text-right"></span>
 					</a>
 					<ul class="nav nav-list tree">
 						<li><a href="#datatables.html">Data Tables</a></li>
@@ -34,17 +31,8 @@ elseif($pilih==1):?>
 						<li><a href="#tablestatic.html">Static</a></li>
 					</ul>
 				</li>
-				<li class="ripple">
-					<a href="#calendar.html">
-						<span class="fa fa-calendar-o"></span>
-						Calendar
-					</a>
-				</li>
-				<li><a href="#credits.html">
-						<span class="fa fa-file-code-o"></span>
-						Credits
-					</a>
-				</li>
+				<li class="ripple"><a href="#calendar.html"><span class="fa fa-calendar-o"></span>Calendar</a></li>
+				<li><a href="#credits.html"><span class="fa fa-file-code-o"></span>Credits</a></li>
 			</ul>
 		</div>
 <?php else:?>
@@ -53,13 +41,10 @@ elseif($pilih==1):?>
 				<li><div class="left-bg"></div></li>
 					<li class="time">
 						<h1 class="animated fadeInLeft">22:00</h1>
-						<p class="animated fadeInRight"><?php
-						echo 'Sat,October 1st 2029';
-						//echo date('dd mmm yyyy');
-						?></p>
+						<p class="animated fadeInRight"><?php echo 'Sat,October 1st 2029';//echo date('dd mmm yyyy');?></p>
 					</li>
 				<li class="active ripple">
-					<a class="tree-toggle nav-header"><span class="fa-home fa"></span> Dashboard 
+					<a class="tree-toggle nav-header"><span class="fa-home fa"></span> Dashboard
 						<span class="fa-angle-right fa right-arrow text-right"></span>
 					</a>
 					<ul class="nav nav-list tree">
@@ -91,7 +76,7 @@ elseif($pilih==1):?>
 				</li>
 				<li class="ripple">
 					<a class="tree-toggle nav-header">
-						<span class="fa fa-pencil-square"></span> Ui Elements  
+						<span class="fa fa-pencil-square"></span> Ui Elements
 						<span class="fa-angle-right fa right-arrow text-right"></span>
 					</a>
 					<ul class="nav nav-list tree">
@@ -112,8 +97,8 @@ elseif($pilih==1):?>
 				</li>
 				<li class="ripple">
 					<a class="tree-toggle nav-header">
-						<span class="fa fa-check-square-o"></span> Forms  
-						<span class="fa-angle-right fa right-arrow text-right"></span> 
+						<span class="fa fa-check-square-o"></span> Forms
+						<span class="fa-angle-right fa right-arrow text-right"></span>
 					</a>
 					<ul class="nav nav-list tree">
 						<li><a href="formelement.html">Form Element</a></li>
@@ -124,8 +109,8 @@ elseif($pilih==1):?>
 				</li>
 				<li class="ripple">
 					<a class="tree-toggle nav-header">
-						<span class="fa fa-table"></span> Tables  
-						<span class="fa-angle-right fa right-arrow text-right"></span> 
+						<span class="fa fa-table"></span> Tables
+						<span class="fa-angle-right fa right-arrow text-right"></span>
 					</a>
 					<ul class="nav nav-list tree">
 						<li><a href="datatables.html">Data Tables</a></li>
@@ -133,13 +118,10 @@ elseif($pilih==1):?>
 						<li><a href="tablestatic.html">Static</a></li>
 					</ul>
 				</li>
-				<li class="ripple">
-					<a href="calendar.html"><span class="fa fa-calendar-o"></span>
-						Calendar</a>
-				</li>
+				<li class="ripple"><a href="calendar.html"><span class="fa fa-calendar-o"></span>Calendar</a></li>
 				<li class="ripple">
 					<a class="tree-toggle nav-header">
-						<span class="fa fa-envelope-o"></span> Mail 
+						<span class="fa fa-envelope-o"></span> Mail
 						<span class="fa-angle-right fa right-arrow text-right"></span>
 					</a>
 					<ul class="nav nav-list tree">
@@ -150,7 +132,7 @@ elseif($pilih==1):?>
 				</li>
 				<li class="ripple">
 					<a class="tree-toggle nav-header">
-						<span class="fa fa-file-code-o"></span> Pages  
+						<span class="fa fa-file-code-o"></span> Pages
 						<?php /*<span class="fa-angle-right fa right-arrow text-right"></span> */?>
 					</a>
 					<?php /*<ul class="nav nav-list tree">
@@ -165,7 +147,7 @@ elseif($pilih==1):?>
 					</ul> */ ?>
 				</li>
 				<li class="ripple">
-					<a class="tree-toggle nav-header"><span class="fa "></span> MultiLevel  
+					<a class="tree-toggle nav-header"><span class="fa "></span> MultiLevel
 					<span class="fa-angle-right fa right-arrow text-right"></span>
 					</a>
 					<ul class="nav nav-list tree">

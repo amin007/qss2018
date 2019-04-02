@@ -10,31 +10,19 @@
 							</div>
 						</div>
 						<div class="panel-body">
-                                    <div class="col-md-12 padding-0 text-center">
-                                      <div class="col-md-4 col-sm-4 col-xs-6 padding-0">
-                                          <h3>2.000</h3>
-                                          <p>Post</p>
-                                      </div>
-                                      <div class="col-md-4 col-sm-4 col-xs-6 padding-0">
-                                          <h3>2.232</h3>
-                                          <p>share</p>
-                                      </div>
-                                      <div class="col-md-4 col-sm-4 col-xs-12 padding-0">
-                                          <h3>4.320</h3>
-                                          <p>photos</p>
-                                      </div>
-                                    </div>
+						<div class="col-md-12 padding-0 text-center">
+							<div class="col-md-4 col-sm-4 col-xs-6 padding-0"><h3>2.000</h3><p>Post</p></div>
+							<div class="col-md-4 col-sm-4 col-xs-6 padding-0"><h3>2.232</h3><p>share</p></div>
+							<div class="col-md-4 col-sm-4 col-xs-12 padding-0"><h3>4.320</h3><p>photos</p></div>
+						</div>
 						</div>
 					</div>
 				</div>
 				<!-- ################################################################################### -->
-				
 				<!-- ################################################################################### -->
 				<div class="col-md-12 padding-0">
 					<div class="panel box-v3">
-						<div class="panel-heading bg-white border-none">
-							<h4>Report</h4>
-						</div>
+						<div class="panel-heading bg-white border-none"><h4>Report</h4></div>
 						<div class="panel-body">
 							<!-- ################################################################################### --
 							<div class="media">
@@ -116,7 +104,6 @@
 					</div><!-- / class="panel box-v3" -->
 				</div><!-- /class="col-md-12 padding-0" -->
 				<!-- ################################################################################### -->
-				
 				<!-- ################################################################################### -->
 				<div class="col-md-12 padding-0">
 					<div class="panel bg-light-blue">

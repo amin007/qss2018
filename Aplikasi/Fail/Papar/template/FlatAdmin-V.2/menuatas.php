@@ -27,33 +27,29 @@
 				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
 				<i class="fa fa-star-half-o"></i> 4</a>
 				<ul class="dropdown-menu danger  animated fadeInDown">
-				<li class="title">
-					Notification <span class="badge pull-right">4</span>
-				</li>
+				<li class="title">Notification <span class="badge pull-right">4</span></li>
 			<!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
 				<li><ul class="list-group notifications">
 				<!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
-				<a href="#"><li class="list-group-item">
-					<span class="badge">1</span> 
-					<i class="fa fa-exclamation-circle icon"></i> 
+				<li class="list-group-item"><a href="#">
+					<span class="badge">1</span>
+					<i class="fa fa-exclamation-circle icon"></i>
 					new registration
-				</li></a>
+				</a></li>
 				<!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
-				<a href="#"><li class="list-group-item">
-					<span class="badge success">1</span> 
-					<i class="fa fa-check icon"></i> 
+				<li class="list-group-item"><a href="#">
+					<span class="badge success">1</span>
+					<i class="fa fa-check icon"></i>
 					new orders
-				</li></a>
+				</a></li>
 				<!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
-				<a href="#"><li class="list-group-item">
+				<li class="list-group-item"><a href="#">
 					<span class="badge danger">2</span>
-					<i class="fa fa-comments icon"></i> 
+					<i class="fa fa-comments icon"></i>
 					customers messages
-				</li></a>
+				</a></li>
 				<!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
-				<a href="#"><li class="list-group-item message">
-					view all
-				</li></a>
+				<li class="list-group-item message"><a href="#">view all</a></li>
 				<!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
 				</ul></li>
 		<!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
@@ -61,7 +57,7 @@
 		</li>
 		<!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
 		<li class="dropdown profile">
-			<a href="#" class="dropdown-toggle" data-toggle="dropdown" 
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown"
 			role="button" aria-expanded="false">Emily Hart <span class="caret"></span></a>
 			<ul class="dropdown-menu animated fadeInDown">
 			<li class="profile-img">

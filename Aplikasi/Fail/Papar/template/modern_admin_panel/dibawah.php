@@ -1,6 +1,6 @@
 <?php
 /*   </div>
-    <!-- /#wrapper -->    
+    <!-- /#wrapper -->
 **/
 echo "\r";
 ?>
@@ -10,6 +10,5 @@ echo "\r";
 <script src="<?=$url?>js/metisMenu.min.js"></script>
 <script src="<?=$url?>js/custom.js"></script>
 
-	
 </body>
 </html>
