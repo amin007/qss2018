@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="">
 <meta name="author" content="">
 <title><?php
@@ -15,7 +16,6 @@ echo Tajuk_Muka_Surat;
 $dpt_url = dpt_url();
 echo (empty($dpt_url[2])) ? null : '[' . $_GET['url'] . ']';
 ?></title>
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <link href="<?=FONTAWESOME563?>" rel="stylesheet" type="text/css">
 <link href="<?=BOOTSTRAPCSS421?>" rel="stylesheet" type="text/css">
 <?php
